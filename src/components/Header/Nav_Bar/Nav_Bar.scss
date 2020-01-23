@@ -12,18 +12,20 @@ ul{
 }
 .containers {
   display: flex;
-  align-items: center;
-  justify-content:center;
+
+ flex-direction: column;
   width: 220%;
   ul.menu {
     height: 50px;
     width: 50px;
+    cursor: pointer;
     li {
       position: relative;
       background:linear-gradient(98deg, rgba(1,108,171,1) 0%, rgba(0,166,110,1) 72%, rgba(165,208,56,1) 100%);
       margin: 10px;
-      height: 8px;
+      height: 2px;
       width: 50px;
+
       // border-radius:20px;
       transition: transform .3s, width .3s;
     }
@@ -60,12 +62,12 @@ ul{
         text-decoration:none;
         transition: color .5s;
         text-transform:uppercase;
-        font-size:170%;
-        font-family: 'Montserrat', sans-serif;
+        font-size:140%;
+        font-family: 'Changa', sans-serif;
         transition: color .5s, margin-left .5s;
         &:hover {
           color: #9CD01C;
-          margin-left: 10px;
+          margin-left: 5px;
           transition: color .5s, margin-left .5s;
         }
       }

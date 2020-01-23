@@ -26,7 +26,7 @@
     height: 5vh;
     color: #01517F;
     animation: scrollToTop 1s infinite;
-    padding-bottom: 8vh;
+    padding-bottom: 0vh;
     border-bottom: 10px solid #01517F;
     font-weight: lighter;
 }
