@@ -1,0 +1,79 @@
+$bg_color: linear-gradient(45deg, rgb(17, 153, 142), rgb(56, 239, 125));
+$main_color : white;
+$primary_color: black;
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900');
+
+ul{
+  list-style-type:none;
+  padding: 0;
+  align-self: start;
+  // margin: 25px;
+}
+.containers {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  width: 100%;
+  ul.menu {
+    height: 50px;
+    width: 50px;
+    li {
+      position: relative;
+      background:linear-gradient(98deg, rgba(1,108,171,1) 0%, rgba(0,166,110,1) 72%, rgba(165,208,56,1) 100%);
+      margin: 10px;
+      height: 8px;
+      width: 50px;
+      // border-radius:20px;
+      transition: transform .3s, width .3s;
+    }
+  }
+  .active_menu {
+    li{
+      &:nth-child(1){
+        top: 18px;
+        transform: rotate(135deg);
+        transition: transform .3s;
+      }
+      &:nth-child(2){
+        width: 0;
+        // transform: rotate(180deg);
+        transition: width .3s;
+      }
+      &:nth-child(3){
+        bottom: 18px;
+        transform: rotate(-135deg);
+        transition: transform .3s;
+      }
+    }
+  }
+
+  ul.links {
+    overflow:hidden;
+    width: 0;
+    margin-left: 0px;
+    transition: width .4s, margin-left .4s;
+    li{
+
+      a{
+        color:$main_color;
+        text-decoration:none;
+        transition: color .5s;
+        text-transform:uppercase;
+        font-size:20px;
+        font-family: 'Montserrat', sans-serif;
+        transition: color .5s, margin-left .5s;
+        &:hover {
+          color: #016cab;
+          margin-left: 20px;
+          transition: color .5s, margin-left .5s;
+        }
+      }
+    }
+  }
+  .active_links{
+    width: 370px !important;
+    margin-left: 35px !important;
+    transition: width .4s, margin-left .4s;
+  }
+}
