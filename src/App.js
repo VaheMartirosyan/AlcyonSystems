@@ -3,6 +3,7 @@ import Header from "./components/Header/Header";
 import About from "./components/About/About";
 import './App.css'
 import Services from './components/Services/Services'
+import Portfolio from './components/Portfolio/Portfolio'
 
 export default class App extends Component{
     constructor(props){
@@ -17,7 +18,7 @@ export default class App extends Component{
         if (window.pageYOffset === 0) {
             clearInterval(this.state.h);
         }
-        window.scroll(0, window.pageYOffset - 8 );
+        window.scroll(0, window.pageYOffset - 15 );
     }
 
 
@@ -35,13 +36,16 @@ export default class App extends Component{
                     <Header/>
                 </header>
             </section>
+            <i className="fa fa-arrow-up  scroll_to_top" onClick={this.scrollhandler}></i>
             <section>
                 <About/>
             </section>
             <section>
+                <Portfolio/>
+            </section>
+            <section>
                 <Services />
             </section>
-            <i className="fa fa-arrow-up  scroll_to_top" onClick={this.scrollhandler}></i>
         </div>
     )
   }

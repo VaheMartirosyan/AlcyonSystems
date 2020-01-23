@@ -19,11 +19,11 @@
 /*  background: #b30000;*/
 /*}*/
 .scroll_to_top{
-  position: fixed;
-  right: 2%;
- bottom: 5%;
-  font-size: 350%;
-  height: 5vh;
+    position: sticky;
+    top: 85vh;
+    left: 95%;
+    font-size: 350%;
+    height: 5vh;
     color: #01517F;
     animation: scrollToTop 1s infinite;
     padding-bottom: 8vh;

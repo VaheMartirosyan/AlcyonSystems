@@ -1,0 +1,27 @@
+.SecPortfolio{
+  width: 100%;
+  background-color: whitesmoke;
+  height: 100vh;
+  display: flex;
+  .Skills{
+    width: 50%;
+    .OurProj{
+      width: 40%;
+      margin: 0 auto;
+    }
+    .OurP{
+      color: #9CD01C;
+      font-size: 50px;
+      margin-top: 15vh;
+    }
+    .proj{
+      color:  #0074C3;
+      font-size: 50px;
+      margin-top: -5vh;
+    }
+  }
+}
+.navSkills {
+  margin-top: 5vh;
+  margin-left: 70%;
+}
