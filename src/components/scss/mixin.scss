@@ -2,3 +2,22 @@
     display: $flex;
     justify-content: $center;
 }
+
+@mixin position($absolute, $top, $left, $width, $height) {
+    position: $absolute;
+    top: $top;
+    left: $left;
+    width: $width;
+    height: $height;
+}
+@mixin display($flex, $between, $center) {
+    display: $flex;
+    justify-content: $between;
+    align-self: $center;
+}
+
+@mixin font($size, $weight, $color) {
+    font-size: $size;
+    font-weight: $weight;
+    color: $color
+}

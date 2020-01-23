@@ -1,4 +1,8 @@
 /* width */
+*{
+  font-family: 'Changa', sans-serif;
+
+}
 ::-webkit-scrollbar {
   width: 20px;
 }
@@ -26,9 +30,10 @@
     height: 5vh;
     color: #01517F;
     animation: scrollToTop 1s infinite;
-    padding-bottom: 0vh;
+    padding-bottom: 8vh;
     border-bottom: 10px solid #01517F;
     font-weight: lighter;
+    z-index: 1999;
 }
 @keyframes scrollToTop {
     0%{
