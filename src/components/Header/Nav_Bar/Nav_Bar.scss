@@ -56,7 +56,7 @@ ul{
     li{
 
       a{
-        color:$main_color;
+        color:#016cab;
         text-decoration:none;
         transition: color .5s;
         text-transform:uppercase;
@@ -64,7 +64,7 @@ ul{
         font-family: 'Montserrat', sans-serif;
         transition: color .5s, margin-left .5s;
         &:hover {
-          color: #016cab;
+          color: #9CD01C;
           margin-left: 10px;
           transition: color .5s, margin-left .5s;
         }
