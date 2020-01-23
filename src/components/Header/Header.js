@@ -7,14 +7,13 @@ import Nav_Bar from "./Nav_Bar/Nav_Bar";
 export default class Header extends Component{
     render() {
         return(
-            <div>
-                <div>
+            <div >
+                <div className={'header_container'}>
                     <div className={'logo'}>
                         <img src={logo} alt=""/>
                     </div>
                     <div className={'nav_fixed'}>
-
-                        <Nav_Bar/>
+                       <Nav_Bar/>
                     </div>
                 </div>
                 <Slider/>

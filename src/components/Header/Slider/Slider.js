@@ -26,7 +26,16 @@ export default ()=>{
                             slider.map((e,i)=>{
                                 return (
                                     <div key={i} style={{backgroundImage:`url(${e})`,width:'100%',height:'100vh'}}>
-                                        <div className={'oppacity'}></div>
+                                        <div className={'oppacity'}>
+                                            <div>
+                                                <h2>WEB DEVELOPMENT</h2>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                    Atque culpa cumque deserunt distinctio earum ex exercitationem
+                                                    laborum, magni modi molestiae, Lorem ipsum dolor.
+                                                    officia possimus, provident saepe sapiente temporibus totam voluptas? Maxime, quas?</p>
+
+                                            </div>
+                                        </div>
                                     </div>
                                 )
 
