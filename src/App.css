@@ -18,3 +18,26 @@
 /*::-webkit-scrollbar-thumb:hover {*/
 /*  background: #b30000;*/
 /*}*/
+.scroll_to_top{
+  position: fixed;
+  right: 2%;
+ bottom: 5%;
+  font-size: 350%;
+  height: 5vh;
+    color: #01517F;
+    animation: scrollToTop 1s infinite;
+    padding-bottom: 8vh;
+    border-bottom: 10px solid #01517F;
+    font-weight: lighter;
+}
+@keyframes scrollToTop {
+    0%{
+        transform: translate(0,0);
+    }
+    50%{
+        transform: translate(0,10px);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}

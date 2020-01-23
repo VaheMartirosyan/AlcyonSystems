@@ -21,11 +21,11 @@ export default class Nav_Bar extends Component{
                 </ul>
                 <ul className={`links ${this.state.active ? 'active_links' : ''}`}>
 
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contacts</a></li>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/portfolio">Portfolio</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/contact">Contact</a></li>
                 </ul>
             </div>
         )
