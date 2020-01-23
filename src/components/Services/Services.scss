@@ -1,0 +1,13 @@
+@import '../scss/variables.scss';
+@import '../scss/mixin.scss';
+
+
+.services {
+    height: 100vh;
+    background-color: $color;
+    width: 100%;
+    color: blue($color: #000000);
+    .ourService {
+        @include display(flex, center)
+    }
+}
