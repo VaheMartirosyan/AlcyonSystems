@@ -15,6 +15,7 @@ ul{
 
  flex-direction: column;
   width: 220%;
+
   ul.menu {
     height: 50px;
     width: 50px;
@@ -31,6 +32,8 @@ ul{
     }
   }
   .active_menu {
+
+
     li{
       &:nth-child(1){
         top: 18px;
@@ -51,18 +54,23 @@ ul{
   }
 
   ul.links {
+    background:rgba(255,255,255,1);
+    text-align: left;
     overflow:hidden;
+    box-shadow: -5px 10px 2px -2px rgba(0,0,0,.2);
+    margin-top: -10px;
     width: 0;
-    margin-left: 0px;
+    border-radius: 10px;
     transition: width .4s, margin-left .4s;
     li{
-
+      margin-bottom: 20px;
+      padding: 10px;
       a{
         color:#016cab;
         text-decoration:none;
         transition: color .5s;
         text-transform:uppercase;
-        font-size:140%;
+        font-size:130%;
         font-family: 'Changa', sans-serif;
         transition: color .5s, margin-left .5s;
         &:hover {
@@ -74,8 +82,8 @@ ul{
     }
   }
   .active_links{
-    width: 370px !important;
-    margin-left: 35px !important;
+    width: 100% !important;
+    margin-left: 0px !important;
     transition: width .4s, margin-left .4s;
   }
 }

@@ -6,6 +6,7 @@ import Services from './components/Services/Services'
 import Portfolio from './components/Portfolio/Portfolio'
 
 export default class App extends Component{
+
     constructor(props){
         super(props)
 
@@ -28,6 +29,7 @@ export default class App extends Component{
         this.setState({h:h})
 
     }
+
   render() {
     return(
         <div>

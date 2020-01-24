@@ -8,15 +8,17 @@ export default class Header extends Component{
     render() {
         return(
             <div >
-                <div className={'header_container'}>
+                <div className={'absolute'}><div className={'header_container'}>
                     <div className={'logo'}>
                         <img src={logo} alt=""/>
                     </div>
                     <div className={'nav_fixed'}>
-                       <NavBar/>
+                        <NavBar/>
                     </div>
-                </div>
+                </div></div>
+
                 <Slider/>
+
             </div>
         )
     }
