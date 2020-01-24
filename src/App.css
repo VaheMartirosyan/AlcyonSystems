@@ -1,6 +1,7 @@
 /* width */
+@import url('https://fonts.googleapis.com/css?family=Prompt&display=swap');
 *{
-  font-family: 'Changa', sans-serif;
+    font-family: 'Prompt', sans-serif;
 
 }
 ::-webkit-scrollbar {

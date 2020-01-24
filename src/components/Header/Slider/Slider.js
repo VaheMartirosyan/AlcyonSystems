@@ -25,7 +25,7 @@ export default ()=>{
                         {
                             slider.map((e,i)=>{
                                 return (
-                                    <div key={i} style={{backgroundImage:`url(${e})`,width:'100%',height:'100vh'}}>
+                                    <div key={i} style={{backgroundImage:`url(${e})`,width:'100%',height:'100vh',backgroundRepeat:'no-repeat'}}>
                                         <div className={'oppacity'}>
                                             <div>
                                                 <h2>WEB DEVELOPMENT</h2>
