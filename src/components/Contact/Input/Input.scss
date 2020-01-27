@@ -1,0 +1,30 @@
+@import '../../scss/variables.scss';
+@import '../../scss/mixin.scss';
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    label {
+        color: $color;
+    }
+    .formInput {
+        @include width(100%, auto, 0px auto, 8px 0,);
+        margin-bottom: 15px;
+        background: white;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        color: $color;
+        padding-left: 15px;
+    }
+}
+.inputs.invalid input {
+    border: 1px solid red;
+}
+.inputs.invalid span {
+    color: red;
+}
+.inputs.invalid label {
+    color: red;
+}

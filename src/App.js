@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
 import Header from "./components/Header/Header";
 import About from "./components/About/About";
-import './App.css'
+import './App.scss'
 import Services from './components/Services/Services'
 import Portfolio from './components/Portfolio/Portfolio'
+import Contact from './components/Contact/Contact'
 
 export default class App extends Component{
 
@@ -38,7 +39,8 @@ export default class App extends Component{
                     <Header/>
                 </header>
             </section>
-            <i className="fa fa-arrow-up  scroll_to_top" onClick={this.scrollhandler}></i>
+                <i className="fa fa-long-arrow-up  scroll_to_top" onClick={this.scrollhandler}></i>
+            
             <section>
                 <About/>
             </section>
@@ -47,6 +49,9 @@ export default class App extends Component{
             </section>
             <section>
                 <Services />
+            </section>
+            <section>
+                <Contact />
             </section>
         </div>
     )
