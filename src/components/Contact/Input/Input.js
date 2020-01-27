@@ -1,11 +1,11 @@
 import React from 'react'
 import './Input.scss'
 
-function isValid({valid, touched, shoudValidate}) {
-    return !valid && touched && shoudValidate
+function isValid(props) {
+    return !props.valid && props.touched && props.shoudValidate
 }
 
-export default ({label, value, type, onchange, errMessage, id}, props) => {
+export default (props) => {
 
     const sty = ['inputs']
     const htmlFor = Math.random()
@@ -14,16 +14,16 @@ export default ({label, value, type, onchange, errMessage, id}, props) => {
     }
 
     return(
-        <div className={sty.join(' ')} key={id}>
-            <label htmlFor={htmlFor}>{label}</label>
+        <div className={sty.join(' ')} key={props.id}>
+            <label htmlFor={htmlFor}>{props.label}</label>
             <input
-                value={value}
-                type={type}
+                value={props.value}
+                type={props.type}
                 id={htmlFor}
                 className="formInput"
-                onChange={onchange}
+                onChange={props.onchange}
              />
-             {isValid(props) ? <span>{errMessage}</span> : null}
+             {isValid(props) ? <span>{props.errMessage}</span> : null}
         </div>
     )
 }

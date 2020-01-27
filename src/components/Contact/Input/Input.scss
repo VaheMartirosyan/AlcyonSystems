@@ -9,8 +9,8 @@
         color: $color;
     }
     .formInput {
-        @include width(100%, auto, 0px auto, 8px 0,);
-        margin-bottom: 15px;
+        @include width(100%, auto, 0px auto, 5px 0,);
+        margin-bottom: 5px;
         background: white;
         border: none;
         border-radius: 5px;
@@ -24,6 +24,7 @@
 }
 .inputs.invalid span {
     color: red;
+    font-size: 11px;
 }
 .inputs.invalid label {
     color: red;

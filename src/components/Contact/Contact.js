@@ -2,9 +2,18 @@ import React, {Component} from 'react'
 import './Contact.scss'
 import Input from './Input/Input'
 
+
+
+function validateEmail(email) {
+    var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@(([[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+}
+
+
 export default class Contact extends Component {
 
     state = {
+        isFormValid: false,
         formControl: {
             name: {
                 label: 'Name',
@@ -16,7 +25,8 @@ export default class Contact extends Component {
                 id: Math.random(),
                 validation: {
                     required: true,
-                    minLength: 2
+                    minLength: 2,
+                    simbol: true
                 }
             },
             email: {
@@ -42,24 +52,61 @@ export default class Contact extends Component {
                 id: Math.random(),
                 validation: {
                     required: true,
-                    minLength: 9
+                    number: true
                 }
             },
         }
     }
 
 
+    Controler(value, validation) {
+        if(!validation) {
+            return true
+        }
+        let isValid = true
+
+        if(validation.required) {
+            isValid = value.trim().length !== 0 && isValid
+        }
+
+        if(validation.number) {
+            isValid = value.match(/^[+]?[(]?[0-9]{3}[)]?[-\s.]?[0-9]{2}[-\s.]?[0-9]{4,6}$/) && isValid
+        }
+
+        if(validation.simbol) {
+            isValid = value.match(/^[a-z ,.'-]+$/i) && isValid
+        }
+
+        if(validation.email) {
+            isValid = validateEmail(value) && isValid
+        }
+
+        if(validation.minLength) {
+            isValid = value.length >= validation.minLength && isValid
+        }
+
+
+        return isValid
+    }
+
     isInvalid(event, control) {
         let formControl = {...this.state.formControl}
         let controls = {...formControl[control]}
 
+        
+
+
         controls.touched = true
         controls.value = event.target.value
-        // controls.validation = this.Controler(value, controls)
-
+        controls.valid = this.Controler(controls.value, controls.validation)
         formControl[control] = controls
 
-        this.setState({formControl})
+        let isFormValid = true
+        Object.keys(this.state.formControl).map(name => {
+            return isFormValid = formControl[name].valid && isFormValid
+        })
+
+        this.setState({formControl, isFormValid})
     }
     render() {
         return(
@@ -118,8 +165,9 @@ export default class Contact extends Component {
                             )
                         })}
                         <label htmlFor="area">Message</label>
-                        <textarea rows="5" id="area" value='' onChange={e => e.target.value}>sdvsd</textarea>
-                        <button type="submit">Send Message</button>
+                        <textarea rows="5" ></textarea>
+                        
+                        <button type="submit" disabled={!this.state.isFormValid} onClick={() => {console.log('click')}} className={this.state.disabled ? 'disabled' : null}>Send Message</button>
                         </form>
                         
                     </div>
