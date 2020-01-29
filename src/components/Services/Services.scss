@@ -5,13 +5,15 @@
     width: 100%;
     height: 100vh;
     .serviceSize {
-        padding-top: 100px;
+        padding-top: 40px;
         .serviceLine {
         width: 95%;
         margin: 0 auto;
-          @include display(flex, space-between, start);  
+        //   @include display(flex, space-between, start);  
+        display: flex;
+        flex-direction: column;
           .firstService {
-              width: 20%;
+              text-align: center;
               .serviceFont {
                   h2 {
                       font-size: 45px;

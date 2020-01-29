@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import './Contact.scss'
 import Input from './Input/Input'
+import Footer from './Footer/Footer'
 
 
 
@@ -113,40 +114,12 @@ export default class Contact extends Component {
             <div className="contact">
                 <div className="contactSize">
                     <div className="contactContainer">
-                        <div className="getIn">
-                        <h2>GET IN</h2>
-                        <h2>TOUCH</h2>
-                        <div className="social">
-                            <div className="media">
-                                <p>Email</p> <p>
-    info@demolink.org, mail@demolink.org</p>
-                            </div>
-                            <div className="media">
-                                <p>Address</p> <p>4730 Crystal Springs Dr, Los Angeles, CA 90027</p>
-                            </div>
-                            <div className="media">
-                                <p>Phone Number</p>
-                                <p>+1 323-913-4688, +1 323-888-4554</p>
-                            </div>
-                            <div className="mediaIcons">
-                                <div className="faFacebook">
-                                    <a href="#">
-                                        <i class="fa fa-facebook-f"></i>
-                                    </a>
-                                    <a href="#">
-                                        <i class="fa fa-twitter"></i>
-                                    </a>
-                                    <a href="#">
-                                        <i class="fa fa-google-plus"></i>
-                                    </a>
-                                    <a href="#">
-                                        <i class="fa fa-instagram"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d453.1057240649606!2d44.52245588050478!3d40.18414654148106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2s!4v1580290594126!5m2!1sru!2s" style={{width:'50%',border:'none'}} allowfullscreen="true">></iframe>
                     <div className="formControler">
+                        <div className='us'>
+                            <h2>Contact Us</h2>
+                        </div> 
+                        
                         <form onSubmit={e => e.preventDefault()}>
                         {Object.keys(this.state.formControl).map((control, index) => {
                             const controls = this.state.formControl[control]
@@ -174,6 +147,7 @@ export default class Contact extends Component {
                         </div>
                     
                 </div>
+                <Footer/>
             </div>
         )
     }
