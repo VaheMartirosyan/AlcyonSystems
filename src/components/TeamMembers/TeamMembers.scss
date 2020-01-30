@@ -1,0 +1,25 @@
+@import '../scss/mixin.scss';
+@import '../scss/variables.scss';
+
+
+.teammebers {
+    @include width(100%, 100vh, 0 auto, 30px 0);
+    .members {
+        @include width(80%, auto, 0 auto, 0);
+        display: flex;
+        justify-content: space-between;
+        .teamcontent {
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            background: yellow;
+        }
+
+        .teamslide {
+            width: 65%;
+            background: green;
+        }
+    }
+    
+    
+}

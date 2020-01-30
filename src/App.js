@@ -5,6 +5,7 @@ import './App.scss'
 import Services from './components/Services/Services'
 import Portfolio from './components/Portfolio/Portfolio'
 import Contact from './components/Contact/Contact'
+import TeamMembers from './components/TeamMembers/TeamMembers'
 
 export default class App extends Component{
 
@@ -51,8 +52,12 @@ export default class App extends Component{
                 <Services />
             </section>
             <section>
+                <TeamMembers />
+            </section>
+            <section>
                 <Contact />
             </section>
+            
         </div>
     )
   }
