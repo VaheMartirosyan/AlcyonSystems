@@ -4,16 +4,19 @@
   height: 100vh;
   display: flex;
   .navSkills{
-
-
+    display: flex;
+    margin-top: 10vh;
   }
-  .Skills{
-    position: relative;
-    background-color: white;
+  .skilsImg{
     width: 50%;
+    height: 50vh;
     background-image: url("./PortfolioImg/1555571973.jpg") ;
     background-size: 100% 80%;
     background-repeat: no-repeat;
+  }
+  .Skills{
+    position: relative;
+    width: 50%;
     .opsit{
       position: absolute;
       width: 100%;
@@ -36,7 +39,21 @@
     }
   }
 }
-.navSkills {
+.navSkill {
   margin-top: 5vh;
-  margin-left: 70%;
+  margin-left: 10%;
+  li{
+    &:hover{
+     a{
+       color: #9CD01C;
+       padding-left: 5px;
+       transition: 1s;
+     }
+    }
+    a{
+      text-decoration: none;
+      color: #01517F;
+      font-size: 20px;
+    }
+  }
 }
