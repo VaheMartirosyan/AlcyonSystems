@@ -2,24 +2,73 @@
 @import '../scss/variables.scss';
 
 
-.teammebers {
+.teammembers {
     @include width(100%, 100vh, 0 auto, 30px 0);
+    //background: #9CD01C;
+    //background: linear-gradient(180deg, rgba(201,201,201,1) 0%, rgba(255,255,255,1) 71%, rgba(255,255,255,1) 100%);
+    background: rgba(105,105,105,.2);
     .members {
-        @include width(80%, auto, 0 auto, 0);
+        @include width(90%, auto, 0 auto, 0);
         display: flex;
-        justify-content: space-between;
+
         .teamcontent {
-            display: flex;
-            flex-direction: column;
-            width: 30%;
-            background: yellow;
+            margin-top: 10%;
+            width: 80%;
+            position: relative;
+            .team_qarakusi{
+                position: absolute;
+                padding: 8vh 13vh;
+                border: 6px solid rgba(105,105,105,.5);
+                z-index: 1;
+                left: 35%;
+            }
+            .teamtxt{
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                h2{
+                    z-index: 2;
+                    font-size: 40px;
+                    font-weight: bolder;
+                    letter-spacing: 2px;
+                }
+                h2:nth-child(1){
+                    color: #004681;
+                    text-align: center;
+                }
+                h2:nth-child(2){
+                    text-align: right;
+                    margin-bottom: 30px;
+                    color: #9CD01C;
+                    margin-right: 20px;
+                }
+                p{
+                    width: 95%;
+                    text-align: right;
+                    letter-spacing: 2px;
+                    font-size: 14px;
+                    color:dimgrey;
+                }
+            }
         }
 
         .teamslide {
-            width: 65%;
-            background: green;
+            width: 60%;
+            margin-top: 140px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            .horizontalmembers{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                img{
+                    width: 31%;
+                    height: 193px;
+                }
+            }
         }
     }
-    
-    
+
+
 }

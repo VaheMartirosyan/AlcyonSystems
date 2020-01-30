@@ -7,18 +7,6 @@ export default ()=>{
              <div className="getIn">
                        
                         <div className="social">
-                        <div className={'mediatext'}>
-                        <div className="media">
-                                <p>Email </p> 
-                                <p> info@demolink.org, mail@demolink.org</p>
-                            </div>
-                            <div className="media">
-                                <p>Address </p> <p> 4730 Crystal Springs Dr, Los Angeles, CA 90027</p>
-                            </div>
-                            <div className="media">
-                                <p>Phone Number  </p>
-                                <p> +1 323-913-4688, +1 323-888-4554</p>
-                            </div></div> 
                             <div className="mediaIcons">
                                 <div className="faFacebook">
                                     <a href="#">
@@ -35,8 +23,22 @@ export default ()=>{
                                     </a>
                                 </div>
                             </div>
+                        <div className={'mediatext'}>
+                        <div className="media">
+                                <p>Email </p> 
+                                <p> info@alcyonsystems.am</p>
+                            </div>
+                            <div className="media">
+                                <p>Address </p> <p> Armenia, Yerevan, Moscow Street 3/2</p>
+                            </div>
+                            <div className="media">
+                                <p>Phone Number  </p>
+                                <p> +374 99 132 032</p>
+                            </div></div> 
+
                         </div>
                     </div>
+            <p className={'LLC'}>© 2020 <span>Alcyon Systems LLC.</span>Alcyon Systems LLC. All Rights Reserved</p>
         </div>
     )
 }

@@ -13,16 +13,16 @@ class Slider01 extends React.Component{
     render(){
         return(
             <section>
-                <div>
+                <div className={'slid'}>
                     <Slide {...properties}>
-                        <div>
-                            <div></div>
+                        <div className={'slidk'}>
+                            <div>team1</div>
                         </div>
-                        <div>
-                            <div></div>
+                        <div className={'slidk'}>
+                            <div>team2</div>
                         </div>
-                        <div>
-                            <div></div>
+                        <div className={'slidk'}>
+                            <div>team3</div>
                         </div>
                     </Slide>
                 </div>
