@@ -22,16 +22,16 @@ export default ()=>{
                             <div className="mediaIcons">
                                 <div className="faFacebook">
                                     <a href="#">
-                                        <i class="fa fa-facebook-f"></i>
+                                        <i className="fa fa-facebook-f"></i>
                                     </a>
                                     <a href="#">
-                                        <i class="fa fa-twitter"></i>
+                                        <i className="fa fa-twitter"></i>
                                     </a>
                                     <a href="#">
-                                        <i class="fa fa-google-plus"></i>
+                                        <i className="fa fa-google-plus"></i>
                                     </a>
                                     <a href="#">
-                                        <i class="fa fa-instagram"></i>
+                                        <i className="fa fa-instagram"></i>
                                     </a>
                                 </div>
                             </div>

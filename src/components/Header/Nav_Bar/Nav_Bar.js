@@ -19,14 +19,15 @@ export default class Nav_Bar extends Component{
                     <li></li>
                     <li></li>
                 </ul>
-                <ul className={`links ${this.state.active ? 'active_links' : ''}`}>
+                <div className={'item_menu'}>
+                    <div className={`item ${this.state.active ? 'active_item' : ''}`} ><span>Home</span></div>
+                    <div className={`item ${this.state.active ? 'active_item' : ''}`}><span>About</span></div>
+                    <div className={`item ${this.state.active ? 'active_item' : ''}`}><span>Portfolio</span></div>
+                    <div className={`item ${this.state.active ? 'active_item' : ''}`}><span>Team</span></div>
+                    <div className={`item ${this.state.active ? 'active_item' : ''}`}><span>Services</span></div>
+                    <div className={`item ${this.state.active ? 'active_item' : ''}`}><span>Contact</span></div>
+                </div>
 
-                    <li><a href="/home">Home</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/portfolio">Portfolio</a></li>
-                    <li><a href="/services">Services</a></li>
-                    <li><a href="/contact">Contact</a></li>
-                </ul>
             </div>
         )
 
