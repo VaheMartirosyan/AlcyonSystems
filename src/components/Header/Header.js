@@ -9,7 +9,7 @@ export default class Header extends Component{
         return(
             <div >
                 <div className={'absolute'}><div className={'header_container'}>
-                    <div className={'logo'}>
+                    <div className={'logo'} onClick={this.props.scroll.bind(this,0)}>
                         <img src={logo} alt=""/>
                     </div>
                     <div className={'nav_fixed'}>
