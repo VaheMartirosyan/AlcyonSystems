@@ -1,34 +1,61 @@
 import React from 'react'
-import { Slide } from 'react-slideshow-image'
+import Carousel from 'react-bootstrap/Carousel'
+import pic1 from '../Memberspic/pic1.jpg'
+import pic2 from '../Memberspic/pic2.jpg'
+import pic3 from '../Memberspic/pic3.jpg'
+import pic4 from '../Memberspic/pic4.jpg'
+import pic5 from '../Memberspic/pic5.jpg'
+import pic6 from '../Memberspic/pic6.jpg'
 
-  const properties = {
-    duration: 5000,
-    transitionDuration: 1000,
-    infinite: true,
-    indicators: true,
-    arrows: false
-  }
 
-class Slider01 extends React.Component{
-    render(){
-        return(
-            <section>
-                <div className={'slid'}>
-                    <Slide {...properties}>
-                        <div className={'slidk'}>
-                            <div>team1</div>
-                        </div>
-                        <div className={'slidk'}>
-                            <div>team2</div>
-                        </div>
-                        <div className={'slidk'}>
-                            <div>team3</div>
-                        </div>
-                    </Slide>
-                </div>
-            </section>
-        )
-    }
+
+
+export default() => {
+
+    return (
+        <div className='teamslide'>
+        <Carousel controls={false}>
+        <Carousel.Item>
+             <div className={'horizontalmembers'}>
+                <img src={pic1} alt=""/>
+                <img src={pic2} alt=""/>
+                <img src={pic3} alt=""/>
+            </div>
+            <div className={'horizontalmembers'}>
+                <img src={pic4} alt=""/>
+                <img src={pic5} alt=""/>
+                <img src={pic6} alt=""/>
+            </div>
+
+        </Carousel.Item>
+        <Carousel.Item>
+            <div className={'horizontalmembers'}>
+                <img src={pic1} alt=""/>
+                <img src={pic2} alt=""/>
+                <img src={pic3} alt=""/>
+            </div>
+            <div className={'horizontalmembers'}>
+                <img src={pic4} alt=""/>
+                <img src={pic5} alt=""/>
+                <img src={pic6} alt=""/>
+            </div>
+
+        </Carousel.Item>
+        <Carousel.Item>
+          <div className={'horizontalmembers'}>
+                <img src={pic1} alt=""/>
+                <img src={pic2} alt=""/>
+                <img src={pic3} alt=""/>
+            </div>
+            <div className={'horizontalmembers'}>
+                <img src={pic4} alt=""/>
+                <img src={pic5} alt=""/>
+                <img src={pic6} alt=""/>
+            </div>
+
+        </Carousel.Item>
+    </Carousel>
+        </div>
+       
+    )
 }
-
-export default Slider01;

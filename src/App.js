@@ -66,7 +66,7 @@ export default class App extends Component{
                 <header>
                     <Header scroll={this.handleScrollToElement}/>
                 </header>
-                <button>Click me</button>
+                
             </section>
                 <i className="fa fa-long-arrow-up  scroll_to_top" onClick={this.handleScrollToElement.bind(this,6)}></i>
 
