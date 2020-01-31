@@ -9,52 +9,81 @@ import TeamMembers from './components/TeamMembers/TeamMembers'
 
 export default class App extends Component{
 
+
+
+
+
     constructor(props){
         super(props)
-
+                this.myRef = React.createRef();
+                this.myAboutRef = React.createRef();
+                this.myPortfolioRef = React.createRef();
+                this.myTeamRef = React.createRef();
+                this.myServicesRef = React.createRef();
+                this.myContactRef = React.createRef();
         this.state = {
-            h:0
+            h:0,
+            a:0
 
         }
     }
-    scrollStep() {
-        if (window.pageYOffset === 0) {
-            clearInterval(this.state.h);
+
+
+
+    handleScrollToElement =(e,i)=> {
+        console.log(e)
+        if (e === 0 ){
+            window.scrollTo(0, this.myRef.current.offsetTop)
         }
-        window.scroll(0, window.pageYOffset - 15 );
-    }
+        else if(e === 1){
+            window.scrollTo(0, this.myAboutRef.current.offsetTop)
+        }
+        else if(e === 2){
+            window.scrollTo(0, this.myPortfolioRef.current.offsetTop)
+        }
+        else if(e === 3){
+            window.scrollTo(0, this.myTeamRef.current.offsetTop)
+        }
+        else if(e === 4){
+            window.scrollTo(0, this.myServicesRef.current.offsetTop)
+        }
+        else if(e === 5){
+            window.scrollTo(0, this.myContactRef.current.offsetTop)
+        }
+        else if(e === 6){
+            window.scrollTo(0, this.myRef.current.offsetTop)
+        }
+            }
 
 
-    scrollhandler = () => {
 
-        let h = setInterval(this.scrollStep.bind(this), .00001)
-        this.setState({h:h})
 
-    }
 
   render() {
     return(
         <div>
-            <section>
+            <section  ref={this.myRef}>
                 <header>
-                    <Header/>
+                    <Header scroll={this.handleScrollToElement}/>
                 </header>
+                <button>Click me</button>
             </section>
-                <i className="fa fa-long-arrow-up  scroll_to_top" onClick={this.scrollhandler}></i>
+                <i className="fa fa-long-arrow-up  scroll_to_top" onClick={this.handleScrollToElement.bind(this,6)}></i>
+
             
-            <section>
+            <section  ref={this.myAboutRef}>
                 <About/>
             </section>
-            <section>
+            <section ref={this.myPortfolioRef}>
                 <Portfolio/>
             </section>
-            <section>
-                <Services />
-            </section>
-            <section>
+            <section ref={this.myTeamRef}>
                 <TeamMembers />
             </section>
-            <section>
+            <section ref={this.myServicesRef}>
+                <Services />
+            </section>
+            <section ref={this.myContactRef}>
                 <Contact />
             </section>
             

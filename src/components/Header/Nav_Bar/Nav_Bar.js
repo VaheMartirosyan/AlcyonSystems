@@ -20,12 +20,12 @@ export default class Nav_Bar extends Component{
                     <li></li>
                 </ul>
                 <div className={'item_menu'}>
-                    <div className={`item ${this.state.active ? 'active_item' : ''}`} ><span>Home</span></div>
-                    <div className={`item ${this.state.active ? 'active_item' : ''}`}><span>About</span></div>
-                    <div className={`item ${this.state.active ? 'active_item' : ''}`}><span>Portfolio</span></div>
-                    <div className={`item ${this.state.active ? 'active_item' : ''}`}><span>Team</span></div>
-                    <div className={`item ${this.state.active ? 'active_item' : ''}`}><span>Services</span></div>
-                    <div className={`item ${this.state.active ? 'active_item' : ''}`}><span>Contact</span></div>
+                    <div onClick={this.props.scroll.bind(this,0)} className={`item ${this.state.active ? 'active_item' : ''}`} ><span>Home</span></div>
+                    <div onClick={this.props.scroll.bind(this,1)} className={`item ${this.state.active ? 'active_item' : ''}`}><span>About</span></div>
+                    <div onClick={this.props.scroll.bind(this,2)} className={`item ${this.state.active ? 'active_item' : ''}`}><span>Portfolio</span></div>
+                    <div onClick={this.props.scroll.bind(this,3)} className={`item ${this.state.active ? 'active_item' : ''}`}><span>Team</span></div>
+                    <div onClick={this.props.scroll.bind(this,4)} className={`item ${this.state.active ? 'active_item' : ''}`}><span>Services</span></div>
+                    <div onClick={this.props.scroll.bind(this,5)} className={`item ${this.state.active ? 'active_item' : ''}`}><span>Contact</span></div>
                 </div>
 
             </div>

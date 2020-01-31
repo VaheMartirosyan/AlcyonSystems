@@ -13,7 +13,7 @@ export default class Header extends Component{
                         <img src={logo} alt=""/>
                     </div>
                     <div className={'nav_fixed'}>
-                        <NavBar/>
+                        <NavBar scroll={this.props.scroll}/>
                     </div>
                 </div></div>
 
