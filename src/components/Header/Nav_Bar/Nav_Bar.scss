@@ -1,6 +1,5 @@
-$bg_color: linear-gradient(45deg, rgb(17, 153, 142), rgb(56, 239, 125));
-$main_color : white;
-$primary_color: black;
+
+
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:900');
 
@@ -22,7 +21,7 @@ ul{
     cursor: pointer;
     li {
       position: relative;
-      background:linear-gradient(98deg, rgba(1,108,171,1) 0%, rgba(0,166,110,1) 72%, rgba(165,208,56,1) 100%);
+      background:white;
       margin: 10px;
       height: 2px;
       width: 50px;
@@ -39,6 +38,7 @@ ul{
         top: 18px;
         transform: rotate(135deg);
         transition: transform .3s;
+        background: white;
       }
       &:nth-child(2){
         width: 0;
@@ -49,6 +49,7 @@ ul{
         bottom: 18px;
         transform: rotate(-135deg);
         transition: transform .3s;
+        background: white;
       }
     }
   }
@@ -131,6 +132,7 @@ ul{
   transform: scale(0);
   transition: opacity 0.5s ease, top 0.5s ease;
   transition-delay: 0;
+  color: white;
 }
 .item:nth-child(1) {
 

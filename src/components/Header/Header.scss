@@ -12,12 +12,12 @@
 .absolute{
   position: fixed;
   z-index: 1999;
-  background:rgba(255,255,255,1);
-  padding: 45px ;
+  background:rgba(0,0,0,0.5);
+  padding: 7vh ;
   width: 100%;
   box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
 }
-header_container{
+.header_container{
   width: 100%;
   margin: 0 auto;
 
