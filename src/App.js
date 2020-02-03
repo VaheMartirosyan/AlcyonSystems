@@ -1,11 +1,6 @@
 import React, {Component} from 'react';
 import Header from "./components/Header/Header";
-import About from "./components/About/About";
-import './App.scss'
-import Services from './components/Services/Services'
-import Portfolio from './components/Portfolio/Portfolio'
-import Contact from './components/Contact/Contact'
-import TeamMembers from './components/TeamMembers/TeamMembers'
+
 
 export default class App extends Component{
 
@@ -68,25 +63,7 @@ export default class App extends Component{
                 </header>
                 
             </section>
-                <i className="fa fa-long-arrow-up  scroll_to_top" onClick={this.handleScrollToElement.bind(this,6)}></i>
-
-            
-            <section  ref={this.myAboutRef}>
-                <About/>
-            </section>
-            <section ref={this.myPortfolioRef}>
-                <Portfolio/>
-            </section>
-            <section ref={this.myTeamRef}>
-                <TeamMembers />
-            </section>
-            <section ref={this.myServicesRef}>
-                <Services />
-            </section>
-            <section ref={this.myContactRef}>
-                <Contact />
-            </section>
-            
+               
         </div>
     )
   }
