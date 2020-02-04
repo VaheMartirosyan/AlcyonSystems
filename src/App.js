@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Header from "./components/Header/Header";
+import AboutUs from './components/AboutUS/AboutUs'
 
 
 export default class App extends Component{
@@ -62,6 +63,9 @@ export default class App extends Component{
                     <Header scroll={this.handleScrollToElement}/>
                 </header>
                 
+            </section>
+            <section>
+                <AboutUs/>
             </section>
                
         </div>

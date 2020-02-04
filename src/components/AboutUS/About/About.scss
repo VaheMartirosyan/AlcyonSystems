@@ -1,0 +1,67 @@
+.about_window{
+  background: url("../pictures/about.jpg") ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+
+    .about_tophover{
+      //animation: anim1 1s;
+      transform: translate(0,0);
+      transition: 1s;
+    }
+    .about_bottomhover{
+      //animation: anim2 1s;
+      transform: translate(0,0);
+      transition: 1s;
+    }
+
+  }
+
+  p{
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: .9em;
+    margin: 0;
+  }
+
+  margin: 0 auto;
+  .about_tophover{
+    background-color: rgba(0, 134, 170,0.8);
+    width: 100%;
+    padding: 8vh 2vw 0 2vw;
+
+    transform: translate(-100%,0);
+    transition: 1s;
+    flex: 1.2;
+  }
+
+  .about_bottomhover{
+    padding: 0vh 2vw 8vh 2vw;
+    background-color: rgba(0, 134, 170,0.8);
+    transform: translate(100%,0);
+    transition: 1s;
+  flex: 1;
+  }
+
+
+}
+.about_relative{
+  position: relative;
+  margin-top: 15vh;
+  h2{
+    position: absolute;
+    z-index: 1999;
+    top:86.5%;
+    font-size: 345%;
+    //color: white;
+    background: -webkit-linear-gradient(270deg,  rgba(255,255,255,1) 0%, rgba(255,245,245,1) 59.86%, rgba(2, 73, 92,1) 59.86%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

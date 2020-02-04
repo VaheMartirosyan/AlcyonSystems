@@ -21,7 +21,7 @@ ul{
     cursor: pointer;
     li {
       position: relative;
-      background:white;
+      background:black;
       margin: 10px;
       height: 2px;
       width: 50px;
@@ -38,7 +38,7 @@ ul{
         top: 18px;
         transform: rotate(135deg);
         transition: transform .3s;
-        background: white;
+        background: black;
       }
       &:nth-child(2){
         width: 0;
@@ -49,7 +49,7 @@ ul{
         bottom: 18px;
         transform: rotate(-135deg);
         transition: transform .3s;
-        background: white;
+        background: black;
       }
     }
   }
@@ -132,7 +132,7 @@ ul{
   transform: scale(0);
   transition: opacity 0.5s ease, top 0.5s ease;
   transition-delay: 0;
-  color: white;
+  color: black;
 }
 .item:nth-child(1) {
 

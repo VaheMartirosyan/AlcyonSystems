@@ -8,7 +8,7 @@ import NavBar from "./Nav_Bar/Nav_Bar";
 export default class Header extends Component{
     render() {
         return(
-            <div >
+            <div className='header_main' >
                 <div className={'absolute'}><div className={'header_container'}>
                     <div className={'logo'} onClick={this.props.scroll.bind(this,0)}>
                         <img src={logo} alt=""/>
