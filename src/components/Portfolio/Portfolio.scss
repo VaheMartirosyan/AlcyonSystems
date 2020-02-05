@@ -1,0 +1,36 @@
+.portfolio{
+  margin-top: 20vh;
+  .portfolio_elems{
+    background:white;
+    position: relative;
+
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    overflow: hidden;
+    &:hover{
+      .portfolio_context{
+        transform: translate(0,0);
+        transition: 1s;
+      }
+    }
+  }
+  .portfolio_title{
+    position: absolute;
+    top:35%;
+    z-index: 1;
+  }
+  .portfolio_context{
+    transform:translate(120%,0) ;
+    transition: 1s;
+    background-color: #004681;
+    width: 110%;
+    height: 100vh;
+    z-index: 2;
+  }
+}
+
+
