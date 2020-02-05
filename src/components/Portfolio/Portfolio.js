@@ -57,19 +57,23 @@ export default ()=>{
 
     return(
         <div className={'d-flex flex-wrap portfolio'}>
-            {services.map(e=>{
+            {services.map((e,i)=>{
                 return(
                     <div key={e.id} className={'portfolio_elems col-lg-4'}>
                         <div className={'portfolio_title'}>
                             <h2>{e.title}</h2>
                             <i className={e.icon}></i>
                         </div>
-                        <div className={'portfolio_context'}>
-                            {e.text}
+                        <div className={`portfolio_context cont${i}`}>
+
+                            <p>
+                                {e.text}
+                            </p>
                         </div>
                     </div>
                 )
             })}
+
         </div>
 
     )

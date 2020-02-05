@@ -1,5 +1,5 @@
 .portfolio{
-  margin-top: 20vh;
+margin-top: -3.2vh;
   .portfolio_elems{
     background:white;
     position: relative;
@@ -11,6 +11,7 @@
     align-self: center;
     text-align: center;
     overflow: hidden;
+    cursor: pointer;
     &:hover{
       .portfolio_context{
         transform: translate(0,0);
@@ -26,11 +27,41 @@
   .portfolio_context{
     transform:translate(120%,0) ;
     transition: 1s;
-    background-color: #004681;
-    width: 110%;
-    height: 100vh;
+    width: 108%;
+    height: 120vh;
     z-index: 2;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    p{
+      color: white;
+      margin: 0 auto;
+      font-weight: bold;
+      width: 70%;
+    }
+  }
+  .cont0{
+    background: rgba(216, 130, 208,1);
+  }
+  .cont1{
+    background: #00c590;
+  }
+  .cont2{
+    background: #ff6069;
+  }
+  .cont3{
+    background: #00bad9;
+  }
+  .cont4{
+    background: #ffd972;
+  }
+  .cont5{
+    background: #fa068e;
+  }
+  .cont6{
+    background:#8dbf40;
   }
 }
+
 
 
