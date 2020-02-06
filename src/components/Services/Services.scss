@@ -3,7 +3,17 @@
   width: 100%;
 
   position: relative;
-
+  .hoverStart{
+    transform: translate(200%,0);
+    transition: 1s;
+  }
+  .hoverMade{
+    transform: translate(0,0);
+    transition: 1s;
+  }
+  .color{
+    background: #d82c22;
+  }
   .services_video{
     position: absolute;
     width: 100%;
@@ -18,6 +28,11 @@
     .services_list{
       display: flex;
       flex-direction: column;
+      .list_item{
+        position: relative;
+
+
+      }
     }
 
 
@@ -26,7 +41,7 @@
       display: flex;
       flex-direction: column;
       width: 100%;
-
+      overflow: hidden;
       z-index: 1;
       h2{
         color:white;
