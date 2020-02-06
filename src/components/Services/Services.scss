@@ -1,78 +1,3 @@
-//.services{
-//  margin-top: 20vh;
-//  width: 100%;
-//  height: 110vh;
-//  background-repeat: no-repeat;
-//  background-size: cover;
-//  overflow: hidden;
-//
-//  position: relative;
-//  .hoverPos{
-//    position: absolute;
-//    top:0;
-//    height: 110%;
-//    margin: 0 auto;
-//    align-items: center;
-//    align-self: center;
-//    p{
-//      text-align: center;
-//    }
-//  }
-//
-//
-//  .services_video{
-//    position: absolute;
-//    width: 100%;
-//
-//
-//    z-index: -1;
-//  }
-//
-//  .li{
-//    height: 120vh;
-//
-//
-//    .services_list{
-//      display: flex;
-//      flex-direction: column;
-//      .list_item{
-//        position: relative;
-//
-//
-//      }
-//    }
-//
-//
-//
-//    .services_intro{
-//      display: flex;
-//      flex-direction: column;
-//      width: 100%;
-//      overflow: hidden;
-//      z-index: 1;
-//      h2{
-//        color:white;
-//        margin-top: 20vh;
-//        font-size: 300%;
-//      }
-//      p{
-//        margin-top: 5vh;
-//        color: white;
-//        letter-spacing: 2px;
-//        font-size: 15px;
-//        width: 70%;
-//        text-align: left;
-//      }
-//    }
-//
-//  }
-//
-//
-//
-//}
-
-
-
 .services{
   width: 100%;
   overflow: hidden;
@@ -103,10 +28,15 @@
       top: 0;
       padding: 10vh;
       height: 100%;
+      p{
+        transform: translate(0,10vh);
+        font-weight: 500;
+        color: black;
+      }
     }
     .hoverStart{
       transform: translate(200%,0);
-      transition: 1s;
+      transition: 2s;
       width: 100%;
     }
     .hoverMade{
@@ -124,14 +54,93 @@
     display: flex;
     flex-direction: column;
     margin-top: 5vh;
+.list_item{
+  h2{
+    cursor: default;
+  }
+}
+
+      .items0:hover{
+        color:#00badb;
+        transition: 1s;
+      }
+
+
+
+    .items1:hover{
+      color:#6da0fb;
+      transition: 1s;
+
+    }
+
+    .items2:hover{
+      color:#de80d2;
+      transition: 1s;
+    }
+    .items3:hover{
+      color:#00c590;
+      transition: 1s;
+    }
+    .items4:hover{
+      color:#cccccc;
+      transition: 1s;
+    }
+    .items5:hover{
+      color:#ff6069;
+      transition: 1s;
+    }
+    .items6:hover{
+      color:#ffd972;
+      transition: 1s;
+    }
+    .items1{
+      transition: 1s;
+      color:white;
+
+
+    }
+
+    .items2{
+      transition: 1s;
+      color:white;
+
+    }
+    .items3{
+      transition: 1s;
+      color:white;
+
+    }
+    .items4{
+      transition: 1s;
+      color:white;
+
+  }
+    .items5{
+      transition: 1s;
+      color:white;
+
+    }
+    .items6{
+      transition: 1s;
+      color:white;
+
+    }
+    .items0{
+      transition: 1s;
+      color:white;
+
+    }
+
     .list_item{
-        margin-top: 2vh;
       margin-left: 2vw;
       color:white;
 
       letter-spacing: 2px;
       h2{
         font-weight: bolder;
+        display: inline-block;
+        margin: 0;
+        padding: 2vh;
       }
     }
   }

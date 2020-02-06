@@ -3,6 +3,7 @@ import Header from "./components/Header/Header";
 import AboutUs from './components/AboutUS/AboutUs'
 import Services from "./components/Services/Services";
 import Portfolio from "./components/Portfolio/Portfolio";
+import TeamMembers from "./components/TeamMembers/TeamMembers";
 
 
 export default class App extends Component{
@@ -73,6 +74,9 @@ export default class App extends Component{
             </section>
             <section>
                 <Portfolio/>
+            </section>
+            <section>
+                <TeamMembers />
             </section>
         </div>
     )

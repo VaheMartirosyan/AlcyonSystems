@@ -14,45 +14,45 @@ export default class Services extends Component{
                         ' which will best describe your company\'s what, how, why and who. ' +
                         'We are Alcyon team and if you want a web based on unique solutions,' +
                         ' you are in the right place.',
-                    hoverColor:'red',
+                    hoverColor:'#00badb',
                 },
                 {
                     content:'If you want to attract more customers to your website, you will need solid design to ' +
                         'reach your goal. Our creative designers will breathe life into your website.',
-                    hoverColor:'green',
+                    hoverColor:'#6da0fb',
                 },
                 {
                     content:'Day by day the ecommerce growth reinforces, which means that there is still' +
                         ' endless opportunity for brands to start-up an ecommerce website and maximise its earnings.' +
                         ' With our ecommerce service you can have the key to the successful online sales.',
-                    hoverColor:'blue',
+                    hoverColor:'#de80d2',
                 },
                 {
                     content:'Another vital role of complete website is QA testing.' +
                         ' It is meant to increase customer confidence and a company\'s credibility, ' +
                         'while also improving work processes and efficiency. ' +
                         'After the testing you can be ensured that it works without any errors and can go live.',
-                    hoverColor:'white',
+                    hoverColor:'#00c590',
                 },
                 {
                     content:'Updating and adding new content to your website will improve its ' +
                         'SEO performance and increase your return on investment. We can take care of your ' +
                         'website maintenance, protection and even content updates! ' +
                         'If you don’t have time or don’t know how to maintain your website, we are here for you.',
-                    hoverColor:'orange',
+                    hoverColor:'#cccccc',
                 },
                 {
                     content:'Do you know that 63% of web traffic is coming from mobile devices ? It means that if you don`t ' +
                         'have well structured mobile friendly website, then you have a big chance to lose real customers. ' +
                         'With our qualified developers team you`ll ' +
                         'get fast, professional and mobile friendly website which your customers will adore.',
-                    hoverColor:'pink',
+                    hoverColor:'#ff6069',
                 },
                 {
                     content:'The more specific your strategy is, ' +
                         'the more effective the execution will be. Smart social strategies ' +
                         'are several times more likely to seal a deal․ Do not hesitate to contact us.',
-                    hoverColor:'gold',
+                    hoverColor:'#ffd972',
                 },
             ],
             e:'',
@@ -98,8 +98,8 @@ export default class Services extends Component{
                 <div className={'col-lg-6 services_list'} >
                     {this.state.titles.map((e,i)=>{
                                 return(
-                                     <div key={i} className={'list_item'} onMouseEnter={this.handleHover.bind(this,i)} onMouseLeave={this.hoverOver}>
-                                            <h2 style={{color:this.state.a}}>{e}</h2>
+                                     <div key={i} className={`list_item div_hov${i}`}  >
+                                            <h2 className={`items${i}`} onMouseEnter={this.handleHover.bind(this,i)} onMouseLeave={this.hoverOver}>{e}</h2>
                                      </div>
                                 )})}
 
