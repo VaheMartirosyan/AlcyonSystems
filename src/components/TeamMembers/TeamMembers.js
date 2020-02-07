@@ -39,8 +39,10 @@ export default ()=>{
                             <div className={'col-lg-3 team_all '}>
                                 <div className={'first'} style={{backgroundImage:`url(${e.img})`}}>
                                     <div className='hovered_img' style={{backgroundImage:`url(${e.hoverimg})`}}>
-
+                                            <p></p>
+                                            <p></p>
                                     </div>
+                
                                 </div>
                             </div>
                         )
