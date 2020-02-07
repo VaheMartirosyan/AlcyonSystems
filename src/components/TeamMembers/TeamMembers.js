@@ -11,10 +11,10 @@ import p5 from './img/5.jpg'
 import p55 from './img/5.5.jpg'
 import p6 from './img/6.jpg'
 import p66 from './img/6.6.jpg'
-import p7 from './img/7.7.jpg'
-import p77 from './img/7.jpg'
-import p8 from './img/8.8.jpg'
-import p88 from './img/8.jpg'
+import p7 from './img/7.jpg'
+import p77 from './img/7.7.jpg'
+import p8 from './img/8.jpg'
+import p88 from './img/8.8.jpg'
 import './TeamMembers.scss'
 
 
@@ -32,14 +32,15 @@ export default ()=>{
     ]
 
         return(
-            <div className={'container team'}>
+            <div className={' team'}>
                 <div className="row">
                     {members.map((e,i)=>{
                         return(
-                            <div className={'col-lg-3  '}>
-                                <div className={'first'} style={{backgroundImage:`url(${e.img})`}}></div>
-                                <div>
+                            <div className={'col-lg-3 team_all '}>
+                                <div className={'first'} style={{backgroundImage:`url(${e.img})`}}>
+                                    <div className='hovered_img' style={{backgroundImage:`url(${e.hoverimg})`}}>
 
+                                    </div>
                                 </div>
                             </div>
                         )
