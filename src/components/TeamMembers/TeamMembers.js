@@ -36,7 +36,7 @@ export default ()=>{
                 <div className="row">
                     {members.map((e,i)=>{
                         return(
-                            <div className={'col-lg-3 team_all '}>
+                            <div className={'col-lg-3 team_all '} key={i}>
                                 <div className={'first'} style={{backgroundImage:`url(${e.img})`}}>
                                     <div className='hovered_img' style={{backgroundImage:`url(${e.hoverimg})`}}>
                                             <p></p>

@@ -1,6 +1,41 @@
 .vacancies{
-    width: 103%;
-    height: 100vh;
+    width: 100%;
+    
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 130% 100%;
+    overflow: hidden;
+
+    .careers_list{
+            padding-left: 10vw;
+            margin-top: 12vh;
+            margin-bottom: 12vh;
+            .careers_list_text{
+                p{
+                    font-size: 200%;
+                   
+                    padding: 1vh;
+                }
+                &:hover{
+                    
+                   
+                }
+            }
+            
+    }
+    .careers_text{
+        margin-top: 10vh;
+        padding-left: 5vw;
+        
+        h2{
+            font-size:300%;
+            letter-spacing: .2em;
+            
+        }
+        p{
+            letter-spacing: .2em;
+            font-size: 90%;
+            padding-top: 5vh;
+            padding-bottom: 5vh;
+        }
+    }
 }
