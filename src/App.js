@@ -35,25 +35,25 @@ export default class App extends Component{
     handleScrollToElement =(e,i)=> {
         console.log(e)
         if (e === 0 ){
-            window.scrollTo(0, this.homeRef.current.offsetTop)
+            window.scrollTo({behavior:'smooth',top:this.homeRef.current.offsetTop})
         }
         else if(e === 1){
-            window.scrollTo(0, this.myAboutRef.current.offsetTop)
+            window.scrollTo({behavior:'smooth',top:this.myAboutRef.current.offsetTop})
         }
         else if(e === 2){
-            window.scrollTo(0, this.myServicesRef.current.offsetTop)
+            window.scrollTo({behavior:'smooth',top:this.myServicesRef.current.offsetTop})
         }
         else if(e === 3){
-            window.scrollTo(0, this.myPortfolioRef.current.offsetTop)
+            window.scrollTo({behavior:'smooth',top:this.myPortfolioRef.current.offsetTop})
         }
         else if(e === 4){
-            window.scrollTo(0, this.myTeamRef.current.offsetTop)
+            window.scrollTo({behavior:'smooth',top:this.myTeamRef.current.offsetTop})
         }
         else if(e === 5){
-            window.scrollTo(0, this.myVacanciesRef.current.offsetTop)
+            window.scrollTo({behavior:'smooth',top:this.myVacanciesRef.current.offsetTop})
         }
         else if(e === 6){
-            window.scrollTo(0, this.myContactRef.current.offsetTop)
+            window.scrollTo({behavior:'smooth',top:this.myContactRef.current.offsetTop})
         }
             }
 
