@@ -15,7 +15,6 @@ export default (props) => {
 
     return(
         <div className={sty.join(' ')} key={props.id}>
-            <label htmlFor={htmlFor}>{props.label}</label>
             <input
                 value={props.value}
                 type={props.type}

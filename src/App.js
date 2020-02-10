@@ -16,11 +16,12 @@ export default class App extends Component{
 
     constructor(props){
         super(props)
-                this.myRef = React.createRef();
+                this.homeRef = React.createRef();
                 this.myAboutRef = React.createRef();
+                this.myServicesRef = React.createRef();
                 this.myPortfolioRef = React.createRef();
                 this.myTeamRef = React.createRef();
-                this.myServicesRef = React.createRef();
+                this.myVacanciesRef = React.createRef();
                 this.myContactRef = React.createRef();
         this.state = {
             h:0,
@@ -34,25 +35,25 @@ export default class App extends Component{
     handleScrollToElement =(e,i)=> {
         console.log(e)
         if (e === 0 ){
-            window.scrollTo(0, this.myRef.current.offsetTop)
+            window.scrollTo(0, this.homeRef.current.offsetTop)
         }
         else if(e === 1){
             window.scrollTo(0, this.myAboutRef.current.offsetTop)
         }
         else if(e === 2){
-            window.scrollTo(0, this.myPortfolioRef.current.offsetTop)
-        }
-        else if(e === 3){
-            window.scrollTo(0, this.myTeamRef.current.offsetTop)
-        }
-        else if(e === 4){
             window.scrollTo(0, this.myServicesRef.current.offsetTop)
         }
+        else if(e === 3){
+            window.scrollTo(0, this.myPortfolioRef.current.offsetTop)
+        }
+        else if(e === 4){
+            window.scrollTo(0, this.myTeamRef.current.offsetTop)
+        }
         else if(e === 5){
-            window.scrollTo(0, this.myContactRef.current.offsetTop)
+            window.scrollTo(0, this.myVacanciesRef.current.offsetTop)
         }
         else if(e === 6){
-            window.scrollTo(0, this.myRef.current.offsetTop)
+            window.scrollTo(0, this.myContactRef.current.offsetTop)
         }
             }
 
@@ -63,24 +64,24 @@ export default class App extends Component{
   render() {
     return(
         <div>
-            <section  ref={this.myRef}>
+            <section  ref={this.homeRef}>
                 <header>
                     <Header scroll={this.handleScrollToElement}/>
                 </header>
             </section>
-            <section>
+            <section ref={this.myAboutRef}>
                 <AboutUs/>
             </section>
-            <section>
+            <section ref={this.myServicesRef}>
                <Services/>
             </section>
-            <section>
+            <section ref={this.myPortfolioRef}>
                 <Portfolio/>
             </section>
-            <section>
+            <section ref={this.myTeamRef}>
                 <TeamMembers />
             </section>
-            <section>
+            <section ref={this.myVacanciesRef}>
                 <Vacancies/>
             </section>
             <section>

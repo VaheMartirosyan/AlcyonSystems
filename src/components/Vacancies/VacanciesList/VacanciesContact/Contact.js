@@ -117,16 +117,6 @@ export default class Contact extends Component {
         Object.keys(this.state.formControl).map(e => {
             const a = this.state.formControl[e]
             //  this.state.emptymass.push(a.value, this.state.areaText)
-            
-
-
-
-
-
-
-
-
-
              
         })
         console.log(this.state.emptymass)
@@ -159,7 +149,7 @@ export default class Contact extends Component {
                                  />
                             )
                         })}
-                        <label htmlFor="area">Message</label>
+                       
                         <textarea rows="5" value={this.state.areaText} onChange={this.changeArea}></textarea>
                         
                         <button type="submit" disabled={!this.state.isFormValid} onClick={() => this.sendMessage()} className={this.state.disabled ? 'disabled' : null}>Send Message</button>

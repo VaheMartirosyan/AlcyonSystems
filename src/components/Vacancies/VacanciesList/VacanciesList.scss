@@ -6,6 +6,7 @@
     height: 100%;
     padding: 10vh;
     transform: translate(-100%,0);
+    
     transition: .8s;
 }
     
@@ -22,9 +23,10 @@
 }
 #mdiv {
     position: absolute;
-    top:5%;
-    right: 5%;
-    width: 10vh;
+    top:3%;
+    right:5%;
+    
+  
     height: 10vh;
     transition: 1s;
     cursor: pointer;
@@ -36,9 +38,9 @@
       }
   }
   .mdiv {
-    height: 10vh;
+    height: 8vh;
     transition: 1s;
-    width: 2vh;
+    width: 1vh;
     margin-left: 12px;
     background-color: black;
     transform: rotate(45deg);
@@ -46,9 +48,26 @@
   }
   
   .md {
-    height: 10vh;
-    width: 2vh;
+    height: 8vh;
+    width: 1vh;
     background-color: black;
     transform: rotate(90deg);
     z-index: 2;
   }
+  .career_items_list{
+    width: 90%;
+    margin: 0 auto;
+    li{
+      list-style-type:disc; 
+      font-size: 14px;
+      margin-top: .2em;
+    }
+    h3{
+      margin-bottom: 1em;
+    }
+  }
+  .career_items_list2{
+    
+    margin: 0 auto;
+  }
+  
