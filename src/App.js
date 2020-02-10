@@ -5,6 +5,7 @@ import Services from "./components/Services/Services";
 import Portfolio from "./components/Portfolio/Portfolio";
 import TeamMembers from "./components/TeamMembers/TeamMembers";
 import Vacancies from './components/Vacancies/Vacancies';
+import Client from './components/Client/Client'
 
 
 export default class App extends Component{
@@ -81,6 +82,9 @@ export default class App extends Component{
             </section>
             <section>
                 <Vacancies/>
+            </section>
+            <section>
+                <Client />
             </section>
         </div>
     )

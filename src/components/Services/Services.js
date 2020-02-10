@@ -14,12 +14,12 @@ export default class Services extends Component{
                         ' which will best describe your company\'s what, how, why and who. ' +
                         'We are Alcyon team and if you want a web based on unique solutions,' +
                         ' you are in the right place.',
-                    hoverColor:'#00badb',
+                    hoverColor:'#0bff0a',
                 },
                 {
                     content:'If you want to attract more customers to your website, you will need solid design to ' +
                         'reach your goal. Our creative designers will breathe life into your website.',
-                    hoverColor:'#6da0fb',
+                    hoverColor:'#eaf800',
                 },
                 {
                     content:'Day by day the ecommerce growth reinforces, which means that there is still' +
@@ -111,9 +111,3 @@ export default class Services extends Component{
     }
 }
 
-//
-//
-
-
-//
-//

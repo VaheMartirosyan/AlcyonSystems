@@ -1,0 +1,13 @@
+.sliderone {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    div {
+        width: 100% !important;
+        img {
+            width: 90% !important;
+            height: 250px;
+        }
+    }
+}
