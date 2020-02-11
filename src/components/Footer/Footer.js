@@ -28,15 +28,19 @@ export default () => {
                 </div>
             </div>
             <div className={`contact_footer ${contact ? 'contactFooter' : null}`}>
-            <div id="mdiv2" onClick={() => setContact(false)}>
+                        <div id="mdiv2" onClick={() => setContact(false)}>
                             <div className="mdiv2">
                                 <div className="md2"></div>
                             </div>
                         </div>
                 <div className="footer_container d-flex">
-                
-                <div className="col-lg-6"><FooterContact /></div>
-                <div className="col-lg-6">image</div>
+                    <div className="col-lg-6">
+                        <FooterContact />
+                    </div>
+                    <div className="col-lg-6">
+                        image
+                        <img src="" alt=""/>
+                    </div>
                 </div>
             
             </div>

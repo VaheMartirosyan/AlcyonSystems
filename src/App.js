@@ -95,9 +95,9 @@ export default class App extends Component{
             <section ref={this.myVacanciesRef}>
                 <Vacancies/>
             </section>
-            <section>
+            {/* <section>
                 <Client />
-            </section>
+            </section> */}
             {/* <section>
                 <Slider />
             </section> */}
