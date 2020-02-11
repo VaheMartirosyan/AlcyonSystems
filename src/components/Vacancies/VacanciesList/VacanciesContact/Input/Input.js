@@ -21,8 +21,9 @@ export default (props) => {
                 id={htmlFor}
                 className="formInput"
                 onChange={props.onchange}
+                placeholder={props.placeholder}
              />
-             {isValid(props) ? <span>{props.errMessage}</span> : null}
+             {/* {isValid(props) ? <span>{props.errMessage}</span> : null} */}
         </div>
     )
 }

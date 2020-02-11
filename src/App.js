@@ -6,6 +6,8 @@ import Portfolio from "./components/Portfolio/Portfolio";
 import TeamMembers from "./components/TeamMembers/TeamMembers";
 import Vacancies from './components/Vacancies/Vacancies';
 import Client from './components/Client/Client'
+import Slider from './components/slider/Slider'
+import Footer from './components/Footer/Footer';
 
 
 export default class App extends Component{
@@ -25,12 +27,18 @@ export default class App extends Component{
                 this.myContactRef = React.createRef();
         this.state = {
             h:0,
-            a:0
+            a:0,
+            load: true
 
         }
     }
 
 
+
+
+    componentDidMount() {
+        this.setState({load: false})
+    }
 
     handleScrollToElement =(e,i)=> {
         console.log(e)
@@ -62,9 +70,12 @@ export default class App extends Component{
 
 
   render() {
+  
+   
     return(
-        <div>
-            <section  ref={this.homeRef}>
+             <div>
+                 {this.state.load ? <h1>LOADING.....</h1> :  <div>
+                    <section  ref={this.homeRef}>
                 <header>
                     <Header scroll={this.handleScrollToElement}/>
                 </header>
@@ -87,7 +98,17 @@ export default class App extends Component{
             <section>
                 <Client />
             </section>
+            {/* <section>
+                <Slider />
+            </section> */}
+            <section>
+                <Footer />
+            </section></div>   }
+            
+        
         </div>
+       
+        
     )
   }
 }

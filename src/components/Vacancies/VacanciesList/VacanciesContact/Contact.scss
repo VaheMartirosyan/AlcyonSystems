@@ -12,12 +12,19 @@
         font-weight: bolder;
         transition: .8s;
         letter-spacing: 2px;
+        &:hover {
+            color: black;
+            background: #ffda66;
+            transition: .8s;
+        }
+        &:disabled {
+            background-color: grey;
+            border-color: grey;
+            color:white;
+        }
+
     }
-    button:hover{
-        color: black;
-        background: #ffda66;
-        transition: .8s;
-    }
+    
     form{
         display: flex;
         flex-direction: column;
@@ -32,8 +39,8 @@
            input{
                border: 4px solid black;
                outline: none;
-               text-align: center;
-           }
+                padding: 1vh;
+            }
            
        }
     }

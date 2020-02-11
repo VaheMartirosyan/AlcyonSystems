@@ -10,6 +10,8 @@ function validateEmail(email) {
 }
 
 
+
+
 export default class Contact extends Component {
 
     state = {
@@ -20,6 +22,7 @@ export default class Contact extends Component {
                 type: 'text',
                 value: '',
                 errMessage: 'name is incorect',
+                placeholder: 'Your Name',
                 touched: false, 
                 valid: false,
                 id: Math.random(),
@@ -34,6 +37,7 @@ export default class Contact extends Component {
                 type: 'email',
                 value: '',
                 errMessage: 'email is incorect',
+                placeholder: 'E-mail',
                 touched: false, 
                 valid: false,
                 id: Math.random(),
@@ -47,12 +51,28 @@ export default class Contact extends Component {
                 type: 'text',
                 value: '',
                 errMessage: 'phone number is incorect',
+                placeholder: 'Your Phone',
                 touched: false, 
                 valid: false,
                 id: Math.random(),
                 validation: {
                     required: true,
                     number: true
+                }
+            },
+            link: {
+                label: 'Link',
+                type: 'text',
+                value: '',
+                errMessage: 'Link is incorect',
+                placeholder: 'Your Link of Your Portfolio',
+                touched: false, 
+                valid: false,
+                id: Math.random(),
+                validation: {
+                    required: true,
+                    minLength: 4,
+                    linkreg: true
                 }
             },
         },
@@ -87,6 +107,10 @@ export default class Contact extends Component {
 
         if(validation.minLength) {
             isValid = value.length >= validation.minLength && isValid
+        }
+
+        if(validation.linkreg) {
+            isValid = value.match(/(([a-z]+:\/\/)?(([a-z0-9\-]+\.)+([a-z]{2}|aero|arpa|biz|com|coop|edu|gov|info|int|jobs|mil|museum|name|nato|net|org|pro|travel|local|internal))(:[0-9]{1,5})?(\/[a-z0-9_\-\.~]+)*(\/([a-z0-9_\-\.]*)(\?[a-z0-9+_\-\.%=&amp;]*)?)?(#[a-zA-Z0-9!$&'()*+.=-_~:@/?]*)?)(\s+|$)/gi) && isValid
         }
         return isValid
     }
@@ -141,6 +165,7 @@ export default class Contact extends Component {
                                     value={controls.value}
                                     type={controls.type}
                                     errMessage={controls.errMessage}
+                                    placeholder={controls.placeholder}
                                     touched={controls.touched}
                                     valid={controls.valid}
                                     shoudValidate={!!controls.validation}
@@ -150,7 +175,7 @@ export default class Contact extends Component {
                             )
                         })}
                        
-                        <textarea rows="5" value={this.state.areaText} onChange={this.changeArea}></textarea>
+                        <textarea rows="5" value={this.state.areaText} onChange={this.changeArea} placeholder='Your Message'></textarea>
                         
                         <button type="submit" disabled={!this.state.isFormValid} onClick={() => this.sendMessage()} className={this.state.disabled ? 'disabled' : null}>Send Message</button>
                         </form>
