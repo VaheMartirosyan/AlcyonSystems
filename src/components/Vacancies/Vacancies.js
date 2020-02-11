@@ -3,6 +3,8 @@ import './Vacancies.scss'
 import back from './VacanciesBackground/back.gif'
 import VacanciesList from './VacanciesList/VacanciesList'
 
+
+
 export default class Vacancies extends Component {
     state = {
         careersList: [

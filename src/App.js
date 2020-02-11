@@ -103,7 +103,8 @@ export default class App extends Component{
             </section> */}
             <section>
                 <Footer />
-            </section></div>   }
+            </section>
+            </div>   }
             
         
         </div>

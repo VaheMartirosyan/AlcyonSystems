@@ -18,7 +18,7 @@ export default class Header extends Component{
                     </div>
                 </div></div>
 
-             <HeaderContent/>
+             <HeaderContent />
 
             </div>
         )
