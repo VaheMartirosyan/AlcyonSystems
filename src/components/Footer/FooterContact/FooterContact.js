@@ -134,11 +134,11 @@ export default class Contact extends Component {
     }
     render() {
         return(
-            <div className="contact">
+            <div className="contacts">
                 <div className="contactSize">
                     <div className="contactContainer">
                     
-                    <div className="formControler">
+                    <div className="formControlers">
                         <div className='us'>
                             <h2>Contact Us</h2>
                         </div> 

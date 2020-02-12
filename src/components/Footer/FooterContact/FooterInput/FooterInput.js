@@ -8,7 +8,7 @@ function isValid(props) {
 
 export default (props) => {
 
-    const sty = ['inputs']
+    const sty = ['contactInputs']
     const htmlFor = Math.random()
     if(isValid(props)) {
         sty.push('invalid')
