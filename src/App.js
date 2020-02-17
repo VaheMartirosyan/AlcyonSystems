@@ -10,6 +10,7 @@ import Slider from './components/slider/Slider'
 import Footer from './components/Footer/Footer';
 
 
+
 export default class App extends Component{
 
 
@@ -89,21 +90,23 @@ export default class App extends Component{
             <section ref={this.myPortfolioRef}>
                 <Portfolio/>
             </section>
-            <section ref={this.myTeamRef}>
-                <TeamMembers />
-            </section>
             <section ref={this.myVacanciesRef}>
                 <Vacancies/>
             </section>
+            <section ref={this.myTeamRef}>
+                <TeamMembers />
+            </section>
+           
             {/* <section>
                 <Client />
             </section> */}
             {/* <section>
                 <Slider />
             </section> */}
-            <section>
+            <section ref={this.myContactRef}>
                 <Footer />
             </section>
+          
             </div>   }
             
         

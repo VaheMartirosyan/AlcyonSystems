@@ -69,49 +69,45 @@ ul{
   }
 
   .active_item:nth-child(1) {
-
-    animation: nav 1s;
+    transition: .7s;
     transform: scale(1);
-
+    
   }
 
   .active_item:nth-child(2) {
-
-    animation: nav .9s;
-
+    transition: .6s;
     transform: scale(1);
-
   }
   .active_item:nth-child(3) {
-    animation: nav .8s;
+    transition: .5s;
     transform: scale(1);
   }
   .active_item:nth-child(4) {
-    animation: nav .7s;
+    transition: .4s;
     transform: scale(1);
   }
   .active_item:nth-child(5) {
-    animation: nav .6s;
+    transition: .3s;
     transform: scale(1);
   }
   .active_item:nth-child(6) {
-    animation: nav .5s;
+    transition: .2s;
     transform: scale(1);
   }
   .active_item:nth-child(7) {
-    animation: nav .4s;
+   transition: .1s;
     transform: scale(1);
   }
   .active_item:nth-child(8) {
-    animation: nav .3s;
+   
     transform: scale(1);
   }
   .active_item:nth-child(9) {
-    animation: nav .2s;
+  
     transform: scale(1);
   }
   .active_item:nth-child(10) {
-    animation: nav 0.1s;
+   
     transform: scale(1);
   }
   .active_links{
@@ -129,72 +125,59 @@ ul{
   display: inline-block;
   margin-right: 70px;
   top: 10px;
-  transform: scale(0);
-  transition: opacity 0.5s ease, top 0.5s ease;
+  
+  
   transition-delay: 0;
   color: black;
 }
 .item:nth-child(1) {
-
-  animation: navik 0s;
+  transition: .7s;
   transform: scale(0);
-
 }
 .item:nth-child(2) {
-
-  animation: navik .1s;
+  transition: .6s;
   transform: scale(0);
 }
 .item:nth-child(3) {
-
-  animation: navik .2s;
+  transition: .5s;
   transform: scale(0);
 }
 .item:nth-child(4) {
-
-  animation: navik .3s;
+  transition: .4s;
   transform: scale(0);
 }
 .item:nth-child(5) {
-
-  animation: navik .4s;
+  transition: .3s;
   transform: scale(0);
-
 }
 .item:nth-child(6) {
-
-  margin-right: 110px;
-  animation: navik .5s;
+  transition: .2s;
   transform: scale(0);
 }
 .item:nth-child(7) {
 
-  animation: navik .6s;
+  margin-right: 110px;
   transform: scale(0);
+  transition: .1s;
 }
 .item:nth-child(8) {
 
-  animation: navik .7s;
+ 
   transform: scale(0);
 }
 .item:nth-child(9) {
 
-  animation: navik .8s;
+  
   transform: scale(0);
 }
 .item:nth-child(10) {
 
-  animation: navik .9s;
+
   transform: scale(0);
+  transition: .7s;
 }
 .item {
   font-weight: bolder;
   letter-spacing: 2px;
   font-size: 11px;
-}
-@keyframes navik {
-  from{
-    transform: scale(1);
-  }
-  to{transform: scale(0)}
 }
