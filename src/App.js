@@ -84,7 +84,7 @@ export default class App extends Component{
             <section ref={this.myAboutRef}>
                 <AboutUs/>
             </section>
-            <section ref={this.myServicesRef}>
+            <section ref={this.myServicesRef} className="refsection">
                <Services/>
             </section>
             <section ref={this.myPortfolioRef}>
@@ -95,17 +95,15 @@ export default class App extends Component{
             </section>
             <section ref={this.myTeamRef}>
                 <TeamMembers />
-            </section>
+            </section> 
            
-            {/* <section>
-                <Client />
-            </section> */}
-            {/* <section>
+           
+            <section>
                 <Slider />
-            </section> */}
-            <section ref={this.myContactRef}>
-                <Footer />
             </section>
+             <section ref={this.myContactRef}>
+                <Footer />
+            </section> 
           
             </div>   }
             

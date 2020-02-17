@@ -1,30 +1,115 @@
 import React, {Component} from 'react'
 import './Slider.scss'
 
-
 export default class Slider extends Component {
-    state = {
-        slider: [0, 1, 2, 3, 4, 5, 6, 7],
-        slider2: [0, 1, 2, 3, 4, 5, 6, 7]
-    }
+
     render() {
-        return(
-            <div className="slider">
-                {this.state.slider.map(e => {
-                    return(
-                        <div className="slide">
-                            {e}
+        return (
+            <div className="sliderover  ">
+                <div class="slider ">
+                    <div class="slide-track ">
+                        <div class="slide">
+                            <img
+                                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png"
+                                height="100"
+                                width="250"
+                                alt=""/>
                         </div>
-                    )
-                })}
-                {this.state.slider2.map(e => {
-                    return(
-                        <div className="slide2">
-                            {e}
+                        <div class="slide">
+                            <img
+                                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png"
+                                height="100"
+                                width="250"
+                                alt=""/>
                         </div>
-                    )
-                })}
+                        <div class="slide">
+                            <img
+                                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"
+                                height="100"
+                                width="250"
+                                alt=""/>
+                        </div>
+                        <div class="slide">
+                            <img
+                                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png"
+                                height="100"
+                                width="250"
+                                alt=""/>
+                        </div>
+                        <div class="slide">
+                            <img
+                                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png"
+                                height="100"
+                                width="250"
+                                alt=""/>
+                        </div>
+                        <div class="slide">
+                            <img
+                                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png"
+                                height="100"
+                                width="250"
+                                alt=""/>
+                        </div>
+                        <div class="slide">
+                            <img
+                                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png"
+                                height="100"
+                                width="250"
+                                alt=""/>
+                        </div>
+                        <div class="slide">
+                            <img
+                                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png"
+                                height="100"
+                                width="250"
+                                alt=""/>
+                        </div>
+                        <div class="slide">
+                            <img
+                                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png"
+                                height="100"
+                                width="250"
+                                alt=""/>
+                        </div>
+                        <div class="slide">
+                            <img
+                                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png"
+                                height="100"
+                                width="250"
+                                alt=""/>
+                        </div>
+                        <div class="slide">
+                            <img
+                                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png"
+                                height="100"
+                                width="250"
+                                alt=""/>
+                        </div>
+                        <div class="slide">
+                            <img
+                                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png"
+                                height="100"
+                                width="250"
+                                alt=""/>
+                        </div>
+                        <div class="slide">
+                            <img
+                                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png"
+                                height="100"
+                                width="250"
+                                alt=""/>
+                        </div>
+                        <div class="slide">
+                            <img
+                                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png"
+                                height="100"
+                                width="250"
+                                alt=""/>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         )
     }
 }

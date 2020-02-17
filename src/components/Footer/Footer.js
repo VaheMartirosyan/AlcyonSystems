@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import './Footer.scss'
 import backimg from './Background/back.gif'
+import img from './Background/1.jpg'
 import FooterContact from './FooterContact/FooterContact'
 
 
@@ -34,18 +35,11 @@ export default () => {
                             </div>
                         </div>
                 <div className="footer_container d-flex">
-                    <div className="allfooter">
-                        <div className="one"></div>
-                        <div className="two">
-                            <div className="men">
-                                {/* <img src="https://previews.123rf.com/images/yapanda/yapanda1602/yapanda160200013/53561342-programming-code-web-software-developer-programmer-and-monitors-with-computer-languages-.jpg" alt=""/> */}
-                            </div>
-                        </div>
-                    </div>
+                  
                     <div className="col-lg-6">
                         <FooterContact />
                     </div>
-                    <div className="col-lg-6">
+                    <div className="col-lg-6 two" style={{backgroundImage:`url(${img})`}}>
                         
                         <img src="" alt=""/>
                     </div>

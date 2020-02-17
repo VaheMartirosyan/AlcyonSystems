@@ -1,9 +1,9 @@
 .services{
-  width: 100%;
+  width: 100%; 
   overflow: hidden;
-  height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
+  
   .services_content{
     width: 100%;
     overflow: hidden;
@@ -53,7 +53,7 @@
   .services_list{
     display: flex;
     flex-direction: column;
-    margin-top: 5vh;
+    
 .list_item{
   h2{
     cursor: default;
@@ -144,4 +144,7 @@
       }
     }
   }
+}
+.services .col-lg-6 {
+  padding: 20vh 0 !important;
 }

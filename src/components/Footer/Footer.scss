@@ -1,6 +1,5 @@
 .footer {
     width: 100%;
-    height: 100vh;
     overflow: hidden;
     background-size: cover;
     background-repeat: no-repeat;
@@ -105,7 +104,7 @@
 
   .footer_container {
       width: 80%;
-      margin: 40px auto;
+      margin: 20vh auto;
   }
   .formControlers {
       form {
@@ -148,27 +147,14 @@
       }
   }
 
-  .allfooter {
-      width: 100%;
-      height: 100vh;
-      position: absolute;
-      left: 0;
-      top: 0;
-      display: flex;
-      .one {
-          background: #ebebeb;
-          width: 50%;
-      }
+  
       .two {
-          background-color: #fbfbfb;
-          width: 50%;
-        background-image: url('./Background/1.jpg');
+          background-color: red;
+          width: 100%;
         background-size: cover;
         background-repeat: no-repeat;
 
-       .men {
-           width: 100%;
+       
+         
            
        }   
-      }
-  }
