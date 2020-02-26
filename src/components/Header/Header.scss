@@ -1,10 +1,13 @@
+.header_main{
+  // height: 100vh;
+}
 .nav_fixed{
   position: fixed;
   width: 10%;
 
   right: 3%;
 
-  top:3%;
+  top:5%;
 
   z-index: 3;
 
@@ -12,12 +15,12 @@
 .absolute{
   position: fixed;
   z-index: 1999;
-  background: white;
-  padding: 45px ;
+  background:white;
+  height: 15vh;
   width: 100%;
-  box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+
 }
-header_container{
+.header_container{
   width: 100%;
   margin: 0 auto;
 
