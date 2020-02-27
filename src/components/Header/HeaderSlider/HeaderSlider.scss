@@ -36,16 +36,22 @@
     width: 100%;
     height: 100vh;
     background: rebeccapurple;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .slide_content_two{
     width: 100%;
     height: 100vh;
     background: pink;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .slide_content_three{
     width: 100%;
     height: 100vh;
     background: deeppink;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
 }
