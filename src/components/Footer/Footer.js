@@ -1,17 +1,20 @@
 import React, {useState} from 'react'
 import './Footer.scss'
-import backimg from './Background/back.gif'
-import img from './Background/1.jpg'
+import './MediaFooter.scss'
+
 import FooterContact from './FooterContact/FooterContact'
+import Particles from 'react-particles-js';
 
 
 export default () => {
     const [contact, setContact] = useState(false)
     return(
-        <div className="footer" style={{backgroundImage: `url(${backimg})`}}>
+        <div className="particles">
+            <div className="footer" >
+            
             <div className="containersik">
                 <div className="row">
-                    <div className="col-lg-8 footer_content" >
+                    <div className="col-lg-6 footer_content" >
                         <h2>Contact</h2>
                         <div className="d-flex flex-column">
                             <div className='address_contact'>
@@ -26,10 +29,10 @@ export default () => {
                             <button className="contactOpener" onClick={() => setContact(true)}>Contact Us</button>
                         </div>
                     </div>
-                    <div className="col-lg-4 ">
-                    <iframe title='map'
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d762.0296029859107!2d44.52195796729593!3d40.1841781633163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abd59fe0b5b85%3A0xe5733ad4eea7bee6!2sAlcyon%20Systems!5e0!3m2!1sen!2s!4v1581942900605!5m2!1sen!2s"
-                    width="650" height="600" frameBorder="0"  allowFullScreen=""></iframe>
+                    <div className="col-lg-6 map-responsive">
+                        <iframe title='map'
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d762.0296029859107!2d44.52195796729593!3d40.1841781633163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abd59fe0b5b85%3A0xe5733ad4eea7bee6!2sAlcyon%20Systems!5e0!3m2!1sen!2s!4v1581942900605!5m2!1sen!2s"
+                        width="800" height="650" frameBorder="0"  allowFullScreen=""></iframe>
                     </div>
                 </div>
             </div>
@@ -44,7 +47,7 @@ export default () => {
                     <div className="col-lg-6">
                         <FooterContact />
                     </div>
-                    <div className="col-lg-6 two" style={{backgroundImage:`url(${img})`}}>
+                    <div className="col-lg-6 two" >
                         
                         <img src="" alt=""/>
                     </div>
@@ -52,5 +55,103 @@ export default () => {
             
             </div>
         </div>
+        <div style={{background:'#0d0d0d',width:'100%',height:"88vh",overflow:'hidden'}}>
+        <Particles 
+
+        params={{
+        "particles": {
+        "number": {
+        "value": 150,
+        "density": {
+        "enable": true,
+
+    }
+    },
+        "color": {
+        "value": "#ffffff"
+    },
+
+        "opacity": {
+        "value": 0.4008530152163807,
+        "random": false,
+        "anim": {
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+    }
+    },
+        "size": {
+        "value": 5,
+        "random": true,
+        "anim": {
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
+        "sync": false
+    }
+    },
+
+        "move": {
+        "enable": true,
+        "speed": 6,
+        "direction": "none",
+        "random": false,
+        "straight": false,
+        "out_mode": "out",
+        "bounce": false,
+        "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+    }
+    }
+    },
+        "interactivity": {
+        "detect_on": "window",
+        "events": {
+        "onhover": {
+        "enable": true,
+        "mode": "grab"
+    },
+        "onclick": {
+        "enable": true,
+        "mode": "bubble"
+    },
+        "resize": true
+    },
+        "modes": {
+        "grab": {
+        "distance": 400,
+        "line_linked": {
+        "opacity": 1
+    }
+    },
+        "bubble": {
+        "distance": 400,
+        "size": 7,
+        "duration": 2,
+        "opacity": 8,
+        "speed": 3
+    },
+        "repulse": {
+        "distance": 100,
+        "duration": 0.4
+    },
+        "push": {
+        "particles_nb": 4
+    },
+        "remove": {
+        "particles_nb": 2
+    }
+    }
+    },
+        "retina_detect": true
+    }}  />
+    
+        </div>
+            
+        </div>
+        
     )
 }
