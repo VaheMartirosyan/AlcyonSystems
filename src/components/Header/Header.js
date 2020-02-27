@@ -1,12 +1,11 @@
 import React,{Component} from "react";
-import HeaderContent from './headerContent/HeaderContent'
-
-
-
 import './Header.scss'
 import './MediaHeader.scss'
 import logo from "./img/logo.png";
 import NavBar from "./Nav_Bar/Nav_Bar";
+import HeaderSlider from "./HeaderSlider/HeaderSlider";
+
+
 export default class Header extends Component{
     render() {
         return(
@@ -20,7 +19,8 @@ export default class Header extends Component{
                     </div>
                 </div></div>
 
-             <HeaderContent />
+             {/*<HeaderContent />*/}
+             <HeaderSlider/>
 
             </div>
         )
