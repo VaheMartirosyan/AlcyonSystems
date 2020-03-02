@@ -7,7 +7,7 @@ import TeamMembers from "./components/TeamMembers/TeamMembers";
 import Vacancies from './components/Vacancies/Vacancies';
 import Slider from './components/slider/Slider'
 import Footer from './components/Footer/Footer';
-
+import { Lines } from 'react-preloaders';
 
 
 export default class App extends Component{
@@ -73,7 +73,9 @@ export default class App extends Component{
   
    
     return(
+
              <div>
+                 <Lines customLoading={this.state.load} />
                  {this.state.load ? <h1>LOADING.....</h1> :  <div>
                     <section  ref={this.homeRef}>
                 <header>
