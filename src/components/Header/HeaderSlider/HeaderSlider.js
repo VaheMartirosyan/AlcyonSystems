@@ -1,8 +1,7 @@
 import React,{Component} from "react";
-import pic from './headerSliderimages/1.jpg'
-import pic2 from './headerSliderimages/2.jpg'
-import pic3 from './headerSliderimages/3.jpg'
 import './HeaderSlider.scss';
+import './MediaHeaderSlider.scss';
+
 
 export default class HeaderSlider extends Component{
     state = {
@@ -37,7 +36,7 @@ export default class HeaderSlider extends Component{
         return(
             <div className={'header_slider'}>
                 <div className={`${this.state.a ? 'slider_content' : '' } ${this.state.b ? 'slider_content2' : ''} ${this.state.c ? 'slider_content3' : ''}`}>
-                    <div className={'slide_content_one'} style={{backgroundImage:`url(${pic})`}}>
+                    <div className={'slide_content_one'} style={{backgroundImage:`url(https://res.cloudinary.com/alcyonsystems/image/upload/v1583139883/AlcyonSystems/1_jeytbu.jpg)`}}>
                         <div className={'text_head_slide'}>
                             <div className={` ${this.state.a ? 'text_for_slider_anim' : 'text_for_slider'}`}>
                                 <h2>Web Development</h2>
@@ -45,7 +44,7 @@ export default class HeaderSlider extends Component{
                             </div>
                         </div>
                     </div>
-                    <div className={'slide_content_two'} style={{backgroundImage:`url(${pic2})`}}>
+                    <div className={'slide_content_two'} style={{backgroundImage:`url(https://res.cloudinary.com/alcyonsystems/image/upload/v1583139883/AlcyonSystems/2_fi4l6o.jpg)`}}>
                         <div className={'text_head_slide'}>
                             <div className={` ${this.state.b ? 'text_for_slider_anim' : 'text_for_slider'}`}>
                                 <h2>Experienced Team</h2>
@@ -53,7 +52,7 @@ export default class HeaderSlider extends Component{
                             </div>
                         </div>
                     </div>
-                    <div className={'slide_content_three'} style={{backgroundImage:`url(${pic3})`}}>
+                    <div className={'slide_content_three'} style={{backgroundImage:`url(https://res.cloudinary.com/alcyonsystems/image/upload/v1583139883/AlcyonSystems/3_tgfmgo.jpg)`}}>
                         <div className={'text_head_slide'}>
                             <div className={` ${this.state.c ? 'text_for_slider_anim' : 'text_for_slider'}`}>
                                 <h2>Award-Winning Software</h2>

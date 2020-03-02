@@ -1,10 +1,4 @@
 import React from "react";
-import pic1 from './PortfolioPics/1.jpg';
-import pic2 from './PortfolioPics/2.jpg';
-import pic3 from './PortfolioPics/3.jpg';
-import pic4 from './PortfolioPics/4.jpg';
-import pic5 from './PortfolioPics/5.jpg';
-import pic6 from './PortfolioPics/6.jpg';
 import './Portfolio.scss'
 
 export default ()=>{
@@ -14,33 +8,33 @@ export default ()=>{
             id: 0,
             icon: 'fa fa-magic',
             title: 'Web Design',
-            img:pic1
+            img:'https://res.cloudinary.com/alcyonsystems/image/upload/v1583139918/AlcyonSystems/6_x9abtz.jpg'
         },
         {
             id: 1,
             icon: 'fa fa-shopping-cart',
             title: 'Ecommerce',
-            img:pic2
+            img:'https://res.cloudinary.com/alcyonsystems/image/upload/v1583139909/AlcyonSystems/1_mztied.jpg'
         }, {
             id: 2,
             icon: 'fa fa-check-circle',
             title: 'QA Testing',
-            img:pic3
+            img:'https://res.cloudinary.com/alcyonsystems/image/upload/v1583139909/AlcyonSystems/2_y65cbi.jpg'
         }, {
             id: 3,
             icon: 'fa fa-desktop',
             title: 'Web Maintenance',
-            img:pic4
+            img:'https://res.cloudinary.com/alcyonsystems/image/upload/v1583139909/AlcyonSystems/3_kppens.jpg'
         }, {
             id: 4,
             icon: 'fa fa-desktop',
             title: 'Responsive Design',
-            img:pic5
+            img:'https://res.cloudinary.com/alcyonsystems/image/upload/v1583139917/AlcyonSystems/5_dynsip.jpg'
         }, {
             id: 5,
             icon: 'fa fa-thumbs-up',
             title: 'Social Media',
-            img:pic6
+            img:'https://res.cloudinary.com/alcyonsystems/image/upload/v1583139918/AlcyonSystems/4_i891hl.jpg'
         },
        
     ]
