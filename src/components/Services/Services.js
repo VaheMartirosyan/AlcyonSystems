@@ -1,7 +1,7 @@
 import React,{Component} from "react";
 import './Services.scss';
 import './MediaServices.scss';
-import video from './backgroundVideo/services.gif';
+import video from './backgroundVideo/services.png';
 
 export default class Services extends Component{
     constructor(props){
