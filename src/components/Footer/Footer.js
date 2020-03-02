@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
 import './Footer.scss'
 import './MediaFooter.scss'
+import Fade from 'react-reveal/Fade'
+
 
 import FooterContact from './FooterContact/FooterContact'
 import Particles from 'react-particles-js';
@@ -14,26 +16,31 @@ export default () => {
             
             <div className="containersik">
                 <div className="row">
-                    <div className="col-lg-6 footer_content" >
-                        <h2>Contact</h2>
-                        <div className="d-flex flex-column">
-                            <div className='address_contact'>
-                                <p>New business & partnership</p>
-                                <p>+374 99-13-20-32</p>
-                                <p className='footer_p_border'>mail@example.ru</p>
+                    <Fade left timeout={2000}>
+                        <div className="col-lg-6 footer_content" >
+                            <h2>Contact</h2>
+                            <div className="d-flex flex-column">
+                                <div className='address_contact'>
+                                    <p>New business & partnership</p>
+                                    <p>+374 99-13-20-32</p>
+                                    <p className='footer_p_border'>mail@example.ru</p>
+                                </div>
+                                <div className='address_contact2'>
+                                    <p>Visit our office</p>
+                                    <p className='footer_p_border'>Armenia, Yerevan, Moskovyan 3/2</p>
+                                </div>
+                                <button className="contactOpener" onClick={() => setContact(true)}>Contact Us</button>
                             </div>
-                            <div className='address_contact2'>
-                                <p>Visit our office</p>
-                                <p className='footer_p_border'>Armenia, Yerevan, Moskovyan 3/2</p>
-                            </div>
-                            <button className="contactOpener" onClick={() => setContact(true)}>Contact Us</button>
                         </div>
-                    </div>
-                    <div className="col-lg-6 map-responsive">
-                        <iframe title='map'
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d762.0296029859107!2d44.52195796729593!3d40.1841781633163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abd59fe0b5b85%3A0xe5733ad4eea7bee6!2sAlcyon%20Systems!5e0!3m2!1sen!2s!4v1581942900605!5m2!1sen!2s"
-                        width="800" height="650" frameBorder="0"  allowFullScreen=""></iframe>
-                    </div>
+                    </Fade>
+                    <Fade right timeout={2500}>
+                        <div className="col-lg-6 map-responsive">
+                            <iframe title='map'
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d762.0296029859107!2d44.52195796729593!3d40.1841781633163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abd59fe0b5b85%3A0xe5733ad4eea7bee6!2sAlcyon%20Systems!5e0!3m2!1sen!2s!4v1581942900605!5m2!1sen!2s"
+                                    width="800" height="650" frameBorder="0"  allowFullScreen=""></iframe>
+                        </div>
+                    </Fade>
+
                 </div>
             </div>
             <div className={`contact_footer ${contact ? 'contactFooter' : null}`}>
@@ -147,7 +154,7 @@ export default () => {
     }
     },
         "retina_detect": true
-    }}  />
+    }} className={'prtcls'} />
     
         </div>
             
