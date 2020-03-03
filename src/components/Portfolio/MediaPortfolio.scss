@@ -1,195 +1,344 @@
 @media only screen and (max-width: 1920px) {
-
-  .nav_fixed {
-    .active_item {
-      font-size: 120%;
-
+  .portfolio{
+    .portfolio_elems{
+      height: 50vh;
+      .portfolio_title{
+          h2{
+            font-size: 250%;
+          }
+      }
     }
-    .active_item:nth-child(7) {
-      margin-right: 200px;
-    }
-    .containers {
-      .menu {
-        li {
-          height: 4px;
-          width: 60px;
+    .portfolio_context{
+      a{
+        font-size: 158%;
+      }
+      .portfolio_img{
+        width: 60%;
+        height: 25vh;
+
+        img{
+          width: 100%;
+          height: 100%;
         }
       }
     }
 
   }
-
 }
 @media only screen and (max-width: 1820px) {
-
-  .nav_fixed {
-    .active_item {
-      font-size: 115%;
-
+  .portfolio{
+    .portfolio_elems{
+      height: 50vh;
+      .portfolio_title{
+        h2{
+          font-size: 245%;
+        }
+      }
     }
-    .active_item:nth-child(7) {
-      margin-right: 200px;
-    }
-    .containers {
-      .menu {
-        li {
-          height: 4px;
-          width: 60px;
+    .portfolio_context{
+      a{
+        font-size: 140%;
+      }
+      .portfolio_img{
+        width: 59%;
+        height: 25vh;
+
+        img{
+          width: 100%;
+          height: 100%;
         }
       }
     }
 
   }
-
 }
 @media only screen and (max-width: 1720px) {
-
-
-
-  .nav_fixed {
-    .active_item {
-      font-size: 95%;
-    }
-    .active_item:nth-child(7) {
-      margin-right: 140px;
-    }
-    .containers {
-      .menu {
-        li {
-          height: 4px;
-          width: 50px;
+  .portfolio{
+    .portfolio_elems{
+      height: 50vh;
+      .portfolio_title{
+        h2{
+          font-size: 240%;
         }
       }
     }
+    .portfolio_context{
+      a{
+        font-size: 130%;
+      }
+      .portfolio_img{
+        width: 58%;
+        height: 25vh;
+
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
   }
+
 }
 @media only screen and (max-width: 1620px) {
-  .nav_fixed {
-    .active_item {
-      font-size: 90%;
-    }
-    .active_item:nth-child(7) {
-      margin-right: 120px;
-    }
-    .containers {
-      .menu {
-        li {
-          height: 4px;
-          width: 48px;
+  .portfolio{
+    .portfolio_elems{
+      height: 48vh;
+      .portfolio_title{
+        h2{
+          font-size: 235%;
         }
       }
     }
+    .portfolio_context{
+      a{
+        font-size: 120%;
+      }
+      .portfolio_img{
+        width: 58%;
+        height: 23vh;
+
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
   }
 }
 @media only screen and (max-width: 1520px) {
-  .nav_fixed {
-    .active_item {
-      font-size: 80%;
-    }
-    .active_item:nth-child(7) {
-      margin-right: 90px;
-    }
-    .containers {
-      .menu {
-        li {
-          height: 4px;
-          width: 45px;
+  .portfolio{
+    .portfolio_elems{
+      height: 46vh;
+      .portfolio_title{
+        h2{
+          font-size: 230%;
         }
       }
     }
+    .portfolio_context{
+      a{
+        font-size: 110%;
+      }
+      .portfolio_img{
+        width: 58%;
+        height: 21vh;
+
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
   }
 
 }
 @media only screen and (max-width: 1420px) {
-  .nav_fixed {
-    .active_item {
-      font-size: 80%;
+  .portfolio{
+    .portfolio_elems{
+      height: 44vh;
+      .portfolio_title{
+        h2{
+          font-size: 225%;
+        }
+      }
     }
-    .active_item:nth-child(7) {
-      margin-right: 20px;
+    .portfolio_context{
+      a{
+        font-size: 102%;
+      }
+      .portfolio_img{
+        width: 58%;
+        height: 20vh;
+
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
     }
+
   }
 }
 
 @media only screen and (max-width: 1320px) {
-  .nav_fixed {
-    .active_item {
-      font-size: 70%;
-    }
-  }
-}
-@media only screen and (max-width: 1250px) {
-  .nav_fixed {
-    .active_item {
-      font-size: 65%;
-    }
-    .item {
-      margin-right: 65px;
-    }
-    .containers {
-      .menu {
-        li {
-          height: 4px;
-          width: 40px;
+  .portfolio{
+    .portfolio_elems{
+      height: 42vh;
+      .portfolio_title{
+        h2{
+          font-size: 220%;
         }
       }
     }
-  }
+    .portfolio_context{
+      a{
+        font-size: 95%;
+      }
+      .portfolio_img{
+        width: 58%;
+        height: 20vh;
 
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .portfolio{
+    .portfolio_elems{
+      height: 39vh;
+      .portfolio_title{
+        h2{
+          font-size: 210%;
+        }
+      }
+    }
+    .portfolio_context{
+      width: 112%;
+      a{
+        font-size: 90%;
+      }
+      .portfolio_img{
+        width: 58%;
+        height: 18vh;
+
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+  }
 }
 
 @media only screen and (max-width: 1200px) {
-  .nav_fixed {
-    .active_item {
-      font-size: 65%;
+  .portfolio{
+    .portfolio_elems{
+      height: 39vh;
+      .portfolio_title{
+        h2{
+          font-size: 200%;
+        }
+      }
     }
-    .item {
-      margin-right: 60px;
-    }
-  }
+    .portfolio_context{
+      width: 112%;
+      a{
+        font-size: 85%;
 
+      }
+      .portfolio_img{
+        width: 58%;
+        height: 18vh;
+
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+  }
 }
 
 @media only screen and (max-width: 1150px) {
-  .nav_fixed {
-    .active_item {
-      font-size: 55%;
+  .portfolio{
+    .portfolio_elems{
+      height: 38vh;
+      .portfolio_title{
+        h2{
+          font-size: 195%;
+        }
+      }
     }
-    .item {
-      margin-right: 65px;
+    .portfolio_context{
+      width: 112%;
+      a{
+        font-size: 80%;
+
+      }
+      .portfolio_img{
+        width: 58%;
+        height: 18vh;
+
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
     }
+
   }
 }
 
 @media only screen and (max-width: 1080px) {
-  .nav_fixed {
-    .active_item {
-      font-size: 55%;
+  .portfolio{
+    .portfolio_elems{
+      height: 38vh;
+      .portfolio_title{
+        h2{
+          font-size: 185%;
+        }
+      }
     }
-    .item {
-      margin-right: 55px;
+    .portfolio_context{
+      width: 112%;
+      a{
+        font-size: 73%;
+
+      }
+      .portfolio_img{
+        width: 58%;
+        height: 18vh;
+
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
     }
+
   }
 }
 
 @media only screen and (max-width: 1020px) {
-  .nav_fixed {
-    .active_item {
-      font-size: 55%;
+  .portfolio{
+    .portfolio_elems{
+      height: 38vh;
+      .portfolio_title{
+        h2{
+          font-size: 185%;
+        }
+      }
     }
-    .item {
-      margin-right: 50px;
+    .portfolio_context{
+      width: 112%;
+      a{
+        font-size: 70%;
+
+      }
+      .portfolio_img{
+        width: 58%;
+        height: 18vh;
+
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
     }
+
   }
 }
 
 @media only screen and (max-width: 990px) {
-  .nav_fixed {
-    .active_item {
-      font-size: 55%;
-    }
-    .item {
-      margin-right: 45px;
-    }
-  }
+
 }

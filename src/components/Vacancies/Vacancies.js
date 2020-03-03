@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import './Vacancies.scss'
 import back from './VacanciesBackground/back.gif'
 import VacanciesList from './VacanciesList/VacanciesList'
+import './MediaVacancies.scss'
 
 
 

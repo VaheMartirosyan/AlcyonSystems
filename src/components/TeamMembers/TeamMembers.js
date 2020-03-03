@@ -1,6 +1,7 @@
 import React from "react";
 
 import './TeamMembers.scss'
+import './MediaTeamMembers.scss'
 
 
 export default ()=>{

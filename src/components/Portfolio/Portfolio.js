@@ -1,5 +1,6 @@
 import React from "react";
-import './Portfolio.scss'
+import './Portfolio.scss';
+import './MediaPortfolio.scss'
 
 export default ()=>{
 
@@ -48,7 +49,7 @@ export default ()=>{
                     <div key={e.id} className={'portfolio_elems col-lg-3'}>
                         <div className={'portfolio_title'}>
                             <h2>{e.title}</h2>
-                            <i className={e.icon}></i>
+
                         </div>
                         <div className={`portfolio_context cont${i}`}>
                             <div className='portfolio_img'>

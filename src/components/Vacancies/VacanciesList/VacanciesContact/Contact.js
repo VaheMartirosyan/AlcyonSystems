@@ -76,7 +76,7 @@ export default class Contact extends Component {
                 }
             },
         },
-        areaText: '',
+        // areaText: '',
     }
     changeArea = (e) => {   
         this.setState({areaText: e.target.value})
@@ -110,7 +110,7 @@ export default class Contact extends Component {
         }
 
         if(validation.linkreg) {
-            isValid = value.match(/(([a-z]+:\/\/)?(([a-z0-9\-]+\.)+([a-z]{2}|aero|arpa|biz|com|coop|edu|gov|info|int|jobs|mil|museum|name|nato|net|org|pro|travel|local|internal))(:[0-9]{1,5})?(\/[a-z0-9_\-\.~]+)*(\/([a-z0-9_\-\.]*)(\?[a-z0-9+_\-\.%=&amp;]*)?)?(#[a-zA-Z0-9!$&'()*+.=-_~:@/?]*)?)(\s+|$)/gi) && isValid
+            isValid = value.match(/(([a-z]+:\/\/)?(([a-z0-9-]+\.)+([a-z]{2}|aero|arpa|biz|com|coop|edu|gov|info|int|jobs|mil|museum|name|nato|net|org|pro|travel|local|internal))(:[0-9]{1,5})?(\/[a-z0-9_\-.~]+)*(\/([a-z0-9_\-.]*)(\?[a-z0-9+_\-.%=&amp;]*)?)?(#[a-zA-Z0-9!$&'()*+.=-_~:@/?]*)?)(\s+|$)/gi) && isValid
         }
         return isValid
     }
@@ -136,15 +136,15 @@ export default class Contact extends Component {
         this.setState({formControl, isFormValid})
     }
 
-    sendMessage = () => {
-
-        Object.keys(this.state.formControl).map(e => {
-            const a = this.state.formControl[e]
-            //  this.state.emptymass.push(a.value, this.state.areaText)
-             
-        })
-        console.log(this.state.emptymass)
-    }
+    // sendMessage = () => {
+    //
+    //     Object.keys(this.state.formControl).map(e => {
+    //         // const a = this.state.formControl[e]
+    //         //  this.state.emptymass.push(a.value, this.state.areaText)
+    //
+    //     })
+    //     console.log(this.state.emptymass)
+    // }
     render() {
         return(
             <div className="contact">
@@ -153,7 +153,7 @@ export default class Contact extends Component {
                     
                     <div className="formControler">
                         <div className='us'>
-                            <h2>Contact Us</h2>
+                            <h2 className={'cos'}>Contact Us</h2>
                         </div> 
                         
                         <form onSubmit={e => e.preventDefault()}>
@@ -177,7 +177,7 @@ export default class Contact extends Component {
                        
                         <textarea rows="5" value={this.state.areaText} onChange={this.changeArea} placeholder='Your Message'></textarea>
                         
-                        <button type="submit" disabled={!this.state.isFormValid} onClick={() => this.sendMessage()} className={this.state.disabled ? 'disabled' : null}>Send Message</button>
+                        <button type="submit" disabled={!this.state.isFormValid} className={this.state.disabled ? 'disabled' : null}>Send Message</button>
                         </form>
                         
                     </div>

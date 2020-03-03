@@ -1,6 +1,7 @@
 import React from 'react'
 import './VacanciesList.scss'
 import Contact from './VacanciesContact/Contact'
+import './MediaVacanciesList.scss'
 
 export default({item, open, close}) => {
 
@@ -8,7 +9,7 @@ export default({item, open, close}) => {
         <div className={`${open ? 'open_list' : 'list_page'}`}>
             
                 {!item ? null : <div>
-                        <h2>{item.title}</h2>
+                        <h2 className={'list_name_items'}>{item.title}</h2>
 
                         <div id="mdiv" onClick={close}>
                             <div className="mdiv">

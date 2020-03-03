@@ -1,7 +1,6 @@
 .sliderover {
     overflow:  hidden;
     width: 100%;
-	box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
 	margin-bottom: 10vh;
 }
 
@@ -9,7 +8,7 @@
 	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
 }
 
-$animationSpeed: 20s;
+$animationSpeed: 35s;
 
 // Animation
 @keyframes scroll {
