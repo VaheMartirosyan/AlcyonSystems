@@ -12,6 +12,24 @@ export default () => {
     const [contact, setContact] = useState(false)
     return(
         <div className="particles">
+            <div className={`contact_footer ${contact ? 'contactFooter' : null}`}>
+                <div id="mdiv2" onClick={() => setContact(false)}>
+                    <div className="mdiv2">
+                        <div className="md2"></div>
+                    </div>
+                </div>
+                <div className="footer_container d-flex">
+
+                    <div className="col-lg-6">
+                        <FooterContact />
+                    </div>
+                    <div className="col-lg-6 two" >
+
+                        <img src="" alt=""/>
+                    </div>
+                </div>
+
+            </div>
             <div className="footer" >
             
             <div className="containersik">
@@ -43,24 +61,7 @@ export default () => {
 
                 </div>
             </div>
-            <div className={`contact_footer ${contact ? 'contactFooter' : null}`}>
-                        <div id="mdiv2" onClick={() => setContact(false)}>
-                            <div className="mdiv2">
-                                <div className="md2"></div>
-                            </div>
-                        </div>
-                <div className="footer_container d-flex">
-                  
-                    <div className="col-lg-6">
-                        <FooterContact />
-                    </div>
-                    <div className="col-lg-6 two" >
-                        
-                        <img src="" alt=""/>
-                    </div>
-                </div>
-            
-            </div>
+
         </div>
         <div style={{background:'#0d0d0d',width:'100%',height:"90vh",overflow:'hidden'}}>
         <Particles 

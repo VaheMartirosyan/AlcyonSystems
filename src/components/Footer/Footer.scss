@@ -1,17 +1,17 @@
 .footer {
     width: 100%;
-   
+
     background-size: cover;
     background-repeat: no-repeat;
-    
+
     padding: 0 17vh;
-   
+
     position: absolute;
     margin-top: 10vh;
     top:0;
 }
 .map-responsive{
-    
+
     padding-bottom:40.25%;
     position:relative;
     height:0;
@@ -32,7 +32,7 @@
         margin-bottom: 5vh;
     }
     .address_contact{
-        
+
         p{
             padding: 0;
             margin: 0;
@@ -76,11 +76,12 @@
 }
 .contact_footer{
     position: absolute;
-    top: -18.2%;
+    top: 0%;
     left: 0;
     width: 100%;
     height: 90vh;
-    
+    z-index: 22;
+
     background: #ebebeb;
     transform: translate(-120%,0);
     transition: .7s;
@@ -91,7 +92,7 @@
 }
 #mdiv2 {
     position: absolute;
-    top: 5%;
+    top: 10%;
     right: 5%;
     height: 10vh;
     transition: 1s;
@@ -112,7 +113,7 @@
     background-color: black;
     transform: rotate(45deg);
   }
-  
+
   .md2 {
     height: 8vh;
     width: 1vh;
@@ -123,7 +124,8 @@
 
   .footer_container {
       width: 80%;
-      margin: 10vh auto;
+      margin: 0 auto;
+      transform: translate(0,40%);
   }
   .formControlers {
       form {
@@ -166,22 +168,23 @@
       }
   }
 
-  
+
       .two {
           background-color: red;
           width: 100%;
         background-size: cover;
         background-repeat: no-repeat;
 
-       
-         
-           
-       }   
+
+
+
+       }
 .containersik{
+
     width: 90%;
 }
 .particles{
-   
+
     position: relative
 }
 .prtcls{

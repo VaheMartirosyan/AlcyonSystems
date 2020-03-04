@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import './FooterContact.scss'
 import FooterInput from './FooterInput/FooterInput'
+import './MediaFooterContact.scss'
 
 
 
