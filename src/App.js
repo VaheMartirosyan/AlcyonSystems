@@ -88,7 +88,10 @@ export default class App extends Component{
                  {this.state.load ? <h1>LOADING.....</h1> :  <div>
                     <section  ref={this.homeRef}>
                 <header>
-                    <Header scroll={this.handleScrollToElement} active = {this.state.active} close={this.menuHandler}/>
+
+                   
+            <Header scroll={this.handleScrollToElement} chanLang = {this.props.chanLang} active = {this.state.active} close={this.menuHandler}/>
+
                 </header>
             </section>
             <section ref={this.myAboutRef}>
