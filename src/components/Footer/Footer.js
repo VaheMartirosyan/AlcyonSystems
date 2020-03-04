@@ -19,7 +19,7 @@ export default () => {
                     <Fade left timeout={2000}>
                         <div className="col-lg-6 footer_content" >
                             <h2>Contact</h2>
-                            <div className="d-flex flex-column">
+                            <div className="d-flex flex-column k">
                                 <div className='address_contact'>
                                     <p>New business & partnership</p>
                                     <p>+374 99-13-20-32</p>
