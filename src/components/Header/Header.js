@@ -14,7 +14,7 @@ export default class Header extends Component{
                         <img src={'https://res.cloudinary.com/alcyonsystems/image/upload/v1583139893/AlcyonSystems/logo_i8kmvn.png'} alt=""/>
                     </div>
                     <div className={'nav_fixed'}>
-                        <NavBar scroll={this.props.scroll}/>
+                        <NavBar scroll={this.props.scroll} active={this.props.active} close={this.props.close}/>
                     </div>
                 </div></div>
 

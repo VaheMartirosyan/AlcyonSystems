@@ -71,7 +71,7 @@ ul{
   .active_item:nth-child(1) {
     transition: .7s;
     transform: scale(1);
-    
+
   }
 
   .active_item:nth-child(2) {
@@ -99,15 +99,15 @@ ul{
     transform: scale(1);
   }
   .active_item:nth-child(8) {
-   
+
     transform: scale(1);
   }
   .active_item:nth-child(9) {
-  
+
     transform: scale(1);
   }
   .active_item:nth-child(10) {
-   
+
     transform: scale(1);
   }
   .active_links{
@@ -125,8 +125,8 @@ ul{
   display: inline-block;
   margin-right: 70px;
   top: 10px;
-  
-  
+
+
   transition-delay: 0;
   color: black;
 }
@@ -162,12 +162,12 @@ ul{
 }
 .item:nth-child(8) {
 
- 
+
   transform: scale(0);
 }
 .item:nth-child(9) {
 
-  
+
   transform: scale(0);
 }
 .item:nth-child(10) {

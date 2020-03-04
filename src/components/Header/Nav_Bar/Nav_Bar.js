@@ -1,36 +1,37 @@
-import React,{Component} from "react";
+import React from "react";
 import './Nav_Bar.scss'
 
-export default class Nav_Bar extends Component{
-    state={
-        active:false
-    }
-    menuHandler =()=>{
-        this.setState({
-            active:!this.state.active
-        })
-    }
-    render() {
+export default ({scroll,active,close})=>{
+
+
 
         return(
             <div className="containers">
-                <ul className={`menu ${this.state.active ? 'active_menu' : ''}`} onClick={this.menuHandler}>
+                <ul className={`menu ${active ? 'active_menu' : ''}`} onClick={() => close()}>
                     <li></li>
                     <li></li>
                     <li></li>
                 </ul>
-                <div className={'item_menu'}>
-                    <div onClick={this.props.scroll.bind(this,0)} className={`item ${this.state.active ? 'active_item' : ''}`} ><span>Home</span></div>
-                    <div onClick={this.props.scroll.bind(this,1)} className={`item ${this.state.active ? 'active_item' : ''}`}><span>About</span></div>
-                    <div onClick={this.props.scroll.bind(this,2)} className={`item ${this.state.active ? 'active_item' : ''}`}><span>Services</span></div>
-                    <div onClick={this.props.scroll.bind(this,3)} className={`item ${this.state.active ? 'active_item' : ''}`}><span>Portfolio</span></div>
-                    <div onClick={this.props.scroll.bind(this,5)} className={`item ${this.state.active ? 'active_item' : ''}`}><span>Vacancies</span></div>
-                    <div onClick={this.props.scroll.bind(this,4)} className={`item ${this.state.active ? 'active_item' : ''}`}><span>Team</span></div>
-                    <div onClick={this.props.scroll.bind(this,6)} className={`item ${this.state.active ? 'active_item' : ''}`}><span>Contact</span></div>
+                <div className={`item_menu`}>
+                    <div onClick={scroll.bind(this,0)} className={`item ${active ? 'active_item' : ''}`} ><span>Home</span></div>
+                    <div onClick={scroll.bind(this,1)} className={`item ${active ? 'active_item' : ''}`}><span>About</span></div>
+                    <div onClick={scroll.bind(this,2)} className={`item ${active ? 'active_item' : ''}`}><span>Services</span></div>
+                    <div onClick={scroll.bind(this,3)} className={`item ${active ? 'active_item' : ''}`}><span>Portfolio</span></div>
+                    <div onClick={scroll.bind(this,5)} className={`item ${active ? 'active_item' : ''}`}><span>Vacancies</span></div>
+                    <div onClick={scroll.bind(this,4)} className={`item ${active ? 'active_item' : ''}`}><span>Team</span></div>
+                    <div onClick={scroll.bind(this,6)} className={`item ${active ? 'active_item' : ''}`}><span>Contact</span></div>
                 </div>
-
+                <div className={` ${active ? 'mobile_active_item' : 'mobile_item'}`}>
+                    <div onClick={scroll.bind(this,0)} className={`item ${active ? 'active_item' : ''}`} ><span>Home</span></div>
+                    <div onClick={scroll.bind(this,1)} className={`item ${active ? 'active_item' : ''}`}><span>About</span></div>
+                    <div onClick={scroll.bind(this,2)} className={`item ${active ? 'active_item' : ''}`}><span>Services</span></div>
+                    <div onClick={scroll.bind(this,3)} className={`item ${active ? 'active_item' : ''}`}><span>Portfolio</span></div>
+                    <div onClick={scroll.bind(this,5)} className={`item ${active ? 'active_item' : ''}`}><span>Vacancies</span></div>
+                    <div onClick={scroll.bind(this,4)} className={`item ${active ? 'active_item' : ''}`}><span>Team</span></div>
+                    <div onClick={scroll.bind(this,6)} className={`item ${active ? 'active_item' : ''}`}><span>Contact</span></div>
+                </div>
             </div>
         )
 
-    }
+
 }

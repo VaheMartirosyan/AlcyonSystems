@@ -28,12 +28,18 @@ export default class App extends Component{
         this.state = {
             h:0,
             a:0,
-            load: true
+            load: true,
+            active:false
 
         }
     }
 
-
+    menuHandler = () =>{
+        this.setState({
+            active:!this.state.active
+        })
+        console.log(this.state.active)
+    }
 
 
     componentDidMount() {
@@ -41,6 +47,9 @@ export default class App extends Component{
     }
 
     handleScrollToElement =(e,i)=> {
+        this.setState({
+            active:!this.state.active
+        })
         console.log(e)
         if (e === 0 ){
             window.scrollTo({behavior:'smooth',top:this.homeRef.current.offsetTop})
@@ -79,7 +88,7 @@ export default class App extends Component{
                  {this.state.load ? <h1>LOADING.....</h1> :  <div>
                     <section  ref={this.homeRef}>
                 <header>
-                    <Header scroll={this.handleScrollToElement}/>
+                    <Header scroll={this.handleScrollToElement} active = {this.state.active} close={this.menuHandler}/>
                 </header>
             </section>
             <section ref={this.myAboutRef}>

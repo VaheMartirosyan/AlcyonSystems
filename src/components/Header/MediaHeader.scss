@@ -1,5 +1,10 @@
 @media only screen and (max-width: 1920px) {
-    
+  .mobile_active_item{
+    display: none;
+  }
+  .mobile_item{
+    display: none;
+  }
     .nav_fixed {
         .active_item {
             font-size: 120%;
@@ -16,9 +21,9 @@
                 }
             }
         }
-        
+
     }
-   
+
   }
   @media only screen and (max-width: 1820px) {
     
@@ -40,7 +45,7 @@
         }
         
     }
-   
+
   }
   @media only screen and (max-width: 1720px) {
   
@@ -98,7 +103,7 @@
             }
         }
     }
-    
+
   }
   @media only screen and (max-width: 1420px) {
     .nav_fixed {
@@ -135,7 +140,7 @@
             }
         }
     }
-   
+
   }
 
   @media only screen and (max-width: 1200px) {
@@ -147,7 +152,7 @@
             margin-right: 60px;
         }
     }
-    
+
   }
 
   @media only screen and (max-width: 1150px) {
@@ -172,24 +177,63 @@
     }
   }
 
-  @media only screen and (max-width: 1020px) {
-    .nav_fixed {
-        .active_item {
-            font-size: 55%;
-        }
-        .item {
-            margin-right: 50px;
-        }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .logo{
+      top:3%;
+      width: 15%;
     }
-  }
+    .item_menu{
+      display: none;
+      .item{
+        display: none;
+      }
+      .active_item{
+        display: none;
+      }
+    }
+    .mobile_item{
+      transition: .6s;
+      display: block;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      right: -30%;
+      top: 110%;
+      width: 0;
+      height: 0;
 
-  @media only screen and (max-width: 990px) {
-    .nav_fixed {
-        .active_item {
-            font-size: 55%;
-        }
-        .item {
-            margin-right: 45px;
-        }
+      font-size: 0;
+
+
+      .item{
+          display: none;
+      }
+    }
+    .mobile_active_item{
+      transition: .6s;
+      display: block;
+      position: absolute;
+      right: -30%;
+      top: 108%;
+      font-size: 400%;
+      width: 1000%;
+      background: white;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .active_item{
+        cursor: pointer;
+        margin-left: 5vh;
+        margin-top: 5vh;
+        transition: 0s;
+      }
+    }
+
+    .absolute{
+      height: 10vh;
+    }
+    .nav_fixed{
+      top: 3%;
     }
   }
