@@ -16,7 +16,7 @@
   position: fixed;
   z-index: 1999;
   background:white;
-  height: 15vh;
+  height: 15%;
   width: 100%;
 
 }
@@ -39,5 +39,8 @@
   }
 }
 .flagTop{
-  float:right;
+ position: absolute;
+  top:35%;
+  right: 1%;
+  z-index: 22;
 }

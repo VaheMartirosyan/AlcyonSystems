@@ -6,6 +6,7 @@
     display: none;
   }
     .nav_fixed {
+
         .active_item {
             font-size: 120%;
             
@@ -26,8 +27,11 @@
 
   }
   @media only screen and (max-width: 1820px) {
-    
+    .flagTop{
+      top:35%;
+    }
     .nav_fixed {
+      top: 5%;
         .active_item {
             font-size: 115%;
             
@@ -49,7 +53,7 @@
   }
   @media only screen and (max-width: 1720px) {
   
-      
+
        
     .nav_fixed {
         .active_item {
@@ -69,6 +73,9 @@
     }
   }
   @media only screen and (max-width: 1620px) {
+    .logo{
+      width: 10%;
+    }
     .nav_fixed {
         .active_item {
             font-size: 90%;
@@ -87,7 +94,11 @@
     }
   }
   @media only screen and (max-width: 1520px) {
+    .flagTop{
+      top:30%;
+    }
     .nav_fixed {
+      top:4%;
         .active_item {
             font-size: 80%;
         }
@@ -117,6 +128,9 @@
   }
 
   @media only screen and (max-width: 1320px) {
+    .logo{
+      width: 11%;
+    }
     .nav_fixed {
         .active_item {
             font-size: 70%;
@@ -124,6 +138,9 @@
     }
   }
   @media only screen and (max-width: 1250px) {
+    .logo{
+      width: 13%;
+    }
     .nav_fixed {
         .active_item {
             font-size: 65%;
@@ -178,9 +195,15 @@
   }
 
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .flagTop{
+      right: 0;
+      top: 27%;
+    }
+
     .logo{
       top:3%;
-      width: 15%;
+      width: 17%;
     }
     .item_menu{
       display: none;
@@ -213,7 +236,7 @@
       transition: .6s;
       display: block;
       position: absolute;
-      right: -30%;
+      right: -60%;
       top: 108%;
       font-size: 400%;
       width: 1000%;
@@ -231,9 +254,135 @@
     }
 
     .absolute{
-      height: 10vh;
+
     }
     .nav_fixed{
-      top: 3%;
+      top: 4%;
+      right: 6%;
+      .containers {
+        .active_menu{
+          li{
+            &:nth-child(1){
+              top: 14px;
+              transform: rotate(135deg);
+              transition: transform .3s;
+              background: black;
+            }
+            &:nth-child(3){
+              bottom: 14px;
+              transform: rotate(-135deg);
+              transition: transform .3s;
+              background: black;
+            }
+          }
+
+        }
+        .menu {
+          li {
+            height: 4px;
+            width: 45px;
+            margin: 8px;
+          }
+        }
+      }
     }
   }
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+   .logo{
+     top:5%;
+     width: 25%;
+   }
+
+   .item_menu{
+     display: none;
+     .item{
+       display: none;
+     }
+     .active_item{
+       display: none;
+     }
+   }
+   .mobile_item{
+     transition: .6s;
+     display: block;
+     position: absolute;
+     display: flex;
+     flex-direction: column;
+     right: -30%;
+     top: 110%;
+     width: 0;
+     height: 0;
+
+     font-size: 0;
+
+
+     .item{
+       display: none;
+     }
+   }
+   .mobile_active_item{
+     transition: .6s;
+     display: block;
+     position: absolute;
+     right: -150%;
+     top: 108%;
+     font-size: 300%;
+     width: 1000%;
+     background: white;
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     .active_item{
+       cursor: pointer;
+       margin-left: 7vh;
+       margin-top: 5vh;
+       transition: 0s;
+     }
+   }
+
+   .absolute{
+
+   }
+  .nav_fixed{
+    top: 6%;
+    right: 15%;
+
+    .containers {
+      .active_menu{
+        li{
+          &:nth-child(1){
+            top: 10px;
+            transform: rotate(135deg);
+            transition: transform .3s;
+            background: black;
+          }
+          &:nth-child(3){
+            bottom: 10px;
+            transform: rotate(-135deg);
+            transition: transform .3s;
+            background: black;
+          }
+        }
+
+      }
+      .menu {
+        li {
+          height: 3px;
+          width: 25px;
+          margin: 5px;
+        }
+      }
+    }
+  }
+  .flagTop  {
+    top: 35%;
+    .flag-select{
+      .selected--flag--option{
+        font-size: 15px !important;
+      }
+    }
+
+  }
+ }
+
