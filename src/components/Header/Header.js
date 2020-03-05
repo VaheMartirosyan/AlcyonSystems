@@ -31,6 +31,7 @@ export default function Header(props){
                     </div>
                    
                 </div>
+
                 <div className=" flagTop">
                     <ReactFlagsSelect
                         countries={["GB","RU"]} 
@@ -43,6 +44,19 @@ export default function Header(props){
                         
                         />
                 </div>
+                    {props.active ? <div  className={` ${props.active ? 'flagTop_mobile' : 'mobile_dis'}`} >
+                        <ReactFlagsSelect
+                            countries={["GB","RU"]}
+                            defaultCountry={i18n.language}
+                            showSelectedLabel={false}
+                            showOptionLabel={false}
+                            selectedSize={20}
+                            optionsSize={14}
+                            onSelect={onSelectFlag}
+
+                        />
+                    </div>: null}
+
                 </div>
 
              {/*<HeaderContent />*/}

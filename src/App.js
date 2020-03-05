@@ -38,11 +38,15 @@ export default class App extends Component{
         this.setState({
             active:!this.state.active
         })
+
     }
+
 
 
     componentDidMount() {
         this.setState({load: false})
+
+
     }
 
     handleScrollToElement =(e,i)=> {
@@ -78,47 +82,44 @@ export default class App extends Component{
 
 
   render() {
-  
+
    
     return(
 
-             <div>
-                 <Lines customLoading={this.state.load} />
-                 {this.state.load ? <h1>LOADING.....</h1> :  <div>
-                    <section  ref={this.homeRef}>
-                <header>
+        <div>
+        <Lines customLoading={this.state.load} />
 
-                   
-            <Header scroll={this.handleScrollToElement} chanLang = {this.props.chanLang} active = {this.state.active} close={this.menuHandler}/>
-
-                </header>
-            </section>
-            <section ref={this.myAboutRef}>
-                <AboutUs/>
-            </section>
-            <section>
-                <Slider />
-            </section>
-            <section ref={this.myServicesRef} className="refsection">
-               <Services/>
-            </section>
-            <section ref={this.myPortfolioRef}>
-                <Portfolio/>
-            </section>
-            <section ref={this.myVacanciesRef}>
-                <Vacancies/>
-            </section>
-            <section ref={this.myTeamRef}>
-                <TeamMembers />
-            </section> 
-             <section ref={this.myContactRef}>
-                <Footer />
-            </section> 
-          
-            </div>   }
-            
-        
+            <div>
+                       <section  ref={this.homeRef}>
+                            <header>
+                                <Header scroll={this.handleScrollToElement} chanLang = {this.props.chanLang} active = {this.state.active} close={this.menuHandler}/>
+                            </header>
+                       </section>
+                       <section ref={this.myAboutRef}>
+                           <AboutUs/>
+                       </section>
+                       <section>
+                           <Slider />
+                       </section>
+                       <section ref={this.myServicesRef} className="refsection">
+                           <Services/>
+                       </section>
+                       <section ref={this.myPortfolioRef}>
+                           <Portfolio/>
+                       </section>
+                       <section ref={this.myVacanciesRef}>
+                           <Vacancies/>
+                       </section>
+                       <section ref={this.myTeamRef}>
+                           <TeamMembers />
+                       </section>
+                       <section ref={this.myContactRef}>
+                           <Footer />
+                       </section>
+            </div>
         </div>
+
+
        
         
     )
