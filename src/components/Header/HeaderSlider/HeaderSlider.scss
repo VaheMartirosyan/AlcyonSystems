@@ -130,6 +130,8 @@
     text-align: center;
     top: 45%;
     left: 0;
+    transform: translate(-200%,0);
+    transition: 1s;
     h2{
       font-size: 450%;
       letter-spacing: .1em;

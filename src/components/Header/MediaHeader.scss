@@ -18,14 +18,17 @@
     display: none;
   }
     .nav_fixed {
-
+.asdf{
+  width: 171%;
+}
         .active_item {
             font-size: 120%;
             
         }
         .active_item:nth-child(7) {
-            margin-right: 200px;
+            margin-right: 10px;
         }
+
         .containers {
             .menu {
                 li {
@@ -49,7 +52,7 @@
             
         }
         .active_item:nth-child(7) {
-            margin-right: 200px;
+            margin-right: 10px;
         }
         .containers {
             .menu {
@@ -72,7 +75,7 @@
             font-size: 95%;
         }
         .active_item:nth-child(7) {
-            margin-right: 140px;
+            margin-right: 10px;
         }
         .containers {
             .menu {
@@ -93,7 +96,7 @@
             font-size: 90%;
         }
         .active_item:nth-child(7) {
-            margin-right: 120px;
+            margin-right: 10px;
         }
         .containers {
             .menu {
@@ -115,7 +118,7 @@
             font-size: 80%;
         }
         .active_item:nth-child(7) {
-            margin-right: 90px;
+            margin-right: 10px;
         }
         .containers {
             .menu {
@@ -134,7 +137,7 @@
             font-size: 80%;
         }
         .active_item:nth-child(7) {
-            margin-right: 20px;
+            margin-right: 10px;
         }
     }
   }

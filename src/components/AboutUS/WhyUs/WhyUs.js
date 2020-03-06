@@ -1,28 +1,24 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade'
+import { useTranslation } from 'react-i18next';
 import './WhyUs.scss'
 
 export default ()=>{
+    const { t } = useTranslation();
     return(
         <Fade right timeout={2000}>
             <div className={'why_relative'}>
-                <h2>Why Choose Us</h2>
+                <h2>{t("aboutMe.4")}</h2>
                 <div className={' why_window'}>
 
                     <div className={'why_tophover'}>
                         <p className={'antipadding'}>
-                            Being a leading web development company in IT industry,
-                            providing excellent customer service and support, we have managed
-                            to gain the trust and respect from our clients. Our team is made up of senior
-                            and intermediate responsive developers as well. Our clients are always
-                            satisfied with our work.
+                            {t("aboutMe.5")}
                         </p>
                     </div>
                     <div className={'why_bottomhover'}>
                         <p>
-                            Alcyon team offers you high quality IT services including web development,
-                            web design, ecommerce, QA testing, web maintenance, responsive design and social media.
-                            Do you want a user friendly, agile and responsive website? Start it with our team.
+                            {t("aboutMe.6")}
                         </p>
                     </div>
                 </div>

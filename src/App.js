@@ -1,13 +1,14 @@
 import React, {Component} from 'react';
 import Header from "./components/Header/Header";
 import AboutUs from './components/AboutUS/AboutUs'
-import Services from "./components/Services/Services";
+
 import Portfolio from "./components/Portfolio/Portfolio";
 import TeamMembers from "./components/TeamMembers/TeamMembers";
 import Vacancies from './components/Vacancies/Vacancies';
 import Slider from './components/slider/Slider'
 import Footer from './components/Footer/Footer';
 import { Lines } from 'react-preloaders';
+import ServForLang from "./components/Services/ServForLang";
 
 
 export default class App extends Component{
@@ -102,7 +103,7 @@ export default class App extends Component{
                            <Slider />
                        </section>
                        <section ref={this.myServicesRef} className="refsection">
-                           <Services/>
+                          <ServForLang/>
                        </section>
                        <section ref={this.myPortfolioRef}>
                            <Portfolio/>
