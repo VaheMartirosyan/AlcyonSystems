@@ -8,29 +8,40 @@
         "6":"команда",
         "7":"Контакт"
     },
+    "headers":{
+         "1":"Веб-разработка",
+         "2":"Oпытная команда",
+         "3":"Отмеченное наградами программное обеспечение"
+         
+    },
     "mainSrev":{
-        "1":"Eine Übersetzung ist dann gelungen, wenn der Leser sie nicht als Übersetzung wahrnimmt. Das klingt einfach, erfordert aber jahrelange Erfahrung und die Bereitschaft, jeden Tag zu lernen. Das tue ich seit mehr als 20 Jahren und jeden Tag entdecke und lerne ich etwas Neues. Höchste Anforderungen an Rechtschreibung, Grammatik und Stil, ist nur einige Aspekte für qualitativ hochwertige Übersetzungen, die mich immer wieder anspornen."
+        "1":"С момента нашего основания мы поставляем высококачественные и устойчивые программные решения для корпоративных целей бизнеса.",
+        "2":"Мы команда квалифицированных разработчиков программного обеспечения, нацеленная на создание уникальных и мощных инструментов для вашего бизнеса и повседневной жизни.",
+        "3":"Программные решения, разработанные нашей компанией, были отмечены многочисленными наградами за удобство использования и инновационные функции."
     },
-    "services":{
-        "1":"Dienstleistungen",
-        "2":"Übersetzung und Lokalisierung",
-        "3":"Software und  Dokumentation in verschiedenen Formaten",
-        "4":"Marketingtexte für gedruckte Materialen",
-        "5":"Webseiten",
-        "6":"Bedienungsanleitungen, Handbücher",
-        "7":"Strick- und Häkelmuster",
-        "8":"Literatur",
-        "9":"Korrekturlesen/Bearbeiten"
-    },
+    
     "aboutMe":{
-        "1":"Über mich",
-        "2":"Nachdem ich in Deutschland und England die Schule besucht habe, entschied ich mich, für ein Übersetzerstudium. Mein Studium führte mich nach Spanien, wo ich Spanisch studiert habe , ehe ich an der Universität Hildesheim meinem Diplom in Internationaler Fachkommunikation, Sprachen: Englisch und Spanisch, erwarb.",
-        "3":"Meinen Abschluss habe ich 2007 gemacht und 2007-2012 als In-House-Übersetzer und technischer Redakteur für Medizinprodukte in Deutschland gearbeitet, ehe ich nach Norwegen ausgewandert bin, um in der Öl- und Gasindustrie als In-House-Übersetzer und technischer Redakteur tätig zu sein.",
-        "4":"2017 habe ich mich entschieden, als Freiberufler zu arbeiten. Ich genieße die Freiheit und die Verantwortung, selbst zu entscheiden, wie sehr ich arbeiten möchte und mich gleichzeitig dazu anzuspornen, qualitativ hochwertige Übersetzungen innerhalb einer festgelegten Frist zu liefern.",
-        "5":"Aufgrund meines technischen Hintergrunds kann ich qualitativ hochwertige Übersetzungen garantieren, insbesondere Dokumente wie Bedienungsanleitungen, Handbücher, Sicherheitsunterlagen und Patente. Außerdem übersetze ich auch Strick- und Häkelmuster.",
-        "6":"Eine zweite Leidenschaft von mir ist die Literaturübersetzen und ich habe mehrere",
-        "7":" Romane und Kinderbücher ",
-        "8":"übersetzt"
+        "1":"O Hас",
+        "2":"Будучи ведущей компанией по разработке веб-приложений в ИТ-индустрии, обеспечивая превосходное обслуживание и поддержку клиентов, нам удалось завоевать доверие и уважение наших клиентов. Наша команда состоит из старших и средних разработчиков. Наши клиенты всегда довольны нашей работой",
+        "3":"почему мы ",
+        "4":"Команда Alcyon предлагает вам высококачественные ИТ-услуги, включая веб-разработку, веб-дизайн, электронную торговлю, тестирование качества, веб-обслуживание, адаптивный дизайн и социальные сети. Хотите удобный, гибкий и отзывчивый сайт? Начните это с нашей командой"
+        
+    },
+    "Services":{
+        "1":"Веб-разработка",
+        "2":"Трудно представить успешный бизнес без хорошего веб-сайта, с помощи которого вы можете лучше описать вашу деятельность. Мы являемся командой Alcyon, и если вы хотите создать сайт, основанную на уникальных решениях, вы находитесь в нужном месте. ",
+        "3":"Веб-дизайн",
+        "4":"Если вы хотите привлечь больше клиентов, вам потребуется солидный дизайн веб-сайта. Наши креативные дизайнеры вдохнут жизнь в ваш сайт. ",
+        "5":"Электронная коммерция",
+        "6":"День ото дня рост электронной коммерции усиливается, что означает, что у брендов все еще есть бесконечная возможность запустить сайт электронной коммерции и максимизировать свой доход. С нашим сервисом электронной коммерции вы можете получить ключ к успешным онлайн-продажам. ",
+        "7":"QA Тестирование",
+        "8":"Другое не менее важное составляющее хорошего и функционального веб-сайта- QA тестирование. Онo улучшит рабочие процессы и эффективность сайта. После тестирования вы можете быть уверены, что он работает без ошибок и может быть запущен. ",
+        "9":"Веб-обслуживание",
+        "10":"Обновление и добавление нового контента на ваш сайт улучшит его SEO производительность и увеличит возврат ваших вложений. Мы можем позаботиться о поддержании вашего сайта, защите и даже обновлении контента! Если у вас нет времени или вы не знаете, как поддерживать свой веб-сайт, просто обратитесь к нам. ",
+        "11":"Адаптивный дизайн",
+        "12":"Знаете ли вы, что 63% веб-трафика идет с мобильных устройств? Это означает, что если у вас нет хорошо структурированного мобильно поддеживающего сайта, у вас есть большой шанс потерять реальных клиентов. С нашей командой разработчиков вы получите быстрый, профессиональный и удобный для мобильных устройств веб-сайт, который наверняка понравится вашим клиентам. ",
+        "13":"Social Media",
+        "14":"Чем конкретнее будет ваша стратегия, тем эффективнее будет выполнение. Умные социальные стратегии в несколько раз чаще заключают сделки ․ Не стесняйтесь, звоните нам! "
     },
     "contact":{
         "1":"Kontakt",

@@ -34,7 +34,7 @@ export default function Header(props){
 
                 <div className=" flagTop">
                     <ReactFlagsSelect
-                        countries={["GB","RU"]} 
+                        countries={["GB","RU","AM"]} 
                         defaultCountry={i18n.language}
                         showSelectedLabel={false}
                         showOptionLabel={false}
@@ -60,7 +60,7 @@ export default function Header(props){
                 </div>
 
              {/*<HeaderContent />*/}
-             <HeaderSlider/>
+             <HeaderSlider lang={t}/>
 
             </div>
         )
