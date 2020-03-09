@@ -29,6 +29,11 @@
   .cos{
     font-size: 200%;
   }
+  .inputs{
+    input{
+      width: 100%;
+    }
+  }
 }
 
 @media only screen and (max-width: 1820px) {
@@ -316,10 +321,23 @@
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px){
+  .vacancies{
+    height: 90vh;
+  }
   .open_list{
     transition: .7s;
     overflow-y: scroll;
     overflow-x: hidden;
+    .fix{
+      width: 100%;
+      height: 100px;
+      background: transparent;
+      transform: translate(58px,10px);
+      position: sticky;
+      top: 0;
+
+
+    }
   }
   .classik{
     flex-direction: column !important;
@@ -344,5 +362,26 @@
         }
       }
     }
+  }
+
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+  .open_list{
+    transition: .7s;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    .fix{
+      width: 100%;
+      height: 100px;
+      background: transparent;
+      transform: translate(58px,10px);
+      position: sticky;
+      top: 0;
+
+
+    }
+  }
+  .vacancies{
+    height: 100vh;
   }
 }

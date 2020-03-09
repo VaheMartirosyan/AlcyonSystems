@@ -291,3 +291,137 @@
     }
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .prtcls{
+    height: 95vh !important;
+  }
+  .heighti{
+    height: 95vh !important;
+  }
+  .contact_footer{
+    height: 95vh;
+    .footer_container{
+      padding: 5vh;
+    }
+  }
+  .footer{
+    .containersik{
+      .row{
+        button{
+          margin-left: 10vh;
+        }
+        h2{
+          text-align: center;
+          margin-left: 10vh;
+          font-size: 300%;
+        }
+        .k{
+
+          align-items: center;
+          .address_contact2{
+            margin-left: 4vh;
+            .footer_p_border{
+              width: 81%;
+            }
+            p:nth-child(1){
+              margin-left: 12.5vh;
+            }
+            p:nth-child(2){
+              margin-left: 6vh;
+            }
+          }
+          .address_contact{
+            .footer_p_border{
+              width: 40%;
+            }
+            p:nth-child(1){
+              margin-left: 10vh;
+            }
+            p:nth-child(2){
+              margin-left: 12.5vh;
+            }
+            p:nth-child(3){
+              margin-left: 13.5vh;
+            }
+          }
+        }
+        .map-responsive{
+          margin-top: 5vh;
+          padding-bottom: 70%;
+          left: -5%;
+        }
+      }
+    }
+
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+  .prtcls{
+    height: 68vh !important;
+  }
+  .heighti{
+    height: 68vh !important;
+  }
+  .contact_footer{
+    height: 68vh !important;
+    .footer_container{
+      padding: 5vh;
+    }
+  }
+  .map-responsive{
+    margin-top: 5vh;
+    padding-bottom: 50% !important;
+    left: -5%;
+  }
+  .footer{
+    .containersik{
+      .row{
+        button{
+          margin-left: -4vh;
+        }
+        h2{
+          text-align: center;
+          margin-left: -2vh;
+          font-size: 300%;
+        }
+        .k{
+
+          align-items: center;
+          .address_contact2{
+            margin-left: 4vh;
+            .footer_p_border{
+              width: 100%;
+            }
+            p:nth-child(1){
+              margin-left: 0vh;
+            }
+            p:nth-child(2){
+              margin-left: 0vh;
+            }
+          }
+          .address_contact{
+            .footer_p_border{
+              width: 62%;
+            }
+            p:nth-child(1){
+              margin-left: 0vh;
+            }
+            p:nth-child(2){
+              margin-left: 0vh;
+            }
+            p:nth-child(3){
+              margin-left: 0vh;
+            }
+          }
+        }
+        .map-responsive{
+          margin-top: 5vh;
+          padding-bottom: 70%;
+          left: -5%;
+        }
+      }
+    }
+
+  }
+}
+

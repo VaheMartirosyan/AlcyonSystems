@@ -20,7 +20,7 @@ export default({item, open, close}) => {
 
 
                         <div className="d-flex classik">
-                        <div className="col-lg-12">
+                        <div className="col-lg-4">
                         <div className='career_items_list '  >
                             <h3>Job</h3>
                             <div>
@@ -47,7 +47,7 @@ export default({item, open, close}) => {
                         </div>
                         </div>
 
-                        <div className={'col-md-12'}>
+                        <div className={'col-lg-4'}>
                             <div className='career_items_list'>
                                 <h3>Requirements</h3>
                                 <div>
@@ -65,7 +65,7 @@ export default({item, open, close}) => {
                             
                         </div>
 
-                        <div className='career_items_list2 col-md-12'>
+                        <div className='career_items_list2 col-lg-4'>
                              <Contact />
                         </div>
                         

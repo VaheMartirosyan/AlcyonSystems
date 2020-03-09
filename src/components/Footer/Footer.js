@@ -63,7 +63,7 @@ export default () => {
             </div>
 
         </div>
-        <div style={{background:'#0d0d0d',width:'100%',height:"90vh",overflow:'hidden'}}>
+        <div style={{background:'#0d0d0d',width:'100%',height:"90vh",overflow:'hidden'}} className={'heighti'}>
         <Particles 
 
         params={{
