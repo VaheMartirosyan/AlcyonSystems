@@ -54,7 +54,7 @@ export default class App extends Component{
         this.setState({
             active:!this.state.active
         })
-        console.log(e)
+
         if (e === 0 ){
             window.scrollTo({behavior:'smooth',top:this.homeRef.current.offsetTop})
         }
@@ -77,6 +77,31 @@ export default class App extends Component{
             window.scrollTo({behavior:'smooth',top:this.myContactRef.current.offsetTop})
         }
             }
+    handleScrollToElementDesktop =(e,i)=> {
+
+
+        if (e === 0 ){
+            window.scrollTo({behavior:'smooth',top:this.homeRef.current.offsetTop})
+        }
+        else if(e === 1){
+            window.scrollTo({behavior:'smooth',top:this.myAboutRef.current.offsetTop})
+        }
+        else if(e === 2){
+            window.scrollTo({behavior:'smooth',top:this.myServicesRef.current.offsetTop-80})
+        }
+        else if(e === 3){
+            window.scrollTo({behavior:'smooth',top:this.myPortfolioRef.current.offsetTop-110})
+        }
+        else if(e === 4){
+            window.scrollTo({behavior:'smooth',top:this.myTeamRef.current.offsetTop-160})
+        }
+        else if(e === 5){
+            window.scrollTo({behavior:'smooth',top:this.myVacanciesRef.current.offsetTop -130})
+        }
+        else if(e === 6){
+            window.scrollTo({behavior:'smooth',top:this.myContactRef.current.offsetTop})
+        }
+    }
 
 
 
@@ -93,7 +118,7 @@ export default class App extends Component{
             <div>
                        <section  ref={this.homeRef}>
                             <header>
-                                <Header scroll={this.handleScrollToElement} chanLang = {this.props.chanLang} active = {this.state.active} close={this.menuHandler}/>
+                                <Header scroll={this.handleScrollToElement} chanLang = {this.props.chanLang} active = {this.state.active} close={this.menuHandler} desktop={this.handleScrollToElementDesktop}/>
                             </header>
                        </section>
                        <section ref={this.myAboutRef}>

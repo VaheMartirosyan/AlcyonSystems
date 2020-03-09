@@ -20,12 +20,13 @@ export default function Header(props){
         return(
             <div className='header_main' >
                 <div className={'absolute'}><div className={'header_container'}>
-                    <div className={'logo'} onClick={props.scroll.bind(this,0)}>
+                    <div className={'logo'} onClick={props.scroll.bind(this,0)} >
                         <img src={'https://res.cloudinary.com/alcyonsystems/image/upload/v1583139893/AlcyonSystems/logo_i8kmvn.png'} alt="logo"/>
                     </div>
-                    <div className={'nav_fixed'}>
 
-                        <NavBar scroll={props.scroll} active={props.active} close={props.close} lang={t}/>
+                    <div className={'nav_fixed'} >
+
+                        <NavBar scroll={props.scroll} active={props.active} close={props.close} lang={t} language = {i18n.language} desktop = {props.desktop}/>
              
 
                     </div>
@@ -46,7 +47,7 @@ export default function Header(props){
                 </div>
                     {props.active ? <div  className={` ${props.active ? 'flagTop_mobile' : 'mobile_dis'}`} >
                         <ReactFlagsSelect
-                            countries={["GB","RU"]}
+                            countries={["GB","RU","AM"]}
                             defaultCountry={i18n.language}
                             showSelectedLabel={false}
                             showOptionLabel={false}
@@ -60,7 +61,7 @@ export default function Header(props){
                 </div>
 
              {/*<HeaderContent />*/}
-             <HeaderSlider lang={t}/>
+             <HeaderSlider lang={t} />
 
             </div>
         )

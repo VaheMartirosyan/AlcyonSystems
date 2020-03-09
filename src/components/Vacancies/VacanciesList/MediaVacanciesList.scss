@@ -284,3 +284,65 @@
     font-size: 155%;
   }
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+.list_name_items{
+  margin-bottom: 2vh;
+  font-weight: bolder;
+}
+  .classik{
+
+    .contact{
+      .contactContainer{
+        .formControler{
+          form{
+            width: 90%;
+            .inputs{
+              input{
+                width: 100%;
+
+              }
+            }
+
+
+
+          }
+        }
+      }
+    }
+  }
+  .open_list{
+    padding: 10vh 2vh 2vh 2vh;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px){
+  .open_list{
+    transition: .7s;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .classik{
+    flex-direction: column !important;
+    justify-content: center;
+   align-items: center;
+    align-self: center;
+    .contact{
+      .contactContainer{
+        .formControler{
+          form{
+            width: 90%;
+            .inputs{
+              input{
+                width: 100%;
+
+              }
+            }
+
+
+
+          }
+        }
+      }
+    }
+  }
+}

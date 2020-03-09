@@ -11,7 +11,7 @@ export default class Vacancies extends Component {
         careersList: [
             {
                 id: 0,
-                title: 'Senior Creator',
+                title: 'Angular Js Developer',
                 jobConditions: ['Salary is discussed individually, motivating bonus system, verified', 
                     'Work in a friendly team that shares universal values', 
                     'Big clients, creative advertising campaigns, solid strategies, serious SMM and favorite production. And the media, where without her',
@@ -22,7 +22,7 @@ export default class Vacancies extends Component {
               requirements:['Experience in the advertising business as a senior creator from 5 years - DIGITAL','Skills for creating ideas (knowledge and use of methodologies)','Supervising Skills','Presentation skills','Teamwork skills']},
               {
                 id: 1,
-                title: 'Creator',
+                title: 'PHP / Laravel Developer',
                 jobConditions: ['Salary is discussed individually, motivating bonus system, verified', 
                     'Work in a friendly team that shares universal values', 
                     'Big clients, creative advertising campaigns, solid strategies, serious SMM and favorite production. And the media, where without her',
@@ -32,66 +32,7 @@ export default class Vacancies extends Component {
               ],
               requirements:['Experience in the advertising business as a senior creator from 5 years - DIGITAL','Skills for creating ideas (knowledge and use of methodologies)',
               'Supervising Skills','Presentation skills','Teamwork skills']},
-              {
-                id: 2,
-                title: 'Account Group Head',
-                jobConditions: ['Salary is discussed individually, motivating bonus system, verified', 
-                    'Work in a friendly team that shares universal values', 
-                    'Big clients, creative advertising campaigns, solid strategies, serious SMM and favorite production. And the media, where without her',
-                    'Greate office in the center of Yerevan'],
-                 duties:['Managing a group of complex digital projects (strategy, creative, SMM and Media, special projects, analytics)',
-                  'Supervising the implementation of creative projects', 'Work in a creative couple','Work with the client: briefing and presentation of ideas','Collaboration with Related Departments: Briefing and Domestic Sales'
-              ],
-              requirements:['Experience in the advertising business as a senior creator from 5 years - DIGITAL','Skills for creating ideas (knowledge and use of methodologies)',
-              'Supervising Skills','Presentation skills','Teamwork skills']},
-              {
-                id: 3,
-                title: 'Communicatio⁢ns Strategist',
-                jobConditions: ['Salary is discussed individually, motivating bonus system, verified', 
-                    'Work in a friendly team that shares universal values', 
-                    'Big clients, creative advertising campaigns, solid strategies, serious SMM and favorite production. And the media, where without her',
-                    'Greate office in the center of Yerevan'],
-                 duties:['Managing a group of complex digital projects (strategy, creative, SMM and Media, special projects, analytics)',
-                  'Supervising the implementation of creative projects', 'Work in a creative couple','Work with the client: briefing and presentation of ideas','Collaboration with Related Departments: Briefing and Domestic Sales'
-              ],
-              requirements:['Experience in the advertising business as a senior creator from 5 years - DIGITAL','Skills for creating ideas (knowledge and use of methodologies)',
-              'Supervising Skills','Presentation skills','Teamwork skills']},
-              {
-                id: 4,
-                title: 'SM Strategist',
-                jobConditions: ['Salary is discussed individually, motivating bonus system, verified', 
-                    'Work in a friendly team that shares universal values', 
-                    'Big clients, creative advertising campaigns, solid strategies, serious SMM and favorite production. And the media, where without her',
-                    'Greate office in the center of Yerevan'],
-                 duties:['Managing a group of complex digital projects (strategy, creative, SMM and Media, special projects, analytics)',
-                  'Supervising the implementation of creative projects', 'Work in a creative couple','Work with the client: briefing and presentation of ideas','Collaboration with Related Departments: Briefing and Domestic Sales'
-              ],
-              requirements:['Experience in the advertising business as a senior creator from 5 years - DIGITAL','Skills for creating ideas (knowledge and use of methodologies)',
-              'Supervising Skills','Presentation skills','Teamwork skills']},
-              {
-                id: 5,
-                title: 'Senior SM⁢ Manager',
-                jobConditions: ['Salary is discussed individually, motivating bonus system, verified', 
-                    'Work in a friendly team that shares universal values', 
-                    'Big clients, creative advertising campaigns, solid strategies, serious SMM and favorite production. And the media, where without her',
-                    'Greate office in the center of Yerevan'],
-                 duties:['Managing a group of complex digital projects (strategy, creative, SMM and Media, special projects, analytics)',
-                  'Supervising the implementation of creative projects', 'Work in a creative couple','Work with the client: briefing and presentation of ideas','Collaboration with Related Departments: Briefing and Domestic Sales'
-              ],
-              requirements:['Experience in the advertising business as a senior creator from 5 years - DIGITAL','Skills for creating ideas (knowledge and use of methodologies)',
-              'Supervising Skills','Presentation skills','Teamwork skills']},
-              {
-                id: 6,
-                title: 'SM Manager',
-                jobConditions: ['Salary is discussed individually, motivating bonus system, verified', 
-                    'Work in a friendly team that shares universal values', 
-                    'Big clients, creative advertising campaigns, solid strategies, serious SMM and favorite production. And the media, where without her',
-                    'Greate office in the center of Yerevan'],
-                 duties:['Managing a group of complex digital projects (strategy, creative, SMM and Media, special projects, analytics)',
-                  'Supervising the implementation of creative projects', 'Work in a creative couple','Work with the client: briefing and presentation of ideas','Collaboration with Related Departments: Briefing and Domestic Sales'
-              ],
-              requirements:['Experience in the advertising business as a senior creator from 5 years - DIGITAL','Skills for creating ideas (knowledge and use of methodologies)',
-              'Supervising Skills','Presentation skills','Teamwork skills']},
+
                   
                   
              ],

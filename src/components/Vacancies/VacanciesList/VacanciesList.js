@@ -7,18 +7,21 @@ export default({item, open, close}) => {
 
     return (
         <div className={`${open ? 'open_list' : 'list_page'}`}>
-            
+            <div className={'fix'}>
+                <div id="mdiv" onClick={close}>
+                    <div className="mdiv">
+                        <div className="md"></div>
+                    </div>
+                </div>
+            </div>
+
                 {!item ? null : <div>
                         <h2 className={'list_name_items'}>{item.title}</h2>
 
-                        <div id="mdiv" onClick={close}>
-                            <div className="mdiv">
-                                <div className="md"></div>
-                            </div>
-                        </div>
+
                         <div className="d-flex classik">
-                        <div className="d-flex flex-column">
-                        <div className='career_items_list'  >
+                        <div className="col-lg-12">
+                        <div className='career_items_list '  >
                             <h3>Job</h3>
                             <div>
                                 <ul>
@@ -44,7 +47,7 @@ export default({item, open, close}) => {
                         </div>
                         </div>
 
-                        <div>
+                        <div className={'col-md-12'}>
                             <div className='career_items_list'>
                                 <h3>Requirements</h3>
                                 <div>
@@ -62,7 +65,7 @@ export default({item, open, close}) => {
                             
                         </div>
 
-                        <div className='career_items_list2'>
+                        <div className='career_items_list2 col-md-12'>
                              <Contact />
                         </div>
                         

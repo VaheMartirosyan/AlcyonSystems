@@ -18,16 +18,19 @@
     display: none;
   }
     .nav_fixed {
-.asdf{
-  width: 171%;
-}
-        .active_item {
-            font-size: 120%;
-            
+      .item_menu{
+        div{
+          font-size: 145%;
+          margin-right: 90px;
         }
-        .active_item:nth-child(7) {
-            margin-right: 10px;
+      }
+      .langAm{
+        div{
+          font-size: 120%;
+          margin-right: 80px;
         }
+      }
+
 
         .containers {
             .menu {
@@ -47,14 +50,20 @@
     }
     .nav_fixed {
       top: 5%;
-        .active_item {
-            font-size: 115%;
-            
+      .item_menu{
+        div{
+          font-size: 140%;
+          margin-right: 80px;
         }
-        .active_item:nth-child(7) {
-            margin-right: 10px;
+      }
+      .langAm{
+        div{
+          font-size: 110%;
+          margin-right: 70px;
         }
-        .containers {
+      }
+
+      .containers {
             .menu {
                 li {
                     height: 4px;
@@ -71,12 +80,19 @@
 
        
     .nav_fixed {
-        .active_item {
-            font-size: 95%;
+      .item_menu{
+        div{
+          font-size: 130%;
+          margin-right: 75px;
         }
-        .active_item:nth-child(7) {
-            margin-right: 10px;
+      }
+      .langAm{
+        div{
+          font-size: 110%;
+          margin-right: 60px;
         }
+      }
+
         .containers {
             .menu {
                 li {
@@ -92,12 +108,18 @@
       width: 10%;
     }
     .nav_fixed {
-        .active_item {
-            font-size: 90%;
+      .langAm{
+        div{
+          font-size: 105%;
+          margin-right: 55px;
         }
-        .active_item:nth-child(7) {
-            margin-right: 10px;
+      }
+      .item_menu{
+        div{
+          font-size: 120%;
+          margin-right: 70px;
         }
+      }
         .containers {
             .menu {
                 li {
@@ -114,12 +136,18 @@
     }
     .nav_fixed {
       top:4%;
-        .active_item {
-            font-size: 80%;
+      .langAm{
+        div{
+          font-size: 100%;
+          margin-right: 50px;
         }
-        .active_item:nth-child(7) {
-            margin-right: 10px;
+      }
+      .item_menu{
+        div{
+          font-size: 110%;
+          margin-right: 65px;
         }
+      }
         .containers {
             .menu {
                 li {
@@ -133,12 +161,18 @@
   }
   @media only screen and (max-width: 1420px) {
     .nav_fixed {
-        .active_item {
-            font-size: 80%;
+      .langAm{
+        div{
+          font-size: 95%;
+          margin-right: 45px;
         }
-        .active_item:nth-child(7) {
-            margin-right: 10px;
+      }
+      .item_menu{
+        div{
+          font-size: 100%;
+          margin-right: 60px;
         }
+      }
     }
   }
 
@@ -147,22 +181,41 @@
       width: 11%;
     }
     .nav_fixed {
-        .active_item {
-            font-size: 70%;
+      .langAm{
+        div{
+          font-size: 90%;
+          margin-right: 40px;
         }
+      }
+      .item_menu{
+        div{
+          font-size: 100%;
+          margin-right: 55px;
+        }
+      }
     }
+
   }
   @media only screen and (max-width: 1250px) {
     .logo{
       width: 13%;
     }
     .nav_fixed {
-        .active_item {
-            font-size: 65%;
+      .langAm{
+        div{
+          font-size: 87%;
+          margin-right: 35px;
         }
-        .item {
-            margin-right: 65px;
+      }
+      .item_menu{
+        div{
+          font-size: 100%;
+          margin-right: 50px;
         }
+        .active_item:nth-child(7){
+          margin-right: 20px;
+        }
+      }
         .containers {
             .menu {
                 li {
@@ -177,35 +230,57 @@
 
   @media only screen and (max-width: 1200px) {
     .nav_fixed {
-        .active_item {
-            font-size: 65%;
+      .langAm{
+        div{
+          font-size: 85%;
+          margin-right: 30px;
         }
-        .item {
-            margin-right: 60px;
+      }
+      .item_menu{
+        div{
+          font-size: 100%;
+          margin-right: 45px;
         }
+        .active_item:nth-child(7){
+          margin-right: 20px;
+        }
+      }
     }
 
   }
 
   @media only screen and (max-width: 1150px) {
     .nav_fixed {
-        .active_item {
-            font-size: 55%;
+      .langAm{
+        div{
+          font-size: 80%;
+          margin-right: 25px;
         }
-        .item {
-            margin-right: 65px;
+      }
+      .item_menu{
+        div{
+          font-size: 90%;
+          margin-right: 40px;
         }
+        .active_item:nth-child(7){
+          margin-right: 20px;
+        }
+      }
     }
   }
 
   @media only screen and (max-width: 1080px) {
     .nav_fixed {
-        .active_item {
-            font-size: 55%;
-        }
-        .item {
-            margin-right: 55px;
-        }
+      .langAm{
+        div{
+          font-size: 77%;
+          margin-right: 25px;
+        }}
+      .item_menu{
+        div{
+          font-size: 90%;
+          margin-right: 35px;
+        }}
     }
   }
 
@@ -220,8 +295,9 @@
       top:3%;
       width: 17%;
     }
-    .item_menu{
+    .item_menu,.langAm, .langRu{
       display: none;
+      background: black;
       .item{
         display: none;
       }
@@ -248,12 +324,13 @@
       }
     }
     .mobile_active_item{
+      text-transform: uppercase;
       transition: .6s;
       display: block;
       position: absolute;
       right: -60%;
       top: 80%;
-      font-size: 400%;
+      font-size: 250%;
       width: 1000%;
       background: white;
       height: 100vh;
@@ -327,7 +404,7 @@
      width: 25%;
    }
 
-   .item_menu{
+   .item_menu,.langAm, .langRu{
      display: none;
      .item{
        display: none;
@@ -359,10 +436,10 @@
      transition: .6s;
      display: block;
      position: absolute;
-
+     text-transform: uppercase;
      right: -50%;
      top: 50%;
-     font-size: 250%;
+     font-size: 180%;
 
      width: 1000%;
      background: white;
@@ -376,9 +453,7 @@
        margin-top: 2vh;
        transition: 0s;
      }
-     .active_item:nth-child(7){
-       margin-left:3vh   ;
-     }
+
    }
 
    .absolute{
@@ -446,7 +521,7 @@
     width: 15%;
   }
 
-  .item_menu{
+  .item_menu,.langAm, .langRu{
     display: none;
     .item{
       display: none;
@@ -476,11 +551,11 @@
   .mobile_active_item{
 
     transition: .6s;
-
+    text-transform: uppercase;
     position: absolute;
     right: -50%;
     top: 65%;
-    font-size: 220%;
+    font-size: 120%;
     width: 1000%;
     background: white;
     height: 100vh;
@@ -493,9 +568,7 @@
       margin-top: 1vh;
       transition: 0s;
     }
-    .active_item:nth-child(7){
-      margin-left:-1vh   ;
-    }
+
   }
 
   .absolute{
@@ -572,7 +645,8 @@
     width: 14%;
   }
   .mobile_active_item{
-
+        font-size: 220%;
+    text-transform: uppercase;
     .active_item{
 
       margin-top: 3vh;
