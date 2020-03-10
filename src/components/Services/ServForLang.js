@@ -1,6 +1,7 @@
 import React from "react";
 import Services from "./Services";
 import { useTranslation } from 'react-i18next';
+import MobileServices from "./MobileServices/MobileServices";
 
 export default ()=>{
     const { t } = useTranslation();
@@ -40,6 +41,7 @@ export default ()=>{
     return(
         <div>
             <Services lang={t} titles = {titles} context = {context} left={left}/>
+            <MobileServices/>
         </div>
     )
 }

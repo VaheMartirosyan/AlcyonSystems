@@ -82,7 +82,7 @@
     width: 100%;
     height: 90vh;
     z-index: 22;
-
+    overflow: hidden;
     background: #ebebeb;
     transform: translate(-120%,0);
     transition: .7s;
@@ -90,6 +90,7 @@
 .contactFooter {
     transform: translate(0px, 0);
     transition: .7s;
+  overflow: hidden;
 }
 #mdiv2 {
     position: absolute;

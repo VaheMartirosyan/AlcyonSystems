@@ -156,3 +156,37 @@
   }
 
 }
+@media only screen and (min-width:320px) and(max-width: 767px) {
+  #mdiv2{
+    top:20%;
+  }
+  .footer_container{
+
+    overflow: hidden !important;
+    .two{
+     display: none;
+    }
+  }
+  .formControlers{
+      margin-top: 15vh;
+    h2{
+      text-align: center;
+
+    }
+    form{
+      width: 100%;
+      input{
+        width: 100%;
+        padding: .8vh;
+      }
+    }
+    textarea{
+
+      width: 100%;
+    }
+    button{
+      font-size: 100%;
+      margin-bottom: 2vh;
+    }
+  }
+}

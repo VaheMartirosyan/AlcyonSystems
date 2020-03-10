@@ -425,3 +425,135 @@
   }
 }
 
+@media only screen and (min-width: 320px) and (max-width: 767px){
+  .footer{
+    overflow: hidden;
+  }
+  .prtcls{
+    height:100vh !important;
+
+  }
+  .heighti{
+    height: 100vh !important;
+  }
+  .contact_footer{
+    height: 100vh !important;
+    .footer_container{
+      padding: 5vh;
+    }
+  }
+  .map-responsive{
+    padding-bottom: 60%;
+    position: relative;
+    height: 0;
+    left: -15%;
+  }
+  .footer{
+    padding: 0 2vh !important;
+    .containersik{
+      width: 100%;
+      .row{
+        button{
+          width: 100%;
+          margin: 5vh 0;
+        }
+        h2{
+          text-align: center;
+        }
+        .k{
+          display: flex !important;
+          flex-direction: row !important;
+          flex-wrap: wrap;
+          overflow: hidden;
+          .address_contact{
+            text-align: center;
+            flex: 1;
+            .footer_p_border{
+              width: 100%;
+            }
+          }
+          .address_contact2{
+            margin-top: 0 !important;
+            text-align: center;
+            flex: 1;
+            display: flex !important;
+            flex-direction: column !important;
+            align-self: flex-end;
+            margin-bottom: 0;
+            margin-left: 10px;
+            .footer_p_border{
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+  .footer{
+    overflow: hidden;
+  }
+  .prtcls{
+    height:155vh !important;
+
+  }
+  .heighti{
+    height: 155vh !important;
+  }
+  .contact_footer{
+    height: 155vh !important;
+    .footer_container{
+      padding: 5vh;
+    }
+  }
+  .map-responsive{
+    padding-bottom: 45%;
+    position: relative;
+    height: 0;
+    left: -15%;
+  }
+  .footer{
+    padding: 0 2vh !important;
+    .containersik{
+      width: 90%;
+      margin: 0 auto;
+      .row{
+        button{
+          width: 80%;
+          margin: 5vh auto;
+
+        }
+        h2{
+          text-align: center;
+        }
+        .k{
+          display: flex !important;
+          flex-direction: row !important;
+          flex-wrap: wrap;
+          overflow: hidden;
+          .address_contact{
+            text-align: center;
+            flex: 1;
+            .footer_p_border{
+              width: 100%;
+            }
+          }
+          .address_contact2{
+            margin-top: 0 !important;
+            text-align: center;
+            flex: 1;
+            display: flex !important;
+            flex-direction: column !important;
+            align-self: flex-end;
+            margin-bottom: 0;
+            margin-left: 10px;
+            .footer_p_border{
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
