@@ -41,7 +41,7 @@ export default ()=>{
     return(
         <div>
             <Services lang={t} titles = {titles} context = {context} left={left}/>
-            <MobileServices/>
+            <MobileServices lang={t} titles = {titles} context = {context} left={left}/>
         </div>
     )
 }
