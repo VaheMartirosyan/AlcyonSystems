@@ -116,7 +116,7 @@ export default class App extends Component{
         <Lines customLoading={this.state.load} />
 
             <div>
-                       <section  ref={this.homeRef}>
+                    <section  ref={this.homeRef}>
                             <header>
                                 <Header scroll={this.handleScrollToElement} chanLang = {this.props.chanLang} active = {this.state.active} close={this.menuHandler} desktop={this.handleScrollToElementDesktop}/>
                             </header>

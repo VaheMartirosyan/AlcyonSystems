@@ -43,9 +43,11 @@ export default class Services extends Component{
                 <div className={'services_content col-lg-6' } >
                     <div className={'services_text'}>
                         <h2 >{this.props.left}</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, aperiam debitis ea enim,
-                            et exercitationem fuga harum id illo laudantium maxime minima odit perferendis possimus
-                            provident ratione repudiandae sunt, ullam!
+                        <p>
+                            Because each client has his own specific needs, our offer includes
+                            all types of activities related to software development solutions,
+                            so we can match any need you have for custom software development projects.
+                            We can offer...
                         </p>
                     </div>
 

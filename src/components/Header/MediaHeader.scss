@@ -340,7 +340,7 @@
       .active_item{
         cursor: pointer;
         margin-left: 5vh;
-        margin-top: 5vh;
+        margin-top: 1vh;
         transition: 0s;
       }
     }
@@ -387,12 +387,12 @@
       transition: 2s all ease;
       transform: scale(1);
       position: absolute;
-      top:128%;
-      right: 8%;
+      top:60%;
+      right: 43.5%;
       z-index: 1999;
       .flag-select{
         .selected--flag--option{
-          font-size: 25px !important;
+          font-size: 30px !important;
         }
       }
 
@@ -438,7 +438,7 @@
      position: absolute;
      text-transform: uppercase;
      right: -50%;
-     top: 50%;
+     top: 55%;
      font-size: 180%;
 
      width: 1000%;
@@ -450,7 +450,7 @@
      .active_item{
        cursor: pointer;
        margin-left: 7vh;
-       margin-top: 2vh;
+       margin-top: 0vh;
        transition: 0s;
      }
 
@@ -491,24 +491,21 @@
     }
   }
   .flagTop  {
-    //top: 35%;
-    //.flag-select{
-    //  .selected--flag--option{
-    //    font-size: 15px !important;
-    //  }
-    //}
+
     display: none;
   }
   .flagTop_mobile{
-    //transition: 10s;
-    //display: block;
+
     transition: 2s all ease;
     transform: scale(1);
     position: absolute;
-    top:100%;
+    top:54%;
     z-index: 23;
-    right: 0;
-
+    right: 39%;
+    .flag-select{
+      .selected--flag--option{
+        font-size: 25px !important;
+      }}
   }
   .mobile_dis{
     transform: scale(0);
@@ -528,6 +525,7 @@
     }
     .active_item{
       display: none;
+
     }
   }
   .mobile_item{
@@ -565,7 +563,7 @@
     .active_item{
       cursor: pointer;
       margin-left: 7vh;
-      margin-top: 1vh;
+      margin-top: -1vh;
       transition: 0s;
     }
 
@@ -620,12 +618,12 @@
     transition: 2s all ease;
     transform: scale(1);
     position: absolute;
-    top:80%;
-    right: 8%;
+    top:54%;
+    right: 45%;
     z-index: 1999;
     .flag-select{
       .selected--flag--option{
-        font-size: 18px !important;
+        font-size: 20px !important;
       }
     }
 
@@ -645,11 +643,11 @@
     width: 14%;
   }
   .mobile_active_item{
-        font-size: 220%;
+        font-size: 210%;
     text-transform: uppercase;
     .active_item{
 
-      margin-top: 3vh;
+      margin-top: 0vh;
 
     }
   }
@@ -662,17 +660,68 @@
     transition: 2s all ease;
     transform: scale(1);
     position: absolute;
-    top:100%;
-    right: 8%;
+    top:62%;
+    right: 46%;
     z-index: 1999;
     .flag-select{
       .selected--flag--option{
-        font-size: 25px !important;
+        font-size: 30px !important;
       }
     }
 
   }
 }
+@media only screen  and (max-height: 600px) {
+  .mobile_active_item{
+    font-size: 140%;
+    text-transform: uppercase;
+    .active_item{
 
+      margin-top: -1vh;
+
+    }
+  }
+  .flagTop_mobile{
+    display: block;
+    transition: 2s all ease;
+    transform: scale(1);
+    position: absolute;
+    top:53%;
+    right: 37%;
+    z-index: 1999;
+    .flag-select{
+      .selected--flag--option{
+        font-size: 22px !important;
+      }
+    }
+
+  }
+}
+@media only screen  and (max-height: 600px) and (orientation: landscape) {
+  .mobile_active_item{
+    font-size: 130%;
+    text-transform: uppercase;
+    .active_item{
+
+      margin-top: -1vh;
+
+    }
+  }
+  .flagTop_mobile{
+    display: block;
+    transition: 2s all ease;
+    transform: scale(1);
+    position: absolute;
+    top:67%;
+    right: 44.5%;
+    z-index: 1999;
+    .flag-select{
+      .selected--flag--option{
+        font-size: 22px !important;
+      }
+    }
+
+  }
+}
 
 

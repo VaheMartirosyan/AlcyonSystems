@@ -2,19 +2,20 @@ import React from "react";
 import Services from "./Services";
 import { useTranslation } from 'react-i18next';
 import MobileServices from "./MobileServices/MobileServices";
-
+// t('Services.3')
 export default ()=>{
     const { t } = useTranslation();
-    const titles = [t('Services.1'),t('Services.3'),t('Services.5'),t('Services.7'),t('Services.9'),t('Services.11'),t('Services.13')];
+    const titles = [t('Services.1'),t('Services.5'),t('Services.7'),t('Services.9'),t('Services.11'),t('Services.13')];
     const context =  [
         {
             content:t('Services.2'),
-            hoverColor:'#0bff0a',
-        },
-        {
-            content:t('Services.4'),
             hoverColor:'#eaf800',
         },
+        // {
+        //     content:t('Services.4'),
+        //     hoverColor:'#0bff0a',
+        //
+        // },
         {
             content:t('Services.6'),
             hoverColor:'#de80d2',

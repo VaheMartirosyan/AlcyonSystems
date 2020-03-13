@@ -1,10 +1,19 @@
 import React from "react";
 import './Nav_Bar.scss'
+import ReactFlagsSelect from "react-flags-select";
+import {useTranslation} from "react-i18next";
 
 
-export default ({scroll,active,close,lang,language,desktop})=>{
 
-   
+
+
+
+export default ({scroll,active,close,lang,language,desktop,chanLang})=>{
+    const {  i18n  } = useTranslation();
+
+    const onSelectFlag=(countryCode)=>{
+       chanLang(countryCode)
+    }
      
 
         return(
@@ -33,7 +42,18 @@ export default ({scroll,active,close,lang,language,desktop})=>{
                     <div onClick={scroll.bind(this,5)} className={`item ${active ? 'active_item' : ''}`}><p>{lang("headerMenu.5")}</p></div>
                     <div onClick={scroll.bind(this,4)} className={`item ${active ? 'active_item' : ''}`}><p>{lang("headerMenu.6")}</p></div>
                     <div onClick={scroll.bind(this,6)} className={`item ${active ? 'active_item' : ''}`}><p>{lang("headerMenu.7")}</p></div>
+                    {active ? <div  className={` ${active ? 'flagTop_mobile' : 'mobile_dis'}`} >
+                        <ReactFlagsSelect
+                            countries={["GB","RU","AM"]}
+                            defaultCountry={i18n.language}
+                            showSelectedLabel={false}
+                            showOptionLabel={false}
+                            selectedSize={20}
+                            optionsSize={14}
+                            onSelect={onSelectFlag}
 
+                        />
+                    </div>: null}
                 </div>
             </div>
         )

@@ -14,24 +14,42 @@ export default class Vacancies extends Component {
                 title: 'Angular Js Developer',
                 jobConditions: ['Salary is discussed individually, motivating bonus system, verified', 
                     'Work in a friendly team that shares universal values', 
-                    'Big clients, creative advertising campaigns, solid strategies, serious SMM and favorite production. And the media, where without her',
+                    'Big clients, creative advertising campaigns, solid strategies',
                     'Greate office in the center of Yerevan'],
-                 duties:['Managing a group of complex digital projects (strategy, creative, SMM and Media, special projects, analytics)',
-                  'Supervising the implementation of creative projects', 'Work in a creative couple','Work with the client: briefing and presentation of ideas','Collaboration with Related Departments: Briefing and Domestic Sales'
+                 duties:['  Designing and developing user interfaces using Angular best practices.',
+                  '  Adapting interface for modern internet applications using the latest front-end technologies.',
+                     ' Writing JavaScript, CSS, and HTML.',
+                     ' Developing product analysis tasks.','  Making complex technical and design decisions for Angular projects.',
+                     ' Developing application codes and unit tests in Angular and Rest Web Services.'
+
               ],
-              requirements:['Experience in the advertising business as a senior creator from 5 years - DIGITAL','Skills for creating ideas (knowledge and use of methodologies)','Supervising Skills','Presentation skills','Teamwork skills']},
+     requirements:[
+                  ' 1+ year of recent experience in Angular 2.X+',
+                 ' 1+ years of recent experience in front-end software development',
+                  'Proficient in CSS, HTML, and writing cross-browser compatible code',
+                  'Excellent communication skills',
+                  'Critical thinker and good problem-solver'
+              ]},
+
               {
                 id: 1,
                 title: 'PHP / Laravel Developer',
-                jobConditions: ['Salary is discussed individually, motivating bonus system, verified', 
-                    'Work in a friendly team that shares universal values', 
-                    'Big clients, creative advertising campaigns, solid strategies, serious SMM and favorite production. And the media, where without her',
+                jobConditions: ['Salary is discussed individually, motivating bonus system, verified',
+                    'Work in a friendly team that shares universal values',
+                    'Big clients, creative advertising campaigns, solid strategies',
                     'Greate office in the center of Yerevan'],
-                 duties:['Managing a group of complex digital projects (strategy, creative, SMM and Media, special projects, analytics)',
-                  'Supervising the implementation of creative projects', 'Work in a creative couple','Work with the client: briefing and presentation of ideas','Collaboration with Related Departments: Briefing and Domestic Sales'
+                 duties:[' Develop, record and maintain cutting edge web-based PHP applications',
+                  'Build innovative, state-of-the-art applications and collaborate with the User Experience (UX) team',
+                     'Utilize backend data services and help to improve the existing data services API',
+                     'Collaboration with Related Departments: Briefing and Domestic Sales',
+                     'Convey effectively with all task progress, evaluations, suggestions, schedules along with technical and process issues',
+                     'Stay updated on new trends and best practices in web development'
               ],
-              requirements:['Experience in the advertising business as a senior creator from 5 years - DIGITAL','Skills for creating ideas (knowledge and use of methodologies)',
-              'Supervising Skills','Presentation skills','Teamwork skills']},
+              requirements:['Willingness to learn and self-develop','Ability to set realistic deadlines and time management skills',
+              'Experience in PHP / Laravel','In-depth knowledge of object-oriented PHP and Laravel 5 PHP Framework',
+                  'Hands-on experience with database design and REST API design','SQL profiling and query optimization',
+                  'Creative and efficient problem solver'
+              ]},
 
                   
                   
@@ -61,7 +79,7 @@ export default class Vacancies extends Component {
                     <h2>Careers</h2>
                     <p>
                         What matters to us is who we work with, what are our goals and principles. We
-                        believe that JAMI is a place where one can realize his full potential in various
+                        believe that <b>Alcyon Systems</b> is a place where one can realize his full potential in various
                         projects, take enjoyment in working and to be on truly friendly terms with
                         colleagues and just make a world a better place.
                     </p>

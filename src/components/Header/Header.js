@@ -26,7 +26,7 @@ export default function Header(props){
 
                     <div className={'nav_fixed'} >
 
-                        <NavBar scroll={props.scroll} active={props.active} close={props.close} lang={t} language = {i18n.language} desktop = {props.desktop}/>
+                        <NavBar scroll={props.scroll} active={props.active} close={props.close} lang={t} language = {i18n.language} desktop = {props.desktop} chanLang={props.chanLang}/>
              
 
                     </div>
@@ -45,18 +45,7 @@ export default function Header(props){
                         
                         />
                 </div>
-                    {props.active ? <div  className={` ${props.active ? 'flagTop_mobile' : 'mobile_dis'}`} >
-                        <ReactFlagsSelect
-                            countries={["GB","RU","AM"]}
-                            defaultCountry={i18n.language}
-                            showSelectedLabel={false}
-                            showOptionLabel={false}
-                            selectedSize={20}
-                            optionsSize={14}
-                            onSelect={onSelectFlag}
 
-                        />
-                    </div>: null}
 
                 </div>
 
