@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import './FooterContact.scss'
 import FooterInput from './FooterInput/FooterInput'
 import './MediaFooterContact.scss'
-
+import axios from 'axios'
 
 
 function validateEmail(email) {
@@ -19,6 +19,7 @@ export default class Contact extends Component {
         isFormValid: false,
         formControl: {
             name: {
+                name:'name',
                 label: 'Name',
                 type: 'text',
                 value: '',
@@ -34,6 +35,7 @@ export default class Contact extends Component {
                 }
             },
             email: {
+                name:'email',
                 label: 'Email',
                 type: 'email',
                 value: '',
@@ -48,6 +50,7 @@ export default class Contact extends Component {
                 }
             },
             phone: {
+                name:'phone',
                 label: 'Phone Number',
                 type: 'text',
                 value: '',
@@ -62,12 +65,18 @@ export default class Contact extends Component {
                 }
             },
         },
+        name:'',
+        email:'',
+        phone:'',
+        area:'',
+
         // areaText: '',
     }
 
 
     changeArea = (e) => {   
         this.setState({areaText: e.target.value})
+               
     }
 
 
@@ -121,17 +130,22 @@ export default class Contact extends Component {
             return isFormValid = formControl[name].valid && isFormValid
         })
 
-        this.setState({formControl, isFormValid})
+        this.setState({formControl, isFormValid,[event.target.name]:event.target.value})
+        console.log(this.state.name,this.state.email);
+        
+        
     }
-
-    // sendMessage = (e) => {
-    //
-    //     Object.keys(this.state.formControl).map((e) => {
-    //         const a = this.state.formControl[e]
-    //          this.state.emptymass.push(a.value, this.state.areaText)
-    //
-    //     })
-    // }
+    
+    sendMessage = (e) => {
+         e.preventDefault()
+         axios.post('/mail',{
+            name:this.state.name,
+            message:this.state.areaText,
+            email:this.state.email,
+            phone:this.state.phone
+         })
+        
+    }
     render() {
         return(
             <div className="contacts">
@@ -143,11 +157,12 @@ export default class Contact extends Component {
                             <h2>Contact Us</h2>
                         </div> 
                         
-                        <form onSubmit={e => e.preventDefault()}>
+                        <form onSubmit={this.sendMessage}>
                         {Object.keys(this.state.formControl).map((control, index) => {
                             const controls = this.state.formControl[control]
                             return(
                                 <FooterInput
+                                    name={controls.name}
                                     label={controls.label}
                                     value={controls.value}
                                     type={controls.type}
@@ -162,7 +177,7 @@ export default class Contact extends Component {
                             )
                         })}
                        
-                        <textarea rows="5" value={this.state.areaText} onChange={this.changeArea} placeholder='Your Message'></textarea>
+                        <textarea name="area" rows="5" value={this.state.areaText} onChange={this.changeArea} placeholder='Your Message'></textarea>
                         
                         <button type="submit" disabled={!this.state.isFormValid} className={this.state.disabled ? 'disabled' : null}>Send Message</button>
                         </form>
