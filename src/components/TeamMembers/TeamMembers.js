@@ -6,14 +6,14 @@ import './MediaTeamMembers.scss'
 
 export default ()=>{
     const members =[
-        {id:0,description:'',name:'',job:'',img:'https://res.cloudinary.com/alcyonsystems/image/upload/v1583139939/AlcyonSystems/Team/1_gughrc.jpg',hoverimg:'https://res.cloudinary.com/alcyonsystems/image/upload/v1583139939/AlcyonSystems/Team/1.1_ihatlo.jpg',hoverColor:''},
-        {id:1,description:'',name:'',job:'',img:'https://res.cloudinary.com/alcyonsystems/image/upload/v1583139939/AlcyonSystems/Team/2_uknkbf.jpg',hoverimg:'https://res.cloudinary.com/alcyonsystems/image/upload/v1583139939/AlcyonSystems/Team/2.2_druxur.jpg',hoverColor:''},
-        {id:2,description:'',name:'',job:'',img:'https://res.cloudinary.com/alcyonsystems/image/upload/v1583139939/AlcyonSystems/Team/4_nhz3ng.jpg',hoverimg:'https://res.cloudinary.com/alcyonsystems/image/upload/v1583139939/AlcyonSystems/Team/4.4_cbfcqd.jpg',hoverColor:''},
-        {id:3,description:'',name:'',job:'',img:'https://res.cloudinary.com/alcyonsystems/image/upload/v1583139939/AlcyonSystems/Team/6_lqmskv.jpg',hoverimg:'https://res.cloudinary.com/alcyonsystems/image/upload/v1583139939/AlcyonSystems/Team/6.6_wgetzo.jpg',hoverColor:''},
-        {id:4,description:'',name:'',job:'',img:'https://res.cloudinary.com/alcyonsystems/image/upload/v1583139939/AlcyonSystems/Team/5_uuk6l3.jpg',hoverimg:'https://res.cloudinary.com/alcyonsystems/image/upload/v1583139939/AlcyonSystems/Team/5.5_zxjsbr.jpg',hoverColor:''},
-        {id:5,description:'',name:'',job:'',img:'https://res.cloudinary.com/alcyonsystems/image/upload/v1583139940/AlcyonSystems/Team/8_dkshh8.jpg',hoverimg:'https://res.cloudinary.com/alcyonsystems/image/upload/v1583139940/AlcyonSystems/Team/8.8_vcukmd.jpg',hoverColor:''},
-        {id:6,description:'',name:'',job:'',img:'https://res.cloudinary.com/alcyonsystems/image/upload/v1583139939/AlcyonSystems/Team/3_fzs8tj.jpg',hoverimg:'https://res.cloudinary.com/alcyonsystems/image/upload/v1583139939/AlcyonSystems/Team/3.3_bruyyf.jpg',hoverColor:''},
-        {id:7,description:'',name:'',job:'',img:'https://res.cloudinary.com/alcyonsystems/image/upload/v1583139940/AlcyonSystems/Team/7_zjpn34.jpg',hoverimg:'https://res.cloudinary.com/alcyonsystems/image/upload/v1583139940/AlcyonSystems/Team/7.7_qlol7i.jpg',hoverColor:''}
+        {id:0,description:'',name:'',job:'',img:'https://res.cloudinary.com/alcyonsystems/image/upload/v1584353679/AlcyonSystems/Team/jdfg/322323_lwn702.png',hoverimg:'https://res.cloudinary.com/alcyonsystems/image/upload/v1584351963/AlcyonSystems/Team/jdfg/Volodyahover_ttuoqy.png',fullName:'Volodya Sargsyan',specialistIn:'Director, Front-End Developer'},
+        {id:1,description:'',name:'',job:'',img:'https://res.cloudinary.com/alcyonsystems/image/upload/v1584352652/AlcyonSystems/Team/jdfg/Lusine_einka2.png',hoverimg:'https://res.cloudinary.com/alcyonsystems/image/upload/v1584351963/AlcyonSystems/Team/jdfg/LusineHdgtover_bz4zyg.png',fullName:'Lusine Adumyan',specialistIn:'Project Manager'},
+        {id:2,description:'',name:'',job:'',img:'https://res.cloudinary.com/alcyonsystems/image/upload/v1584106071/AlcyonSystems/Team/zhgcgdg/IMG_8624-min_phj76w.png',hoverimg:'https://res.cloudinary.com/alcyonsystems/image/upload/v1584351963/AlcyonSystems/Team/jdfg/Armanhover_nghuuh.png',fullName:'Arman Nazaryan',specialistIn:'Front-End Developer'},
+        {id:3,description:'',name:'',job:'',img:'https://res.cloudinary.com/alcyonsystems/image/upload/v1584351962/AlcyonSystems/Team/jdfg/Hasmik_ysp4u1.png',hoverimg:'https://res.cloudinary.com/alcyonsystems/image/upload/v1584351963/AlcyonSystems/Team/jdfg/HasmikHover_b6rihn.png',fullName:'Hasmik Hovsepyan',specialistIn:'Full-Stack Developer'},
+        {id:4,description:'',name:'',job:'',img:'https://res.cloudinary.com/alcyonsystems/image/upload/v1584351963/AlcyonSystems/Team/jdfg/Nare_umwjcg.png',hoverimg:'https://res.cloudinary.com/alcyonsystems/image/upload/v1584351963/AlcyonSystems/Team/jdfg/NareHover_eysv4a.png',fullName:'Nare Madoyan',specialistIn:'Front-End Developer'},
+        {id:5,description:'',name:'',job:'',img:'https://res.cloudinary.com/alcyonsystems/image/upload/v1584353679/AlcyonSystems/Team/jdfg/IMG_8618-migghggggn_uujjba.png',hoverimg:'https://res.cloudinary.com/alcyonsystems/image/upload/v1584351963/AlcyonSystems/Team/jdfg/TigranHover_cb9chf.png',fullName:'Tigran Mnjoyan',specialistIn:'Front-End Developer'},
+        {id:6,description:'',name:'',job:'',img:'https://res.cloudinary.com/alcyonsystems/image/upload/v1584353679/AlcyonSystems/Team/jdfg/120.0454_gi5hds.png',hoverimg:'https://res.cloudinary.com/alcyonsystems/image/upload/v1584351962/AlcyonSystems/Team/jdfg/Hrachhover_lrujy2.png',fullName:'Hrachya Ashkhatoyan',specialistIn:'Full-Stack Developer'},
+        {id:7,description:'',name:'',job:'',img:'https://res.cloudinary.com/alcyonsystems/image/upload/v1584106071/AlcyonSystems/Team/zhgcgdg/vahge1-min_viqk0l.png',hoverimg:'https://res.cloudinary.com/alcyonsystems/image/upload/v1584351963/AlcyonSystems/Team/jdfg/VaheHover_wjn1kc.png',fullName:'Vahe Martirosyan',specialistIn:'Front-End Developer'}
 
     ]
 
@@ -25,8 +25,11 @@ export default ()=>{
                             <div className={'col-lg-3 team_all '} key={i}>
                                 <div className={'first'} style={{backgroundImage:`url(${e.img})`}}>
                                     <div className='hovered_img' style={{backgroundImage:`url(${e.hoverimg})`}}>
-                                            <p></p>
-                                            <p></p>
+                                        <div className={' container d-flex bsd'}>
+                                            <p>{e.fullName}</p>
+                                            <p>{e.specialistIn}</p>
+                                        </div>
+
                                     </div>
                 
                                 </div>

@@ -42,7 +42,7 @@ export default () => {
                                 <div className='address_contact'>
                                     <p>New business & partnership</p>
                                     <p>+374 99-13-20-32</p>
-                                    <p className='footer_p_border'>mail@example.ru</p>
+                                    <p className='footer_p_border'>info@alcyonsystems.am</p>
                                 </div>
                                 <div className='address_contact2'>
                                     <p>Visit our office</p>
