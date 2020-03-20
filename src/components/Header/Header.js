@@ -33,18 +33,18 @@ export default function Header(props){
                    
                 </div>
 
-                <div className=" flagTop">
-                    <ReactFlagsSelect
-                        countries={["GB","RU","AM"]} 
-                        defaultCountry={i18n.language}
-                        showSelectedLabel={false}
-                        showOptionLabel={false}
-                        selectedSize={20}
-                        optionsSize={14}
-                        onSelect={onSelectFlag}
-                        
-                        />
-                </div>
+                {/*<div className=" flagTop">*/}
+                {/*    <ReactFlagsSelect*/}
+                {/*        countries={["GB","RU","AM"]} */}
+                {/*        defaultCountry={i18n.language}*/}
+                {/*        showSelectedLabel={false}*/}
+                {/*        showOptionLabel={false}*/}
+                {/*        selectedSize={20}*/}
+                {/*        optionsSize={14}*/}
+                {/*        onSelect={onSelectFlag}*/}
+                {/*        */}
+                {/*        />*/}
+                {/*</div>*/}
 
 
                 </div>

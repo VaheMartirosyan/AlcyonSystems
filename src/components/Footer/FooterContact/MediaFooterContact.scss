@@ -134,6 +134,12 @@
   }
 }
 @media only screen and(min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .us{
+    h2{
+      text-align:center;
+      margin-left:-7vh;
+    }
+  }
   .footer_container{
     display: flex;
     flex-direction: row !important;
@@ -144,6 +150,7 @@
   }
   .formControlers{
     form{
+      width:100%;
       input{
         padding: .5vh;
       }

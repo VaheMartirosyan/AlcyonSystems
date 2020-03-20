@@ -3,12 +3,33 @@
     .first{
       height: 38vh;
     }
+    .bsd{
+      margin-top: -3vh;
+      p{
+        font-size:90% !important;
+      }
+      p:nth-child(1){
+        width: 35%;
+
+      }
+    }
   }
+
 }
 @media only screen and (max-width: 1420px) {
   .team_all{
     .first{
       height: 37vh;
+    }
+    .bsd{
+      margin-top: -4vh;
+      p{
+        font-size:90% !important;
+      }
+      p:nth-child(1){
+        width: 35%;
+
+      }
     }
   }
 }
@@ -16,6 +37,17 @@
   .team_all{
     .first{
       height: 36vh;
+    }
+
+    .bsd{
+      margin-top: -6vh;
+      p{
+        font-size:80% !important;
+      }
+      p:nth-child(1){
+        width: 35%;
+
+      }
     }
   }
 }
@@ -52,6 +84,16 @@
     .first{
       height: 32.5vh;
     }
+    .bsd{
+      margin-top: -10vh;
+      p{
+        font-size:70% !important;
+      }
+      p:nth-child(1){
+        width: 35%;
+
+      }
+    }
   }
 }
 @media only screen and (max-width: 1215px) {
@@ -60,13 +102,22 @@
       height: 30.7vh;
     }
   }
+
 }
 @media only screen and (max-width: 1150px) {
   .team_all{
     .first{
       height: 29.5vh;
+    }
+    .bsd{
+      margin-top: -12vh;
+      p{
+        font-size:70% !important;
+      }
+      p:nth-child(1){
+        width: 35%;
 
-
+      }
     }
   }
 }
@@ -86,7 +137,16 @@
 }
  @media only screen and ( min-width: 768px) and (max-width: 1024px) {
    .team_all{
+     .bsd{
+       margin-top: -1vh;
+       p{
+         font-size:120% !important;
+       }
+       p:nth-child(1){
+         width: 35%;
 
+       }
+     }
      .first{
        margin-top:2vh;
        height: 50vh;
@@ -105,7 +165,16 @@
     }
   }
   .team_all{
+    .bsd{
+      margin-top: -8vh;
+      p{
+        font-size:70% !important;
+      }
+      p:nth-child(1){
+        width: 35%;
 
+      }
+    }
     .first{
       height: 40vh;
       background-size: 100% ;
@@ -119,7 +188,16 @@
 }
 @media only screen and ( min-width: 320px) and (max-width: 767px) {
   .team_all{
+    .bsd{
+      margin-top: -2vh;
+      p{
+        font-size:90% !important;
+      }
+      p:nth-child(1){
+        width: 35%;
 
+      }
+    }
     .first{
       margin-top:2vh;
       height: 50vh;
