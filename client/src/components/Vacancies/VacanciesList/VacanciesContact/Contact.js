@@ -116,6 +116,8 @@ export default class Contact extends Component {
     }
 
     isInvalid(event, control) {
+        console.log(event.target.valu, event.target.name);
+        
         let formControl = {...this.state.formControl}
         let controls = {...formControl[control]}
 
@@ -161,6 +163,7 @@ export default class Contact extends Component {
                             const controls = this.state.formControl[control]
                             return(
                                 <Input
+                                    name={controls.name}
                                     label={controls.label}
                                     value={controls.value}
                                     type={controls.type}

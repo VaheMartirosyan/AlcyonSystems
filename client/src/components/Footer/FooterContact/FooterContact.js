@@ -139,7 +139,7 @@ export default class Contact extends Component {
     sendMessage = async (e) => {
          e.preventDefault()
       try{
-        const response = await  axios.post('/mail',{
+        const response = await  axios.post('contact',{
             name:this.state.name,
             message:this.state.areaText,
             email:this.state.email,
