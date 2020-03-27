@@ -8,19 +8,22 @@ export default ()=>{
         {
             id: 0,
             icon: 'fa fa-magic',
-            title: 'Web Design',
-            img:'https://res.cloudinary.com/alcyonsystems/image/upload/v1583139918/AlcyonSystems/6_x9abtz.jpg'
+            title: 'Gnumner',
+            img:'https://res.cloudinary.com/alcyonsystems/image/upload/v1584699036/AlcyonSystems/portfolio/gnumnerAm_xmpyhh.png',
+            link:'http://gnumner.am/'
         },
         {
             id: 1,
             icon: 'fa fa-shopping-cart',
-            title: 'Ecommerce',
-            img:'https://res.cloudinary.com/alcyonsystems/image/upload/v1583139909/AlcyonSystems/1_mztied.jpg'
+            title: 'Lexigo',
+            img:'https://res.cloudinary.com/alcyonsystems/image/upload/v1584699037/AlcyonSystems/portfolio/Lexigo_w79aao.png',
+            link:'http://lexigoversion2.kinsta.cloud/'
         }, {
             id: 2,
             icon: 'fa fa-check-circle',
-            title: 'QA Testing',
-            img:'https://res.cloudinary.com/alcyonsystems/image/upload/v1583139909/AlcyonSystems/2_y65cbi.jpg'
+            title: 'EcofruitArmenia',
+            img:'https://res.cloudinary.com/alcyonsystems/image/upload/v1584699039/AlcyonSystems/portfolio/Exofruit_q8joqb.png',
+            link:'http://ecofruitarmenia.am/'
         }, {
             id: 3,
             icon: 'fa fa-desktop',
@@ -55,7 +58,7 @@ export default ()=>{
                             <div className='portfolio_img'>
                                 <img src={e.img} alt=""/>
                             </div>
-                            <a href="/">Click To Watch</a>
+                            <a href={e.link} target="_blank" rel="noopener noreferrer">Click To Watch</a>
                         </div>
                     </div>
                 )
