@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import './Contact.scss'
 import Input from './Input/Input'
+import axios from 'axios'
 
 
 
@@ -18,6 +19,7 @@ export default class Contact extends Component {
         isFormValid: false,
         formControl: {
             name: {
+                name:'name',
                 label: 'Name',
                 type: 'text',
                 value: '',
@@ -33,6 +35,7 @@ export default class Contact extends Component {
                 }
             },
             email: {
+                name:'email',
                 label: 'Email',
                 type: 'email',
                 value: '',
@@ -47,6 +50,7 @@ export default class Contact extends Component {
                 }
             },
             phone: {
+                name:'phone',
                 label: 'Phone Number',
                 type: 'text',
                 value: '',
@@ -61,6 +65,7 @@ export default class Contact extends Component {
                 }
             },
             link: {
+                name:'link',
                 label: 'Link',
                 type: 'text',
                 value: '',
@@ -76,7 +81,11 @@ export default class Contact extends Component {
                 }
             },
         },
-        // areaText: '',
+         name:'',
+         email:'',
+         phone:'',
+         link:'',   
+         areaText: '',
     }
     changeArea = (e) => {   
         this.setState({areaText: e.target.value})
@@ -116,7 +125,7 @@ export default class Contact extends Component {
     }
 
     isInvalid(event, control) {
-        console.log(event.target.valu, event.target.name);
+     
         
         let formControl = {...this.state.formControl}
         let controls = {...formControl[control]}
@@ -135,18 +144,30 @@ export default class Contact extends Component {
             return isFormValid = formControl[name].valid && isFormValid
         })
 
-        this.setState({formControl, isFormValid})
+        this.setState({formControl, isFormValid,[event.target.name]:event.target.value})
     }
 
-    // sendMessage = () => {
-    //
-    //     Object.keys(this.state.formControl).map(e => {
-    //         // const a = this.state.formControl[e]
-    //         //  this.state.emptymass.push(a.value, this.state.areaText)
-    //
-    //     })
-    //     console.log(this.state.emptymass)
-    // }
+    dataFetching = async (e) => {
+        e.preventDefault()
+            const message = {
+                name:this.state.name,
+                email:this.state.email,
+                phone:this.state.phone,
+                link:this.state.link,
+                description:this.state.areaText
+            }
+           
+            try{
+              const response = await  axios.post('cariers',{ message })
+               
+               alert(response.data.message)
+               
+            }catch{
+              alert('succsses denied')
+            }
+       
+        console.log()
+    }
     render() {
         return(
             <div className="contact">
@@ -180,7 +201,9 @@ export default class Contact extends Component {
                        
                         <textarea rows="5" value={this.state.areaText} onChange={this.changeArea} placeholder='Your Message'></textarea>
                         
-                        <button type="submit" disabled={!this.state.isFormValid} className={this.state.disabled ? 'disabled' : null}>Send Message</button>
+                        <button type="submit" disabled={!this.state.isFormValid} className={this.state.disabled ? 'disabled' : null} 
+                        
+                         onClick={this.dataFetching} >Send Message</button>
                         </form>
                         
                     </div>

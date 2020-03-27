@@ -12,7 +12,8 @@ export default (props) => {
     if(isValid(props)) {
         sty.push('invalid')
     }
-
+       
+        
     return(
         <div className={sty.join(' ')} key={props.id}>
             <input
